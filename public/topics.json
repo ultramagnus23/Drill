@@ -1,0 +1,7328 @@
+[
+  {
+    "id": "cs-0001",
+    "topic": "Why is the P vs NP question actually asking whether verifying is easier than solving?",
+    "domain": "cs",
+    "difficulty": 3,
+    "tags": [
+      "complexity",
+      "theory"
+    ]
+  },
+  {
+    "id": "cs-0002",
+    "topic": "What does it mean for a problem to be NP-complete, and why does finding one fast algorithm break everything?",
+    "domain": "cs",
+    "difficulty": 3,
+    "tags": [
+      "complexity",
+      "theory"
+    ]
+  },
+  {
+    "id": "cs-0003",
+    "topic": "How does a hash table achieve near-constant time lookup, and what makes it degrade to linear time?",
+    "domain": "cs",
+    "difficulty": 2,
+    "tags": [
+      "data-structures"
+    ]
+  },
+  {
+    "id": "cs-0004",
+    "topic": "Why do B-trees, not binary search trees, back most databases?",
+    "domain": "cs",
+    "difficulty": 2,
+    "tags": [
+      "data-structures",
+      "databases"
+    ]
+  },
+  {
+    "id": "cs-0005",
+    "topic": "What is the halting problem, and why can no program solve it in general?",
+    "domain": "cs",
+    "difficulty": 2,
+    "tags": [
+      "theory",
+      "computability"
+    ]
+  },
+  {
+    "id": "cs-0006",
+    "topic": "How does garbage collection know an object is no longer reachable?",
+    "domain": "cs",
+    "difficulty": 2,
+    "tags": [
+      "systems",
+      "memory"
+    ]
+  },
+  {
+    "id": "cs-0007",
+    "topic": "Why does TCP need a three-way handshake instead of just sending data?",
+    "domain": "cs",
+    "difficulty": 2,
+    "tags": [
+      "networking"
+    ]
+  },
+  {
+    "id": "cs-0008",
+    "topic": "What actually happens during a context switch between two processes?",
+    "domain": "cs",
+    "difficulty": 2,
+    "tags": [
+      "systems",
+      "os"
+    ]
+  },
+  {
+    "id": "cs-0009",
+    "topic": "Why is cache invalidation considered one of the two hard problems in computer science?",
+    "domain": "cs",
+    "difficulty": 2,
+    "tags": [
+      "systems",
+      "caching"
+    ]
+  },
+  {
+    "id": "cs-0010",
+    "topic": "How does a CPU pipeline hazard stall instructions, and how does branch prediction fight it?",
+    "domain": "cs",
+    "difficulty": 3,
+    "tags": [
+      "architecture"
+    ]
+  },
+  {
+    "id": "cs-0011",
+    "topic": "What is the CAP theorem, and why can't a distributed system have all three properties at once?",
+    "domain": "cs",
+    "difficulty": 2,
+    "tags": [
+      "distributed-systems"
+    ]
+  },
+  {
+    "id": "cs-0012",
+    "topic": "How does a Raft or Paxos consensus protocol get a cluster of unreliable machines to agree on one value?",
+    "domain": "cs",
+    "difficulty": 3,
+    "tags": [
+      "distributed-systems"
+    ]
+  },
+  {
+    "id": "cs-0013",
+    "topic": "Why do distributed systems need vector clocks instead of just timestamps?",
+    "domain": "cs",
+    "difficulty": 3,
+    "tags": [
+      "distributed-systems"
+    ]
+  },
+  {
+    "id": "cs-0014",
+    "topic": "What is a Bloom filter, and why would you accept false positives to save memory?",
+    "domain": "cs",
+    "difficulty": 2,
+    "tags": [
+      "data-structures"
+    ]
+  },
+  {
+    "id": "cs-0015",
+    "topic": "How does a compiler turn source code into an abstract syntax tree, and why does that step exist?",
+    "domain": "cs",
+    "difficulty": 2,
+    "tags": [
+      "compilers"
+    ]
+  },
+  {
+    "id": "cs-0016",
+    "topic": "What is the difference between a compiler and an interpreter, and why do many languages use both?",
+    "domain": "cs",
+    "difficulty": 1,
+    "tags": [
+      "compilers"
+    ]
+  },
+  {
+    "id": "cs-0017",
+    "topic": "Why does static type checking catch some bugs but not others?",
+    "domain": "cs",
+    "difficulty": 1,
+    "tags": [
+      "programming-languages"
+    ]
+  },
+  {
+    "id": "cs-0018",
+    "topic": "What is the Curry-Howard correspondence between proofs and programs?",
+    "domain": "cs",
+    "difficulty": 3,
+    "tags": [
+      "programming-languages",
+      "logic"
+    ]
+  },
+  {
+    "id": "cs-0019",
+    "topic": "How does RSA encryption rely on the difficulty of factoring large numbers?",
+    "domain": "cs",
+    "difficulty": 2,
+    "tags": [
+      "crypto"
+    ]
+  },
+  {
+    "id": "cs-0020",
+    "topic": "What is a zero-knowledge proof, and how can you prove you know a secret without revealing it?",
+    "domain": "cs",
+    "difficulty": 3,
+    "tags": [
+      "crypto"
+    ]
+  },
+  {
+    "id": "cs-0021",
+    "topic": "Why does public-key cryptography need both a public and private key instead of one shared secret?",
+    "domain": "cs",
+    "difficulty": 1,
+    "tags": [
+      "crypto"
+    ]
+  },
+  {
+    "id": "cs-0022",
+    "topic": "How does a Merkle tree let you verify a huge dataset without downloading all of it?",
+    "domain": "cs",
+    "difficulty": 2,
+    "tags": [
+      "crypto",
+      "data-structures"
+    ]
+  },
+  {
+    "id": "cs-0023",
+    "topic": "What is ray tracing, and why does it simulate light backwards from the camera?",
+    "domain": "cs",
+    "difficulty": 2,
+    "tags": [
+      "graphics"
+    ]
+  },
+  {
+    "id": "cs-0024",
+    "topic": "How do GPUs achieve massive parallelism that CPUs can't?",
+    "domain": "cs",
+    "difficulty": 2,
+    "tags": [
+      "architecture",
+      "graphics"
+    ]
+  },
+  {
+    "id": "cs-0025",
+    "topic": "What is anti-aliasing, and why do jagged edges appear on digital images in the first place?",
+    "domain": "cs",
+    "difficulty": 1,
+    "tags": [
+      "graphics"
+    ]
+  },
+  {
+    "id": "cs-0026",
+    "topic": "How does a lens focus light, and why do fisheye and telephoto lenses distort images differently?",
+    "domain": "cs",
+    "difficulty": 2,
+    "tags": [
+      "optics"
+    ]
+  },
+  {
+    "id": "cs-0027",
+    "topic": "Why does JPEG compression lose quality, and what is it throwing away?",
+    "domain": "cs",
+    "difficulty": 2,
+    "tags": [
+      "graphics",
+      "compression"
+    ]
+  },
+  {
+    "id": "cs-0028",
+    "topic": "What is the difference between TCP and UDP, and why would anyone choose the less reliable one?",
+    "domain": "cs",
+    "difficulty": 1,
+    "tags": [
+      "networking"
+    ]
+  },
+  {
+    "id": "cs-0029",
+    "topic": "How does DNS turn a domain name into an IP address across the whole internet?",
+    "domain": "cs",
+    "difficulty": 1,
+    "tags": [
+      "networking"
+    ]
+  },
+  {
+    "id": "cs-0030",
+    "topic": "Why does BGP routing make the internet vulnerable to accidental or malicious hijacks?",
+    "domain": "cs",
+    "difficulty": 3,
+    "tags": [
+      "networking"
+    ]
+  },
+  {
+    "id": "cs-0031",
+    "topic": "What is a race condition, and why is it so hard to reproduce in testing?",
+    "domain": "cs",
+    "difficulty": 1,
+    "tags": [
+      "concurrency"
+    ]
+  },
+  {
+    "id": "cs-0032",
+    "topic": "How does a mutex actually prevent two threads from touching the same memory at once?",
+    "domain": "cs",
+    "difficulty": 2,
+    "tags": [
+      "concurrency"
+    ]
+  },
+  {
+    "id": "cs-0033",
+    "topic": "What is deadlock, and why do the four Coffman conditions all need to hold for it to happen?",
+    "domain": "cs",
+    "difficulty": 2,
+    "tags": [
+      "concurrency"
+    ]
+  },
+  {
+    "id": "cs-0034",
+    "topic": "Why is quicksort's worst case quadratic despite averaging n log n?",
+    "domain": "cs",
+    "difficulty": 2,
+    "tags": [
+      "algorithms"
+    ]
+  },
+  {
+    "id": "cs-0035",
+    "topic": "How does dynamic programming avoid recomputation that plain recursion wastes?",
+    "domain": "cs",
+    "difficulty": 1,
+    "tags": [
+      "algorithms"
+    ]
+  },
+  {
+    "id": "cs-0036",
+    "topic": "What is the difference between a stack and a heap in memory management?",
+    "domain": "cs",
+    "difficulty": 1,
+    "tags": [
+      "systems",
+      "memory"
+    ]
+  },
+  {
+    "id": "cs-0037",
+    "topic": "Why do virtual memory and paging let a program think it has more RAM than the machine has?",
+    "domain": "cs",
+    "difficulty": 2,
+    "tags": [
+      "systems",
+      "memory"
+    ]
+  },
+  {
+    "id": "cs-0038",
+    "topic": "How does a Turing machine formalize what it means to compute something?",
+    "domain": "cs",
+    "difficulty": 2,
+    "tags": [
+      "theory",
+      "computability"
+    ]
+  },
+  {
+    "id": "cs-0039",
+    "topic": "What is regular expression backtracking, and why can it make some patterns catastrophically slow?",
+    "domain": "cs",
+    "difficulty": 2,
+    "tags": [
+      "algorithms"
+    ]
+  },
+  {
+    "id": "cs-0040",
+    "topic": "How does a load balancer decide which server should handle a request?",
+    "domain": "cs",
+    "difficulty": 1,
+    "tags": [
+      "systems",
+      "distributed-systems"
+    ]
+  },
+  {
+    "id": "cs-0041",
+    "topic": "Why did the SHA family of hash functions replace MD5 and SHA-1 for security purposes?",
+    "domain": "cs",
+    "difficulty": 2,
+    "tags": [
+      "crypto"
+    ]
+  },
+  {
+    "id": "cs-0042",
+    "topic": "What is homomorphic encryption, and why would you want to compute on data without decrypting it?",
+    "domain": "cs",
+    "difficulty": 3,
+    "tags": [
+      "crypto"
+    ]
+  },
+  {
+    "id": "cs-0043",
+    "topic": "How does the A* search algorithm use a heuristic to find shortest paths faster than Dijkstra's?",
+    "domain": "cs",
+    "difficulty": 2,
+    "tags": [
+      "algorithms"
+    ]
+  },
+  {
+    "id": "cs-0044",
+    "topic": "Why does floating-point arithmetic sometimes make 0.1 + 0.2 not equal 0.3?",
+    "domain": "cs",
+    "difficulty": 1,
+    "tags": [
+      "architecture"
+    ]
+  },
+  {
+    "id": "cs-0045",
+    "topic": "What is a Skip List, and why does it achieve balanced-tree performance using randomness instead of rebalancing?",
+    "domain": "cs",
+    "difficulty": 3,
+    "tags": [
+      "data-structures"
+    ]
+  },
+  {
+    "id": "cs-0046",
+    "topic": "Why does a trie make prefix search faster than a hash table despite using more memory?",
+    "domain": "cs",
+    "difficulty": 2,
+    "tags": [
+      "data-structures"
+    ]
+  },
+  {
+    "id": "cs-0047",
+    "topic": "What is the difference between optimistic and pessimistic concurrency control in a database?",
+    "domain": "cs",
+    "difficulty": 2,
+    "tags": [
+      "concurrency",
+      "databases"
+    ]
+  },
+  {
+    "id": "swe-0001",
+    "topic": "Why does the second system effect make a team's follow-up project often worse than its first?",
+    "domain": "software-engineering",
+    "difficulty": 2,
+    "tags": [
+      "engineering-practice"
+    ]
+  },
+  {
+    "id": "swe-0002",
+    "topic": "What is technical debt, and why is it sometimes a rational choice rather than a failure?",
+    "domain": "software-engineering",
+    "difficulty": 1,
+    "tags": [
+      "engineering-practice"
+    ]
+  },
+  {
+    "id": "swe-0003",
+    "topic": "Why does Conway's Law claim that software architecture mirrors an organization's communication structure?",
+    "domain": "software-engineering",
+    "difficulty": 2,
+    "tags": [
+      "engineering-practice"
+    ]
+  },
+  {
+    "id": "swe-0004",
+    "topic": "What does it mean for an API to be idempotent, and why does that matter for retries?",
+    "domain": "software-engineering",
+    "difficulty": 1,
+    "tags": [
+      "api-design"
+    ]
+  },
+  {
+    "id": "swe-0005",
+    "topic": "Why do feature flags let teams decouple deploying code from releasing it?",
+    "domain": "software-engineering",
+    "difficulty": 1,
+    "tags": [
+      "engineering-practice"
+    ]
+  },
+  {
+    "id": "swe-0006",
+    "topic": "What is the difference between unit, integration, and end-to-end tests, and why do you need all three?",
+    "domain": "software-engineering",
+    "difficulty": 1,
+    "tags": [
+      "testing"
+    ]
+  },
+  {
+    "id": "swe-0007",
+    "topic": "Why does Brooks's “mythical man-month” argue that adding people to a late project makes it later?",
+    "domain": "software-engineering",
+    "difficulty": 2,
+    "tags": [
+      "engineering-practice"
+    ]
+  },
+  {
+    "id": "swe-0008",
+    "topic": "What is a monorepo, and what tradeoff does it make against separate repositories?",
+    "domain": "software-engineering",
+    "difficulty": 1,
+    "tags": [
+      "engineering-practice"
+    ]
+  },
+  {
+    "id": "swe-0009",
+    "topic": "How does semantic versioning try to communicate the risk of upgrading a dependency?",
+    "domain": "software-engineering",
+    "difficulty": 1,
+    "tags": [
+      "engineering-practice"
+    ]
+  },
+  {
+    "id": "swe-0010",
+    "topic": "Why does blue-green deployment reduce the risk of a bad release?",
+    "domain": "software-engineering",
+    "difficulty": 1,
+    "tags": [
+      "deployment"
+    ]
+  },
+  {
+    "id": "swe-0011",
+    "topic": "What is the strangler fig pattern for migrating a legacy system?",
+    "domain": "software-engineering",
+    "difficulty": 2,
+    "tags": [
+      "architecture"
+    ]
+  },
+  {
+    "id": "swe-0012",
+    "topic": "Why do microservices trade simpler deployments for more complex operations?",
+    "domain": "software-engineering",
+    "difficulty": 2,
+    "tags": [
+      "architecture"
+    ]
+  },
+  {
+    "id": "swe-0013",
+    "topic": "What is eventual consistency, and why do some systems accept it instead of strong consistency?",
+    "domain": "software-engineering",
+    "difficulty": 2,
+    "tags": [
+      "distributed-systems"
+    ]
+  },
+  {
+    "id": "swe-0014",
+    "topic": "How does code review catch problems that automated tests miss?",
+    "domain": "software-engineering",
+    "difficulty": 1,
+    "tags": [
+      "engineering-practice"
+    ]
+  },
+  {
+    "id": "swe-0015",
+    "topic": "What is the bus factor of a project, and why does it matter for risk?",
+    "domain": "software-engineering",
+    "difficulty": 1,
+    "tags": [
+      "engineering-practice"
+    ]
+  },
+  {
+    "id": "swe-0016",
+    "topic": "Why does premature optimization get called the root of all evil, and when is optimizing early actually right?",
+    "domain": "software-engineering",
+    "difficulty": 1,
+    "tags": [
+      "engineering-practice"
+    ]
+  },
+  {
+    "id": "swe-0017",
+    "topic": "What is a circuit breaker pattern, and how does it stop cascading failures?",
+    "domain": "software-engineering",
+    "difficulty": 2,
+    "tags": [
+      "reliability"
+    ]
+  },
+  {
+    "id": "swe-0018",
+    "topic": "How does chaos engineering deliberately break production to make systems more reliable?",
+    "domain": "software-engineering",
+    "difficulty": 2,
+    "tags": [
+      "reliability"
+    ]
+  },
+  {
+    "id": "swe-0019",
+    "topic": "What is the difference between horizontal and vertical scaling, and why does one eventually hit a wall?",
+    "domain": "software-engineering",
+    "difficulty": 1,
+    "tags": [
+      "architecture"
+    ]
+  },
+  {
+    "id": "swe-0020",
+    "topic": "Why does database indexing speed up reads but slow down writes?",
+    "domain": "software-engineering",
+    "difficulty": 1,
+    "tags": [
+      "databases"
+    ]
+  },
+  {
+    "id": "swe-0021",
+    "topic": "What is a database transaction's ACID guarantee, and why is the “isolation” part the hardest to get right?",
+    "domain": "software-engineering",
+    "difficulty": 2,
+    "tags": [
+      "databases"
+    ]
+  },
+  {
+    "id": "swe-0022",
+    "topic": "How does an ORM's N+1 query problem quietly destroy application performance?",
+    "domain": "software-engineering",
+    "difficulty": 1,
+    "tags": [
+      "databases"
+    ]
+  },
+  {
+    "id": "swe-0023",
+    "topic": "Why does Git use a directed acyclic graph of commits instead of a linear history?",
+    "domain": "software-engineering",
+    "difficulty": 1,
+    "tags": [
+      "version-control"
+    ]
+  },
+  {
+    "id": "swe-0024",
+    "topic": "What does a three-way merge in Git actually compare?",
+    "domain": "software-engineering",
+    "difficulty": 2,
+    "tags": [
+      "version-control"
+    ]
+  },
+  {
+    "id": "swe-0025",
+    "topic": "Why do rate limiting algorithms like token bucket exist, and what problem do they solve?",
+    "domain": "software-engineering",
+    "difficulty": 1,
+    "tags": [
+      "reliability"
+    ]
+  },
+  {
+    "id": "swe-0026",
+    "topic": "What is dependency injection, and what does it actually decouple?",
+    "domain": "software-engineering",
+    "difficulty": 2,
+    "tags": [
+      "design"
+    ]
+  },
+  {
+    "id": "swe-0027",
+    "topic": "Why does the SOLID single responsibility principle get misapplied so often in practice?",
+    "domain": "software-engineering",
+    "difficulty": 2,
+    "tags": [
+      "design"
+    ]
+  },
+  {
+    "id": "swe-0028",
+    "topic": "What is the difference between authentication and authorization, and why do breaches often confuse them?",
+    "domain": "software-engineering",
+    "difficulty": 1,
+    "tags": [
+      "security"
+    ]
+  },
+  {
+    "id": "swe-0029",
+    "topic": "How does OAuth let one service grant limited access to another without sharing a password?",
+    "domain": "software-engineering",
+    "difficulty": 2,
+    "tags": [
+      "security"
+    ]
+  },
+  {
+    "id": "swe-0030",
+    "topic": "What is a SQL injection attack, and why does parameterized querying prevent it?",
+    "domain": "software-engineering",
+    "difficulty": 1,
+    "tags": [
+      "security"
+    ]
+  },
+  {
+    "id": "swe-0031",
+    "topic": "Why does cross-site scripting exploit the browser's trust in a website's own content?",
+    "domain": "software-engineering",
+    "difficulty": 2,
+    "tags": [
+      "security"
+    ]
+  },
+  {
+    "id": "swe-0032",
+    "topic": "What is a postmortem culture, and why do “blameless” postmortems produce better outcomes?",
+    "domain": "software-engineering",
+    "difficulty": 1,
+    "tags": [
+      "engineering-practice"
+    ]
+  },
+  {
+    "id": "swe-0033",
+    "topic": "How does a content delivery network reduce latency for users far from the origin server?",
+    "domain": "software-engineering",
+    "difficulty": 1,
+    "tags": [
+      "infrastructure"
+    ]
+  },
+  {
+    "id": "swe-0034",
+    "topic": "What is infrastructure as code, and what failure mode does it prevent?",
+    "domain": "software-engineering",
+    "difficulty": 1,
+    "tags": [
+      "infrastructure"
+    ]
+  },
+  {
+    "id": "swe-0035",
+    "topic": "Why does a canary release limit the blast radius of a bad deploy?",
+    "domain": "software-engineering",
+    "difficulty": 1,
+    "tags": [
+      "deployment"
+    ]
+  },
+  {
+    "id": "swe-0036",
+    "topic": "What is the difference between synchronous and asynchronous message queues, and when does each fail badly?",
+    "domain": "software-engineering",
+    "difficulty": 2,
+    "tags": [
+      "architecture"
+    ]
+  },
+  {
+    "id": "swe-0037",
+    "topic": "How does an event-sourced system reconstruct current state from a log of past events?",
+    "domain": "software-engineering",
+    "difficulty": 2,
+    "tags": [
+      "architecture"
+    ]
+  },
+  {
+    "id": "swe-0038",
+    "topic": "Why do teams adopt trunk-based development over long-lived feature branches?",
+    "domain": "software-engineering",
+    "difficulty": 1,
+    "tags": [
+      "version-control"
+    ]
+  },
+  {
+    "id": "swe-0039",
+    "topic": "What is a service level objective, and how does it differ from a service level agreement?",
+    "domain": "software-engineering",
+    "difficulty": 1,
+    "tags": [
+      "reliability"
+    ]
+  },
+  {
+    "id": "swe-0040",
+    "topic": "Why does Goodhart's Law undermine engineering metrics like lines of code or velocity?",
+    "domain": "software-engineering",
+    "difficulty": 2,
+    "tags": [
+      "engineering-practice"
+    ]
+  },
+  {
+    "id": "swe-0041",
+    "topic": "What is idempotency in a payments system, and why does a naive retry without it risk double-charging?",
+    "domain": "software-engineering",
+    "difficulty": 2,
+    "tags": [
+      "reliability"
+    ]
+  },
+  {
+    "id": "swe-0042",
+    "topic": "Why does a feature toggle left in code long-term become its own form of technical debt?",
+    "domain": "software-engineering",
+    "difficulty": 1,
+    "tags": [
+      "engineering-practice"
+    ]
+  },
+  {
+    "id": "swe-0043",
+    "topic": "What is the difference between a smoke test and a full regression suite, and why do CI pipelines need both?",
+    "domain": "software-engineering",
+    "difficulty": 1,
+    "tags": [
+      "testing"
+    ]
+  },
+  {
+    "id": "ml-0001",
+    "topic": "Why does gradient descent work at all when the loss surface of a neural network is nowhere near convex?",
+    "domain": "ml",
+    "difficulty": 2,
+    "tags": [
+      "deep-learning",
+      "optimization"
+    ]
+  },
+  {
+    "id": "ml-0002",
+    "topic": "What is backpropagation actually computing, and why is it just the chain rule at scale?",
+    "domain": "ml",
+    "difficulty": 2,
+    "tags": [
+      "deep-learning"
+    ]
+  },
+  {
+    "id": "ml-0003",
+    "topic": "Why does overfitting happen, and why does more data usually fix it better than a more complex model?",
+    "domain": "ml",
+    "difficulty": 1,
+    "tags": [
+      "statistics"
+    ]
+  },
+  {
+    "id": "ml-0004",
+    "topic": "What is the bias-variance tradeoff, and why can't you minimize both at once?",
+    "domain": "ml",
+    "difficulty": 2,
+    "tags": [
+      "statistics"
+    ]
+  },
+  {
+    "id": "ml-0005",
+    "topic": "How does regularization like L1 or L2 penalize a model into generalizing better?",
+    "domain": "ml",
+    "difficulty": 2,
+    "tags": [
+      "statistics"
+    ]
+  },
+  {
+    "id": "ml-0006",
+    "topic": "Why does the attention mechanism in transformers let a model weigh distant words directly?",
+    "domain": "ml",
+    "difficulty": 2,
+    "tags": [
+      "deep-learning",
+      "nlp"
+    ]
+  },
+  {
+    "id": "ml-0007",
+    "topic": "What problem does positional encoding solve for transformers that recurrent networks didn't have?",
+    "domain": "ml",
+    "difficulty": 3,
+    "tags": [
+      "deep-learning",
+      "nlp"
+    ]
+  },
+  {
+    "id": "ml-0008",
+    "topic": "Why do convolutional neural networks share weights across an image instead of learning separate ones per pixel?",
+    "domain": "ml",
+    "difficulty": 2,
+    "tags": [
+      "deep-learning",
+      "vision"
+    ]
+  },
+  {
+    "id": "ml-0009",
+    "topic": "What is the vanishing gradient problem, and why did it make deep networks hard to train?",
+    "domain": "ml",
+    "difficulty": 2,
+    "tags": [
+      "deep-learning"
+    ]
+  },
+  {
+    "id": "ml-0010",
+    "topic": "How do batch normalization layers stabilize training?",
+    "domain": "ml",
+    "difficulty": 2,
+    "tags": [
+      "deep-learning"
+    ]
+  },
+  {
+    "id": "ml-0011",
+    "topic": "Why does dropout regularize a network by randomly deleting neurons during training?",
+    "domain": "ml",
+    "difficulty": 2,
+    "tags": [
+      "deep-learning"
+    ]
+  },
+  {
+    "id": "ml-0012",
+    "topic": "What is a generative adversarial network, and why does training it resemble a minimax game?",
+    "domain": "ml",
+    "difficulty": 2,
+    "tags": [
+      "deep-learning"
+    ]
+  },
+  {
+    "id": "ml-0013",
+    "topic": "How does a diffusion model generate an image by learning to reverse noise?",
+    "domain": "ml",
+    "difficulty": 3,
+    "tags": [
+      "deep-learning",
+      "generative"
+    ]
+  },
+  {
+    "id": "ml-0014",
+    "topic": "Why does reinforcement learning's exploration-exploitation tradeoff make it fundamentally different from supervised learning?",
+    "domain": "ml",
+    "difficulty": 2,
+    "tags": [
+      "reinforcement-learning"
+    ]
+  },
+  {
+    "id": "ml-0015",
+    "topic": "What is the credit assignment problem in reinforcement learning?",
+    "domain": "ml",
+    "difficulty": 3,
+    "tags": [
+      "reinforcement-learning"
+    ]
+  },
+  {
+    "id": "ml-0016",
+    "topic": "Why does a support vector machine try to maximize the margin rather than just find any separating boundary?",
+    "domain": "ml",
+    "difficulty": 2,
+    "tags": [
+      "classical-ml"
+    ]
+  },
+  {
+    "id": "ml-0017",
+    "topic": "How does a random forest reduce variance by averaging many high-variance decision trees?",
+    "domain": "ml",
+    "difficulty": 1,
+    "tags": [
+      "classical-ml"
+    ]
+  },
+  {
+    "id": "ml-0018",
+    "topic": "What does the kernel trick let a support vector machine do without ever computing the high-dimensional mapping?",
+    "domain": "ml",
+    "difficulty": 3,
+    "tags": [
+      "classical-ml"
+    ]
+  },
+  {
+    "id": "ml-0019",
+    "topic": "Why does k-means clustering depend so heavily on how you initialize the centroids?",
+    "domain": "ml",
+    "difficulty": 1,
+    "tags": [
+      "classical-ml"
+    ]
+  },
+  {
+    "id": "ml-0020",
+    "topic": "What is the curse of dimensionality, and why does it break intuitions about distance?",
+    "domain": "ml",
+    "difficulty": 2,
+    "tags": [
+      "statistics"
+    ]
+  },
+  {
+    "id": "ml-0021",
+    "topic": "Why is cross-validation more trustworthy than a single train-test split?",
+    "domain": "ml",
+    "difficulty": 1,
+    "tags": [
+      "statistics"
+    ]
+  },
+  {
+    "id": "ml-0022",
+    "topic": "What does it mean for a classifier to be well-calibrated, and why is accuracy alone not enough?",
+    "domain": "ml",
+    "difficulty": 2,
+    "tags": [
+      "statistics"
+    ]
+  },
+  {
+    "id": "ml-0023",
+    "topic": "Why does precision-recall tradeoff matter more than accuracy on an imbalanced dataset?",
+    "domain": "ml",
+    "difficulty": 1,
+    "tags": [
+      "statistics"
+    ]
+  },
+  {
+    "id": "ml-0024",
+    "topic": "What is a Markov chain, and why does the “memoryless” property make it tractable?",
+    "domain": "ml",
+    "difficulty": 1,
+    "tags": [
+      "statistics"
+    ]
+  },
+  {
+    "id": "ml-0025",
+    "topic": "How does a hidden Markov model infer hidden states from only observed outputs?",
+    "domain": "ml",
+    "difficulty": 2,
+    "tags": [
+      "statistics"
+    ]
+  },
+  {
+    "id": "ml-0026",
+    "topic": "Why does Bayesian inference update a belief instead of just estimating a fixed parameter?",
+    "domain": "ml",
+    "difficulty": 2,
+    "tags": [
+      "statistics"
+    ]
+  },
+  {
+    "id": "ml-0027",
+    "topic": "What is the difference between a generative and a discriminative model?",
+    "domain": "ml",
+    "difficulty": 2,
+    "tags": [
+      "statistics"
+    ]
+  },
+  {
+    "id": "ml-0028",
+    "topic": "Why does word embedding place semantically similar words near each other in vector space?",
+    "domain": "ml",
+    "difficulty": 1,
+    "tags": [
+      "nlp"
+    ]
+  },
+  {
+    "id": "ml-0029",
+    "topic": "What is tokenization, and why do modern language models use subword units instead of whole words?",
+    "domain": "ml",
+    "difficulty": 1,
+    "tags": [
+      "nlp"
+    ]
+  },
+  {
+    "id": "ml-0030",
+    "topic": "Why does a large language model hallucinate facts it was never trained to state confidently?",
+    "domain": "ml",
+    "difficulty": 2,
+    "tags": [
+      "nlp"
+    ]
+  },
+  {
+    "id": "ml-0031",
+    "topic": "What is transfer learning, and why does fine-tuning a pretrained model usually beat training from scratch?",
+    "domain": "ml",
+    "difficulty": 1,
+    "tags": [
+      "deep-learning"
+    ]
+  },
+  {
+    "id": "ml-0032",
+    "topic": "Why does the “no free lunch” theorem say no single algorithm is best across all possible problems?",
+    "domain": "ml",
+    "difficulty": 3,
+    "tags": [
+      "theory"
+    ]
+  },
+  {
+    "id": "ml-0033",
+    "topic": "What is an autoencoder, and why does forcing data through a bottleneck teach useful representations?",
+    "domain": "ml",
+    "difficulty": 2,
+    "tags": [
+      "deep-learning"
+    ]
+  },
+  {
+    "id": "ml-0034",
+    "topic": "Why does feature scaling matter for gradient-based models but not for tree-based ones?",
+    "domain": "ml",
+    "difficulty": 1,
+    "tags": [
+      "statistics"
+    ]
+  },
+  {
+    "id": "ml-0035",
+    "topic": "What is the difference between L1 regularization producing sparsity and L2 shrinking weights smoothly?",
+    "domain": "ml",
+    "difficulty": 2,
+    "tags": [
+      "statistics"
+    ]
+  },
+  {
+    "id": "ml-0036",
+    "topic": "Why does model distillation let a small network mimic a much larger one?",
+    "domain": "ml",
+    "difficulty": 2,
+    "tags": [
+      "deep-learning"
+    ]
+  },
+  {
+    "id": "ml-0037",
+    "topic": "What is a confusion matrix, and why can a 99% accurate model still be useless?",
+    "domain": "ml",
+    "difficulty": 1,
+    "tags": [
+      "statistics"
+    ]
+  },
+  {
+    "id": "ml-0038",
+    "topic": "Why does Simpson's paradox mean a trend can reverse when you combine subgroups?",
+    "domain": "ml",
+    "difficulty": 2,
+    "tags": [
+      "statistics"
+    ]
+  },
+  {
+    "id": "ml-0039",
+    "topic": "What is p-hacking, and why does it make published findings less reliable than they look?",
+    "domain": "ml",
+    "difficulty": 1,
+    "tags": [
+      "statistics"
+    ]
+  },
+  {
+    "id": "ml-0040",
+    "topic": "Why does a convolution operation in image processing act as a learnable filter?",
+    "domain": "ml",
+    "difficulty": 1,
+    "tags": [
+      "deep-learning",
+      "vision"
+    ]
+  },
+  {
+    "id": "ml-0041",
+    "topic": "What is the exploration bonus in an upper confidence bound algorithm, and why does it favor uncertain actions?",
+    "domain": "ml",
+    "difficulty": 3,
+    "tags": [
+      "reinforcement-learning"
+    ]
+  },
+  {
+    "id": "ml-0042",
+    "topic": "Why does mode collapse make a generative adversarial network produce only a narrow slice of possible outputs?",
+    "domain": "ml",
+    "difficulty": 2,
+    "tags": [
+      "deep-learning",
+      "generative"
+    ]
+  },
+  {
+    "id": "ml-0043",
+    "topic": "What is the difference between a validation set and a test set, and why does reusing the test set corrupt your results?",
+    "domain": "ml",
+    "difficulty": 1,
+    "tags": [
+      "statistics"
+    ]
+  },
+  {
+    "id": "fin-0001",
+    "topic": "Why does the yield curve inverting predict recessions?",
+    "domain": "finance",
+    "difficulty": 2,
+    "tags": [
+      "macro",
+      "bonds"
+    ]
+  },
+  {
+    "id": "fin-0002",
+    "topic": "What is duration risk, and why do bond prices fall when interest rates rise?",
+    "domain": "finance",
+    "difficulty": 2,
+    "tags": [
+      "bonds"
+    ]
+  },
+  {
+    "id": "fin-0003",
+    "topic": "Why does a stock split not actually change the value of what a shareholder owns?",
+    "domain": "finance",
+    "difficulty": 1,
+    "tags": [
+      "equities"
+    ]
+  },
+  {
+    "id": "fin-0004",
+    "topic": "What is short selling, and why does it carry theoretically unlimited risk?",
+    "domain": "finance",
+    "difficulty": 1,
+    "tags": [
+      "equities"
+    ]
+  },
+  {
+    "id": "fin-0005",
+    "topic": "How does a leveraged buyout let a firm acquire a company mostly using the target's own future cash flow?",
+    "domain": "finance",
+    "difficulty": 2,
+    "tags": [
+      "corporate-finance"
+    ]
+  },
+  {
+    "id": "fin-0006",
+    "topic": "What is the difference between a company's market cap and its enterprise value?",
+    "domain": "finance",
+    "difficulty": 1,
+    "tags": [
+      "valuation"
+    ]
+  },
+  {
+    "id": "fin-0007",
+    "topic": "Why does the Black-Scholes model price an option using the underlying's volatility, not its expected return?",
+    "domain": "finance",
+    "difficulty": 3,
+    "tags": [
+      "derivatives"
+    ]
+  },
+  {
+    "id": "fin-0008",
+    "topic": "What is a credit default swap, and how did it let investors bet against bonds they didn't own?",
+    "domain": "finance",
+    "difficulty": 2,
+    "tags": [
+      "derivatives"
+    ]
+  },
+  {
+    "id": "fin-0009",
+    "topic": "Why does diversification reduce risk without necessarily reducing expected return?",
+    "domain": "finance",
+    "difficulty": 1,
+    "tags": [
+      "portfolio-theory"
+    ]
+  },
+  {
+    "id": "fin-0010",
+    "topic": "What is the efficient market hypothesis, and what would disprove it?",
+    "domain": "finance",
+    "difficulty": 2,
+    "tags": [
+      "market-theory"
+    ]
+  },
+  {
+    "id": "fin-0011",
+    "topic": "Why does compound interest make the timing of returns matter more than the average return?",
+    "domain": "finance",
+    "difficulty": 1,
+    "tags": [
+      "basics"
+    ]
+  },
+  {
+    "id": "fin-0012",
+    "topic": "What is a special purpose vehicle, and why did they hide risk before the 2008 crisis?",
+    "domain": "finance",
+    "difficulty": 2,
+    "tags": [
+      "accounting"
+    ]
+  },
+  {
+    "id": "fin-0013",
+    "topic": "Why does double-entry bookkeeping require every transaction to hit at least two accounts?",
+    "domain": "finance",
+    "difficulty": 1,
+    "tags": [
+      "accounting"
+    ]
+  },
+  {
+    "id": "fin-0014",
+    "topic": "What is the difference between cash-basis and accrual accounting, and why does it change reported profit?",
+    "domain": "finance",
+    "difficulty": 1,
+    "tags": [
+      "accounting"
+    ]
+  },
+  {
+    "id": "fin-0015",
+    "topic": "Why can a profitable company still go bankrupt from a cash flow problem?",
+    "domain": "finance",
+    "difficulty": 1,
+    "tags": [
+      "accounting"
+    ]
+  },
+  {
+    "id": "fin-0016",
+    "topic": "What does it mean for a firm's balance sheet to have goodwill, and why is it not a “real” asset?",
+    "domain": "finance",
+    "difficulty": 2,
+    "tags": [
+      "accounting"
+    ]
+  },
+  {
+    "id": "fin-0017",
+    "topic": "How does a mortgage-backed security bundle individual home loans into a tradable bond?",
+    "domain": "finance",
+    "difficulty": 2,
+    "tags": [
+      "structured-finance"
+    ]
+  },
+  {
+    "id": "fin-0018",
+    "topic": "Why did tranching mortgage-backed securities create AAA-rated debt out of risky loans?",
+    "domain": "finance",
+    "difficulty": 3,
+    "tags": [
+      "structured-finance"
+    ]
+  },
+  {
+    "id": "fin-0019",
+    "topic": "What is quantitative easing, and how does a central bank buying bonds affect interest rates?",
+    "domain": "finance",
+    "difficulty": 2,
+    "tags": [
+      "macro"
+    ]
+  },
+  {
+    "id": "fin-0020",
+    "topic": "Why does raising interest rates cool inflation but risk triggering a recession?",
+    "domain": "finance",
+    "difficulty": 1,
+    "tags": [
+      "macro"
+    ]
+  },
+  {
+    "id": "fin-0021",
+    "topic": "What is the difference between a Roth and a traditional retirement account for tax purposes?",
+    "domain": "finance",
+    "difficulty": 1,
+    "tags": [
+      "personal-finance"
+    ]
+  },
+  {
+    "id": "fin-0022",
+    "topic": "Why do index funds tend to outperform actively managed funds after fees over long horizons?",
+    "domain": "finance",
+    "difficulty": 1,
+    "tags": [
+      "investing"
+    ]
+  },
+  {
+    "id": "fin-0023",
+    "topic": "What is beta in the capital asset pricing model, and what does it actually measure?",
+    "domain": "finance",
+    "difficulty": 2,
+    "tags": [
+      "portfolio-theory"
+    ]
+  },
+  {
+    "id": "fin-0024",
+    "topic": "Why does a company's stock price often drop after it announces surprisingly good earnings?",
+    "domain": "finance",
+    "difficulty": 2,
+    "tags": [
+      "markets"
+    ]
+  },
+  {
+    "id": "fin-0025",
+    "topic": "What is arbitrage, and why does its existence keep markets roughly efficient?",
+    "domain": "finance",
+    "difficulty": 1,
+    "tags": [
+      "market-theory"
+    ]
+  },
+  {
+    "id": "fin-0026",
+    "topic": "How does a company's capital structure trade off the tax benefits of debt against bankruptcy risk?",
+    "domain": "finance",
+    "difficulty": 2,
+    "tags": [
+      "corporate-finance"
+    ]
+  },
+  {
+    "id": "fin-0027",
+    "topic": "What is dilution, and why do existing shareholders resist a company issuing new shares?",
+    "domain": "finance",
+    "difficulty": 1,
+    "tags": [
+      "equities"
+    ]
+  },
+  {
+    "id": "fin-0028",
+    "topic": "Why does an initial public offering often get priced below its first day's trading value?",
+    "domain": "finance",
+    "difficulty": 2,
+    "tags": [
+      "equities"
+    ]
+  },
+  {
+    "id": "fin-0029",
+    "topic": "What is a repo transaction, and why does short-term funding markets depend on it?",
+    "domain": "finance",
+    "difficulty": 2,
+    "tags": [
+      "money-markets"
+    ]
+  },
+  {
+    "id": "fin-0030",
+    "topic": "Why does the “greater fool theory” describe some speculative bubbles better than fundamentals do?",
+    "domain": "finance",
+    "difficulty": 1,
+    "tags": [
+      "behavioral-finance"
+    ]
+  },
+  {
+    "id": "fin-0031",
+    "topic": "What is a sovereign wealth fund, and why do resource-rich countries build them?",
+    "domain": "finance",
+    "difficulty": 1,
+    "tags": [
+      "macro"
+    ]
+  },
+  {
+    "id": "fin-0032",
+    "topic": "How does currency hedging protect an international investor from exchange rate swings?",
+    "domain": "finance",
+    "difficulty": 2,
+    "tags": [
+      "fx"
+    ]
+  },
+  {
+    "id": "fin-0033",
+    "topic": "Why does a country's current account deficit have to be matched by a capital account surplus?",
+    "domain": "finance",
+    "difficulty": 2,
+    "tags": [
+      "macro",
+      "fx"
+    ]
+  },
+  {
+    "id": "fin-0034",
+    "topic": "What is the difference between a Ponzi scheme and a legitimate but risky investment fund?",
+    "domain": "finance",
+    "difficulty": 1,
+    "tags": [
+      "fraud"
+    ]
+  },
+  {
+    "id": "fin-0035",
+    "topic": "Why does venture capital's return model depend on a small number of huge winners?",
+    "domain": "finance",
+    "difficulty": 1,
+    "tags": [
+      "venture-capital"
+    ]
+  },
+  {
+    "id": "fin-0036",
+    "topic": "What is a convertible note, and why do early-stage startups prefer it to pricing a round directly?",
+    "domain": "finance",
+    "difficulty": 2,
+    "tags": [
+      "venture-capital"
+    ]
+  },
+  {
+    "id": "fin-0037",
+    "topic": "Why does inflation erode the real value of fixed-rate debt in a borrower's favor?",
+    "domain": "finance",
+    "difficulty": 1,
+    "tags": [
+      "macro"
+    ]
+  },
+  {
+    "id": "fin-0038",
+    "topic": "What is a stock buyback, and why is it economically similar to a dividend?",
+    "domain": "finance",
+    "difficulty": 1,
+    "tags": [
+      "corporate-finance"
+    ]
+  },
+  {
+    "id": "fin-0039",
+    "topic": "How does securitization let a bank move loans off its balance sheet?",
+    "domain": "finance",
+    "difficulty": 2,
+    "tags": [
+      "structured-finance"
+    ]
+  },
+  {
+    "id": "fin-0040",
+    "topic": "Why does the term structure of interest rates reflect expectations about future rates, not just current ones?",
+    "domain": "finance",
+    "difficulty": 2,
+    "tags": [
+      "bonds"
+    ]
+  },
+  {
+    "id": "fin-0041",
+    "topic": "What is a covenant in a corporate bond, and why do lenders use it instead of just charging a higher rate?",
+    "domain": "finance",
+    "difficulty": 2,
+    "tags": [
+      "corporate-finance"
+    ]
+  },
+  {
+    "id": "fin-0042",
+    "topic": "Why does a company's free cash flow matter more to a value investor than its reported net income?",
+    "domain": "finance",
+    "difficulty": 1,
+    "tags": [
+      "valuation"
+    ]
+  },
+  {
+    "id": "fin-0043",
+    "topic": "What is a carry trade, and why does it work well until it suddenly doesn't?",
+    "domain": "finance",
+    "difficulty": 2,
+    "tags": [
+      "fx"
+    ]
+  },
+  {
+    "id": "eco-0001",
+    "topic": "Why does a minimum wage above the market-clearing wage cause unemployment in simple supply-and-demand models, and why is that prediction contested empirically?",
+    "domain": "economics",
+    "difficulty": 2,
+    "tags": [
+      "micro",
+      "labor"
+    ]
+  },
+  {
+    "id": "eco-0002",
+    "topic": "What is a Nash equilibrium, and why doesn't it always produce the best outcome for everyone?",
+    "domain": "economics",
+    "difficulty": 2,
+    "tags": [
+      "game-theory"
+    ]
+  },
+  {
+    "id": "eco-0003",
+    "topic": "Why does the prisoner's dilemma show that individually rational choices can produce a collectively worse outcome?",
+    "domain": "economics",
+    "difficulty": 1,
+    "tags": [
+      "game-theory"
+    ]
+  },
+  {
+    "id": "eco-0004",
+    "topic": "What is a public good, and why does the free-rider problem mean markets undersupply it?",
+    "domain": "economics",
+    "difficulty": 1,
+    "tags": [
+      "micro"
+    ]
+  },
+  {
+    "id": "eco-0005",
+    "topic": "Why does a negative externality like pollution justify a Pigouvian tax?",
+    "domain": "economics",
+    "difficulty": 1,
+    "tags": [
+      "micro"
+    ]
+  },
+  {
+    "id": "eco-0006",
+    "topic": "What is comparative advantage, and why can trade benefit both parties even if one is better at everything?",
+    "domain": "economics",
+    "difficulty": 1,
+    "tags": [
+      "trade"
+    ]
+  },
+  {
+    "id": "eco-0007",
+    "topic": "Why does the tragedy of the commons deplete a shared resource even when everyone knows the consequences?",
+    "domain": "economics",
+    "difficulty": 1,
+    "tags": [
+      "micro"
+    ]
+  },
+  {
+    "id": "eco-0008",
+    "topic": "What is moral hazard, and why does insurance change the behavior of the insured?",
+    "domain": "economics",
+    "difficulty": 1,
+    "tags": [
+      "micro"
+    ]
+  },
+  {
+    "id": "eco-0009",
+    "topic": "Why does adverse selection make insurance markets collapse when insurers can't tell risk types apart?",
+    "domain": "economics",
+    "difficulty": 2,
+    "tags": [
+      "micro"
+    ]
+  },
+  {
+    "id": "eco-0010",
+    "topic": "What is the difference between nominal and real GDP, and why does the distinction matter?",
+    "domain": "economics",
+    "difficulty": 1,
+    "tags": [
+      "macro"
+    ]
+  },
+  {
+    "id": "eco-0011",
+    "topic": "Why does the Phillips curve suggest a tradeoff between inflation and unemployment, and why did the 1970s break that relationship?",
+    "domain": "economics",
+    "difficulty": 2,
+    "tags": [
+      "macro"
+    ]
+  },
+  {
+    "id": "eco-0012",
+    "topic": "What is stagflation, and why did mainstream Keynesian models struggle to explain it?",
+    "domain": "economics",
+    "difficulty": 2,
+    "tags": [
+      "macro"
+    ]
+  },
+  {
+    "id": "eco-0013",
+    "topic": "Why does the money multiplier mean a bank can lend out more than the deposits it holds?",
+    "domain": "economics",
+    "difficulty": 2,
+    "tags": [
+      "macro",
+      "banking"
+    ]
+  },
+  {
+    "id": "eco-0014",
+    "topic": "What is the difference between monetary and fiscal policy, and why do they sometimes work against each other?",
+    "domain": "economics",
+    "difficulty": 1,
+    "tags": [
+      "macro"
+    ]
+  },
+  {
+    "id": "eco-0015",
+    "topic": "Why does purchasing power parity predict exchange rates over the long run but fail badly in the short run?",
+    "domain": "economics",
+    "difficulty": 2,
+    "tags": [
+      "macro",
+      "fx"
+    ]
+  },
+  {
+    "id": "eco-0016",
+    "topic": "What is a liquidity trap, and why does cutting interest rates stop working once you're in one?",
+    "domain": "economics",
+    "difficulty": 3,
+    "tags": [
+      "macro"
+    ]
+  },
+  {
+    "id": "eco-0017",
+    "topic": "Why does the Solow growth model predict that poor countries should grow faster than rich ones?",
+    "domain": "economics",
+    "difficulty": 2,
+    "tags": [
+      "development"
+    ]
+  },
+  {
+    "id": "eco-0018",
+    "topic": "What is the resource curse, and why do resource-rich countries often grow slower than resource-poor ones?",
+    "domain": "economics",
+    "difficulty": 2,
+    "tags": [
+      "development"
+    ]
+  },
+  {
+    "id": "eco-0019",
+    "topic": "Why does microfinance's promise to lift people out of poverty have such mixed empirical support?",
+    "domain": "economics",
+    "difficulty": 2,
+    "tags": [
+      "development"
+    ]
+  },
+  {
+    "id": "eco-0020",
+    "topic": "What is price elasticity of demand, and why does it determine who actually bears a tax?",
+    "domain": "economics",
+    "difficulty": 1,
+    "tags": [
+      "micro"
+    ]
+  },
+  {
+    "id": "eco-0021",
+    "topic": "Why does a monopoly produce less and charge more than a competitive market would?",
+    "domain": "economics",
+    "difficulty": 1,
+    "tags": [
+      "micro"
+    ]
+  },
+  {
+    "id": "eco-0022",
+    "topic": "What is price discrimination, and why can it sometimes make consumers as a whole better off?",
+    "domain": "economics",
+    "difficulty": 2,
+    "tags": [
+      "micro"
+    ]
+  },
+  {
+    "id": "eco-0023",
+    "topic": "Why do behavioral economists say loss aversion means losses hurt roughly twice as much as equivalent gains feel good?",
+    "domain": "economics",
+    "difficulty": 1,
+    "tags": [
+      "behavioral"
+    ]
+  },
+  {
+    "id": "eco-0024",
+    "topic": "What is the endowment effect, and why does owning something make people overvalue it?",
+    "domain": "economics",
+    "difficulty": 1,
+    "tags": [
+      "behavioral"
+    ]
+  },
+  {
+    "id": "eco-0025",
+    "topic": "Why does hyperbolic discounting explain why people procrastinate against their own stated preferences?",
+    "domain": "economics",
+    "difficulty": 2,
+    "tags": [
+      "behavioral"
+    ]
+  },
+  {
+    "id": "eco-0026",
+    "topic": "What is the difference between a public good and a common-pool resource?",
+    "domain": "economics",
+    "difficulty": 2,
+    "tags": [
+      "micro"
+    ]
+  },
+  {
+    "id": "eco-0027",
+    "topic": "Why does the median voter theorem predict that competing parties converge toward the center?",
+    "domain": "economics",
+    "difficulty": 2,
+    "tags": [
+      "political-economy"
+    ]
+  },
+  {
+    "id": "eco-0028",
+    "topic": "What is rent-seeking, and why does it destroy value rather than just redistribute it?",
+    "domain": "economics",
+    "difficulty": 2,
+    "tags": [
+      "political-economy"
+    ]
+  },
+  {
+    "id": "eco-0029",
+    "topic": "Why does Gresham's Law claim that “bad money drives out good”?",
+    "domain": "economics",
+    "difficulty": 2,
+    "tags": [
+      "monetary-history"
+    ]
+  },
+  {
+    "id": "eco-0030",
+    "topic": "What is the difference between absolute and relative poverty, and why does the choice change policy conclusions?",
+    "domain": "economics",
+    "difficulty": 1,
+    "tags": [
+      "development"
+    ]
+  },
+  {
+    "id": "eco-0031",
+    "topic": "Why does an increase in the minimum wage sometimes coexist with higher employment in monopsony labor markets?",
+    "domain": "economics",
+    "difficulty": 3,
+    "tags": [
+      "labor"
+    ]
+  },
+  {
+    "id": "eco-0032",
+    "topic": "What is a Giffen good, and why does demand for it rise when its price rises?",
+    "domain": "economics",
+    "difficulty": 3,
+    "tags": [
+      "micro"
+    ]
+  },
+  {
+    "id": "eco-0033",
+    "topic": "Why does the Coase theorem argue that externalities can be resolved through bargaining if property rights are clear?",
+    "domain": "economics",
+    "difficulty": 2,
+    "tags": [
+      "micro"
+    ]
+  },
+  {
+    "id": "eco-0034",
+    "topic": "What is the difference between a customs union and a free trade area?",
+    "domain": "economics",
+    "difficulty": 1,
+    "tags": [
+      "trade"
+    ]
+  },
+  {
+    "id": "eco-0035",
+    "topic": "Why does dumping in international trade provoke anti-dumping tariffs even though it lowers prices for consumers?",
+    "domain": "economics",
+    "difficulty": 2,
+    "tags": [
+      "trade"
+    ]
+  },
+  {
+    "id": "eco-0036",
+    "topic": "What is human capital, and why did economists start treating education as investment rather than consumption?",
+    "domain": "economics",
+    "difficulty": 1,
+    "tags": [
+      "labor"
+    ]
+  },
+  {
+    "id": "eco-0037",
+    "topic": "Why does the natural rate of unemployment mean zero unemployment isn't actually the policy target?",
+    "domain": "economics",
+    "difficulty": 2,
+    "tags": [
+      "macro"
+    ]
+  },
+  {
+    "id": "eco-0038",
+    "topic": "What is quantitative easing's transmission mechanism supposed to be, and why is it debated whether it works?",
+    "domain": "economics",
+    "difficulty": 2,
+    "tags": [
+      "macro"
+    ]
+  },
+  {
+    "id": "eco-0039",
+    "topic": "Why does a currency peg force a country to give up independent monetary policy?",
+    "domain": "economics",
+    "difficulty": 2,
+    "tags": [
+      "macro",
+      "fx"
+    ]
+  },
+  {
+    "id": "eco-0040",
+    "topic": "What is the difference between a recession and a depression, and who decides when one has started?",
+    "domain": "economics",
+    "difficulty": 1,
+    "tags": [
+      "macro"
+    ]
+  },
+  {
+    "id": "eco-0041",
+    "topic": "Why does a country's Gini coefficient compress inequality into a single number, and what does it hide?",
+    "domain": "economics",
+    "difficulty": 1,
+    "tags": [
+      "development"
+    ]
+  },
+  {
+    "id": "eco-0042",
+    "topic": "What is the difference between a tariff and a quota, and why do economists usually prefer neither?",
+    "domain": "economics",
+    "difficulty": 1,
+    "tags": [
+      "trade"
+    ]
+  },
+  {
+    "id": "eco-0043",
+    "topic": "Why does the paradox of thrift mean everyone saving more can make a recession worse in aggregate?",
+    "domain": "economics",
+    "difficulty": 2,
+    "tags": [
+      "macro"
+    ]
+  },
+  {
+    "id": "phi-0001",
+    "topic": "What is the Gettier problem, and why did it break the classical definition of knowledge as justified true belief?",
+    "domain": "philosophy",
+    "difficulty": 2,
+    "tags": [
+      "epistemology"
+    ]
+  },
+  {
+    "id": "phi-0002",
+    "topic": "Why does the trolley problem expose a conflict between consequentialist and deontological ethics?",
+    "domain": "philosophy",
+    "difficulty": 1,
+    "tags": [
+      "ethics"
+    ]
+  },
+  {
+    "id": "phi-0003",
+    "topic": "What is the is-ought problem, and why does it say you can't derive morality from facts alone?",
+    "domain": "philosophy",
+    "difficulty": 2,
+    "tags": [
+      "ethics"
+    ]
+  },
+  {
+    "id": "phi-0004",
+    "topic": "Why does the Ship of Theseus challenge our notion of identity over time?",
+    "domain": "philosophy",
+    "difficulty": 1,
+    "tags": [
+      "metaphysics"
+    ]
+  },
+  {
+    "id": "phi-0005",
+    "topic": "What is the hard problem of consciousness, and why is it harder than explaining brain function?",
+    "domain": "philosophy",
+    "difficulty": 2,
+    "tags": [
+      "philosophy-of-mind"
+    ]
+  },
+  {
+    "id": "phi-0006",
+    "topic": "Why does the Chinese Room argument claim a computer could pass the Turing Test without understanding anything?",
+    "domain": "philosophy",
+    "difficulty": 2,
+    "tags": [
+      "philosophy-of-mind"
+    ]
+  },
+  {
+    "id": "phi-0007",
+    "topic": "What is philosophical zombie, and why does its conceivability matter for physicalism?",
+    "domain": "philosophy",
+    "difficulty": 3,
+    "tags": [
+      "philosophy-of-mind"
+    ]
+  },
+  {
+    "id": "phi-0008",
+    "topic": "Why does the problem of induction mean past observations can never logically guarantee future ones?",
+    "domain": "philosophy",
+    "difficulty": 2,
+    "tags": [
+      "epistemology"
+    ]
+  },
+  {
+    "id": "phi-0009",
+    "topic": "What is a category error, and why does asking “what color is Tuesday” illustrate one?",
+    "domain": "philosophy",
+    "difficulty": 1,
+    "tags": [
+      "logic"
+    ]
+  },
+  {
+    "id": "phi-0010",
+    "topic": "Why does Descartes's cogito ergo sum survive even his most radical skepticism?",
+    "domain": "philosophy",
+    "difficulty": 1,
+    "tags": [
+      "epistemology"
+    ]
+  },
+  {
+    "id": "phi-0011",
+    "topic": "What is the veil of ignorance, and how does Rawls use it to argue for a theory of justice?",
+    "domain": "philosophy",
+    "difficulty": 2,
+    "tags": [
+      "political-philosophy"
+    ]
+  },
+  {
+    "id": "phi-0012",
+    "topic": "Why does utilitarianism's demand to maximize aggregate happiness run into the “utility monster” objection?",
+    "domain": "philosophy",
+    "difficulty": 2,
+    "tags": [
+      "ethics"
+    ]
+  },
+  {
+    "id": "phi-0013",
+    "topic": "What is moral luck, and why does it complicate the idea that we're only responsible for our choices?",
+    "domain": "philosophy",
+    "difficulty": 2,
+    "tags": [
+      "ethics"
+    ]
+  },
+  {
+    "id": "phi-0014",
+    "topic": "Why does the paradox of the heap show that vague predicates resist precise boundaries?",
+    "domain": "philosophy",
+    "difficulty": 2,
+    "tags": [
+      "logic"
+    ]
+  },
+  {
+    "id": "phi-0015",
+    "topic": "What is compatibilism, and how does it try to reconcile free will with a deterministic universe?",
+    "domain": "philosophy",
+    "difficulty": 2,
+    "tags": [
+      "metaphysics"
+    ]
+  },
+  {
+    "id": "phi-0016",
+    "topic": "Why does Zeno's dichotomy paradox seem to prove that motion is impossible?",
+    "domain": "philosophy",
+    "difficulty": 1,
+    "tags": [
+      "logic",
+      "history"
+    ]
+  },
+  {
+    "id": "phi-0017",
+    "topic": "What is the problem of evil, and why does it challenge belief in an omnipotent, benevolent god?",
+    "domain": "philosophy",
+    "difficulty": 1,
+    "tags": [
+      "philosophy-of-religion"
+    ]
+  },
+  {
+    "id": "phi-0018",
+    "topic": "Why does Ockham's razor favor simpler explanations, and what justifies that preference?",
+    "domain": "philosophy",
+    "difficulty": 1,
+    "tags": [
+      "epistemology"
+    ]
+  },
+  {
+    "id": "phi-0019",
+    "topic": "What is the difference between analytic and synthetic statements, and why did Quine attack the distinction?",
+    "domain": "philosophy",
+    "difficulty": 3,
+    "tags": [
+      "logic",
+      "epistemology"
+    ]
+  },
+  {
+    "id": "phi-0020",
+    "topic": "Why does the experience machine thought experiment challenge the idea that pleasure is all that matters?",
+    "domain": "philosophy",
+    "difficulty": 1,
+    "tags": [
+      "ethics"
+    ]
+  },
+  {
+    "id": "phi-0021",
+    "topic": "What is the difference between negative and positive liberty in political philosophy?",
+    "domain": "philosophy",
+    "difficulty": 2,
+    "tags": [
+      "political-philosophy"
+    ]
+  },
+  {
+    "id": "phi-0022",
+    "topic": "Why does the social contract tradition justify government authority through hypothetical consent?",
+    "domain": "philosophy",
+    "difficulty": 1,
+    "tags": [
+      "political-philosophy"
+    ]
+  },
+  {
+    "id": "phi-0023",
+    "topic": "What is epistemic injustice, and how can someone be wronged specifically in their capacity as a knower?",
+    "domain": "philosophy",
+    "difficulty": 2,
+    "tags": [
+      "epistemology"
+    ]
+  },
+  {
+    "id": "phi-0024",
+    "topic": "Why does the paradox of tolerance suggest an unlimited tolerance for intolerance destroys tolerance itself?",
+    "domain": "philosophy",
+    "difficulty": 1,
+    "tags": [
+      "political-philosophy"
+    ]
+  },
+  {
+    "id": "phi-0025",
+    "topic": "What is the difference between a priori and a posteriori knowledge?",
+    "domain": "philosophy",
+    "difficulty": 1,
+    "tags": [
+      "epistemology"
+    ]
+  },
+  {
+    "id": "phi-0026",
+    "topic": "Why does Nietzsche's concept of the eternal recurrence function as an ethical test rather than a cosmological claim?",
+    "domain": "philosophy",
+    "difficulty": 2,
+    "tags": [
+      "ethics",
+      "history"
+    ]
+  },
+  {
+    "id": "phi-0027",
+    "topic": "What is existentialism's claim that “existence precedes essence,” and what follows from it?",
+    "domain": "philosophy",
+    "difficulty": 2,
+    "tags": [
+      "metaphysics"
+    ]
+  },
+  {
+    "id": "phi-0028",
+    "topic": "Why does the sorites paradox make it hard to say exactly when a person becomes “bald”?",
+    "domain": "philosophy",
+    "difficulty": 1,
+    "tags": [
+      "logic"
+    ]
+  },
+  {
+    "id": "phi-0029",
+    "topic": "What is the difference between a valid argument and a sound one?",
+    "domain": "philosophy",
+    "difficulty": 1,
+    "tags": [
+      "logic"
+    ]
+  },
+  {
+    "id": "phi-0030",
+    "topic": "Why does the problem of personal identity ask whether a teleported copy of you is really you?",
+    "domain": "philosophy",
+    "difficulty": 2,
+    "tags": [
+      "metaphysics"
+    ]
+  },
+  {
+    "id": "phi-0031",
+    "topic": "What is virtue ethics, and how does it differ from judging actions by rules or consequences?",
+    "domain": "philosophy",
+    "difficulty": 1,
+    "tags": [
+      "ethics"
+    ]
+  },
+  {
+    "id": "phi-0032",
+    "topic": "Why does Plato's allegory of the cave argue that most people mistake shadows for reality?",
+    "domain": "philosophy",
+    "difficulty": 1,
+    "tags": [
+      "metaphysics",
+      "history"
+    ]
+  },
+  {
+    "id": "phi-0033",
+    "topic": "What is the is/seems distinction, and why does it matter for theories of perception?",
+    "domain": "philosophy",
+    "difficulty": 2,
+    "tags": [
+      "epistemology"
+    ]
+  },
+  {
+    "id": "phi-0034",
+    "topic": "Why does the paradox of the stone ask whether an omnipotent being could create a stone it can't lift?",
+    "domain": "philosophy",
+    "difficulty": 1,
+    "tags": [
+      "philosophy-of-religion"
+    ]
+  },
+  {
+    "id": "phi-0035",
+    "topic": "What is the difference between moral relativism and moral pluralism?",
+    "domain": "philosophy",
+    "difficulty": 1,
+    "tags": [
+      "ethics"
+    ]
+  },
+  {
+    "id": "phi-0036",
+    "topic": "Why does functionalism in philosophy of mind define mental states by what they do, not what they're made of?",
+    "domain": "philosophy",
+    "difficulty": 2,
+    "tags": [
+      "philosophy-of-mind"
+    ]
+  },
+  {
+    "id": "phi-0037",
+    "topic": "What is the problem of other minds, and why can't you strictly prove anyone else is conscious?",
+    "domain": "philosophy",
+    "difficulty": 2,
+    "tags": [
+      "philosophy-of-mind"
+    ]
+  },
+  {
+    "id": "phi-0038",
+    "topic": "Why does Aristotle's doctrine of the mean locate virtue between two vices?",
+    "domain": "philosophy",
+    "difficulty": 1,
+    "tags": [
+      "ethics",
+      "history"
+    ]
+  },
+  {
+    "id": "phi-0039",
+    "topic": "What is a category mistake in the philosophy of mind, according to Gilbert Ryle's critique of dualism?",
+    "domain": "philosophy",
+    "difficulty": 2,
+    "tags": [
+      "philosophy-of-mind"
+    ]
+  },
+  {
+    "id": "phi-0040",
+    "topic": "Why does the paradox of hedonism suggest that directly pursuing happiness can undermine finding it?",
+    "domain": "philosophy",
+    "difficulty": 1,
+    "tags": [
+      "ethics"
+    ]
+  },
+  {
+    "id": "phi-0041",
+    "topic": "What is the difference between reliabilism and internalism as theories of epistemic justification?",
+    "domain": "philosophy",
+    "difficulty": 3,
+    "tags": [
+      "epistemology"
+    ]
+  },
+  {
+    "id": "phi-0042",
+    "topic": "Why does Buridan's ass illustrate a problem for theories of rational choice under symmetric options?",
+    "domain": "philosophy",
+    "difficulty": 1,
+    "tags": [
+      "logic"
+    ]
+  },
+  {
+    "id": "phi-0043",
+    "topic": "What is the naturalistic fallacy, and why does defining “good” in natural terms allegedly fail?",
+    "domain": "philosophy",
+    "difficulty": 2,
+    "tags": [
+      "ethics"
+    ]
+  },
+  {
+    "id": "cog-0001",
+    "topic": "Why does the McGurk effect show that what you hear can be changed by what you see?",
+    "domain": "cogsci",
+    "difficulty": 1,
+    "tags": [
+      "perception"
+    ]
+  },
+  {
+    "id": "cog-0002",
+    "topic": "What is confirmation bias, and why does it survive even when people are told about it?",
+    "domain": "cogsci",
+    "difficulty": 1,
+    "tags": [
+      "psychology"
+    ]
+  },
+  {
+    "id": "cog-0003",
+    "topic": "Why does working memory hold only about four chunks of information at a time?",
+    "domain": "cogsci",
+    "difficulty": 1,
+    "tags": [
+      "cognition"
+    ]
+  },
+  {
+    "id": "cog-0004",
+    "topic": "What is the difference between System 1 and System 2 thinking in dual-process theory?",
+    "domain": "cogsci",
+    "difficulty": 1,
+    "tags": [
+      "cognition"
+    ]
+  },
+  {
+    "id": "cog-0005",
+    "topic": "Why does the availability heuristic make vivid, memorable events feel more likely than they are?",
+    "domain": "cogsci",
+    "difficulty": 1,
+    "tags": [
+      "cognition"
+    ]
+  },
+  {
+    "id": "cog-0006",
+    "topic": "What is cognitive dissonance, and why does it push people to change beliefs rather than behavior?",
+    "domain": "cogsci",
+    "difficulty": 1,
+    "tags": [
+      "psychology"
+    ]
+  },
+  {
+    "id": "cog-0007",
+    "topic": "Why does the spacing effect make distributed practice more effective than cramming for long-term memory?",
+    "domain": "cogsci",
+    "difficulty": 1,
+    "tags": [
+      "memory"
+    ]
+  },
+  {
+    "id": "cog-0008",
+    "topic": "What is the difference between procedural and declarative memory, and why can amnesia spare one but not the other?",
+    "domain": "cogsci",
+    "difficulty": 2,
+    "tags": [
+      "memory",
+      "neuroscience"
+    ]
+  },
+  {
+    "id": "cog-0009",
+    "topic": "Why does long-term potentiation strengthen synaptic connections when neurons fire together?",
+    "domain": "cogsci",
+    "difficulty": 2,
+    "tags": [
+      "neuroscience"
+    ]
+  },
+  {
+    "id": "cog-0010",
+    "topic": "What is neuroplasticity, and why does it decline but not disappear with age?",
+    "domain": "cogsci",
+    "difficulty": 1,
+    "tags": [
+      "neuroscience"
+    ]
+  },
+  {
+    "id": "cog-0011",
+    "topic": "Why does the fusiform face area suggest the brain has dedicated hardware for recognizing faces?",
+    "domain": "cogsci",
+    "difficulty": 2,
+    "tags": [
+      "neuroscience"
+    ]
+  },
+  {
+    "id": "cog-0012",
+    "topic": "What is blindsight, and why can someone respond to a visual stimulus they report not seeing?",
+    "domain": "cogsci",
+    "difficulty": 2,
+    "tags": [
+      "neuroscience",
+      "consciousness"
+    ]
+  },
+  {
+    "id": "cog-0013",
+    "topic": "Why does the mere exposure effect make people like things simply because they've seen them before?",
+    "domain": "cogsci",
+    "difficulty": 1,
+    "tags": [
+      "psychology"
+    ]
+  },
+  {
+    "id": "cog-0014",
+    "topic": "What is the fundamental attribution error, and why do people blame others' character but their own circumstances?",
+    "domain": "cogsci",
+    "difficulty": 1,
+    "tags": [
+      "social-psychology"
+    ]
+  },
+  {
+    "id": "cog-0015",
+    "topic": "Why did the Stanford prison experiment's conclusions about situational power get seriously challenged decades later?",
+    "domain": "cogsci",
+    "difficulty": 2,
+    "tags": [
+      "social-psychology",
+      "history"
+    ]
+  },
+  {
+    "id": "cog-0016",
+    "topic": "What is the bystander effect, and why does having more witnesses reduce the odds any one intervenes?",
+    "domain": "cogsci",
+    "difficulty": 1,
+    "tags": [
+      "social-psychology"
+    ]
+  },
+  {
+    "id": "cog-0017",
+    "topic": "Why does cognitive load theory argue that instructional design can overwhelm working memory before learning happens?",
+    "domain": "cogsci",
+    "difficulty": 2,
+    "tags": [
+      "education",
+      "cognition"
+    ]
+  },
+  {
+    "id": "cog-0018",
+    "topic": "What is the dual-coding theory of memory, and why do words plus images stick better than either alone?",
+    "domain": "cogsci",
+    "difficulty": 1,
+    "tags": [
+      "memory"
+    ]
+  },
+  {
+    "id": "cog-0019",
+    "topic": "Why does the Dunning-Kruger effect describe incompetence as hiding its own existence from the incompetent?",
+    "domain": "cogsci",
+    "difficulty": 1,
+    "tags": [
+      "psychology"
+    ]
+  },
+  {
+    "id": "cog-0020",
+    "topic": "What is theory of mind, and at what age do children typically pass false-belief tasks?",
+    "domain": "cogsci",
+    "difficulty": 2,
+    "tags": [
+      "developmental"
+    ]
+  },
+  {
+    "id": "cog-0021",
+    "topic": "Why does the marshmallow test's link to later life outcomes look weaker once you control for family wealth?",
+    "domain": "cogsci",
+    "difficulty": 2,
+    "tags": [
+      "developmental"
+    ]
+  },
+  {
+    "id": "cog-0022",
+    "topic": "What is synesthesia, and what does it suggest about how the brain's senses are normally kept separate?",
+    "domain": "cogsci",
+    "difficulty": 2,
+    "tags": [
+      "neuroscience"
+    ]
+  },
+  {
+    "id": "cog-0023",
+    "topic": "Why does split-brain research suggest the two cerebral hemispheres can act as semi-independent agents?",
+    "domain": "cogsci",
+    "difficulty": 2,
+    "tags": [
+      "neuroscience"
+    ]
+  },
+  {
+    "id": "cog-0024",
+    "topic": "What is the default mode network, and why is it active when the brain is supposedly “at rest”?",
+    "domain": "cogsci",
+    "difficulty": 2,
+    "tags": [
+      "neuroscience"
+    ]
+  },
+  {
+    "id": "cog-0025",
+    "topic": "Why does the placebo effect produce measurable physiological changes from an inert treatment?",
+    "domain": "cogsci",
+    "difficulty": 1,
+    "tags": [
+      "psychology",
+      "neuroscience"
+    ]
+  },
+  {
+    "id": "cog-0026",
+    "topic": "What is learned helplessness, and how did Seligman's early experiments demonstrate it?",
+    "domain": "cogsci",
+    "difficulty": 1,
+    "tags": [
+      "psychology"
+    ]
+  },
+  {
+    "id": "cog-0027",
+    "topic": "Why does the peak-end rule mean people judge an experience mostly by its most intense moment and its ending?",
+    "domain": "cogsci",
+    "difficulty": 1,
+    "tags": [
+      "cognition"
+    ]
+  },
+  {
+    "id": "cog-0028",
+    "topic": "What is change blindness, and why can a large visual change go completely unnoticed?",
+    "domain": "cogsci",
+    "difficulty": 1,
+    "tags": [
+      "perception"
+    ]
+  },
+  {
+    "id": "cog-0029",
+    "topic": "Why does the James-Lange theory of emotion argue that physical arousal comes before, not after, the feeling?",
+    "domain": "cogsci",
+    "difficulty": 2,
+    "tags": [
+      "psychology"
+    ]
+  },
+  {
+    "id": "cog-0030",
+    "topic": "What is the difference between crystallized and fluid intelligence, and how does each change with age?",
+    "domain": "cogsci",
+    "difficulty": 2,
+    "tags": [
+      "cognition"
+    ]
+  },
+  {
+    "id": "cog-0031",
+    "topic": "Why does chunking let a chess grandmaster memorize a board position that would overwhelm a novice?",
+    "domain": "cogsci",
+    "difficulty": 1,
+    "tags": [
+      "memory",
+      "cognition"
+    ]
+  },
+  {
+    "id": "cog-0032",
+    "topic": "What is the actor-observer bias, and why do people explain their own failures differently than others'?",
+    "domain": "cogsci",
+    "difficulty": 2,
+    "tags": [
+      "social-psychology"
+    ]
+  },
+  {
+    "id": "cog-0033",
+    "topic": "Why does REM sleep appear essential to memory consolidation and emotional regulation?",
+    "domain": "cogsci",
+    "difficulty": 2,
+    "tags": [
+      "neuroscience"
+    ]
+  },
+  {
+    "id": "cog-0034",
+    "topic": "What is prosopagnosia, and why can someone with it still recognize a face's emotion but not its identity?",
+    "domain": "cogsci",
+    "difficulty": 2,
+    "tags": [
+      "neuroscience"
+    ]
+  },
+  {
+    "id": "cog-0035",
+    "topic": "Why does the halo effect let one positive trait bias judgments of a person's unrelated traits?",
+    "domain": "cogsci",
+    "difficulty": 1,
+    "tags": [
+      "social-psychology"
+    ]
+  },
+  {
+    "id": "cog-0036",
+    "topic": "What is the difference between classical and operant conditioning?",
+    "domain": "cogsci",
+    "difficulty": 1,
+    "tags": [
+      "psychology"
+    ]
+  },
+  {
+    "id": "cog-0037",
+    "topic": "Why does intermittent reinforcement produce more persistent behavior than constant reinforcement?",
+    "domain": "cogsci",
+    "difficulty": 2,
+    "tags": [
+      "psychology"
+    ]
+  },
+  {
+    "id": "cog-0038",
+    "topic": "What is the somatic marker hypothesis, and how does it link emotion to rational decision-making?",
+    "domain": "cogsci",
+    "difficulty": 2,
+    "tags": [
+      "neuroscience"
+    ]
+  },
+  {
+    "id": "cog-0039",
+    "topic": "Why does anchoring bias skew numeric estimates even when the anchor is obviously irrelevant?",
+    "domain": "cogsci",
+    "difficulty": 1,
+    "tags": [
+      "cognition"
+    ]
+  },
+  {
+    "id": "cog-0040",
+    "topic": "What is the difference between top-down and bottom-up processing in perception?",
+    "domain": "cogsci",
+    "difficulty": 1,
+    "tags": [
+      "perception"
+    ]
+  },
+  {
+    "id": "cog-0041",
+    "topic": "Why does the framing effect change a decision even when the underlying facts stay identical?",
+    "domain": "cogsci",
+    "difficulty": 1,
+    "tags": [
+      "cognition"
+    ]
+  },
+  {
+    "id": "cog-0042",
+    "topic": "What is inattentional blindness, and why can a person miss an object in plain sight while focused elsewhere?",
+    "domain": "cogsci",
+    "difficulty": 1,
+    "tags": [
+      "perception"
+    ]
+  },
+  {
+    "id": "cog-0043",
+    "topic": "Why does state-dependent memory make it easier to recall something in the same mood or place you learned it?",
+    "domain": "cogsci",
+    "difficulty": 2,
+    "tags": [
+      "memory"
+    ]
+  },
+  {
+    "id": "geo-0001",
+    "topic": "Why does the security dilemma mean one country's defensive move can make war more likely, not less?",
+    "domain": "geopolitics",
+    "difficulty": 2,
+    "tags": [
+      "ir-theory"
+    ]
+  },
+  {
+    "id": "geo-0002",
+    "topic": "What is the difference between hard power and soft power in international relations?",
+    "domain": "geopolitics",
+    "difficulty": 1,
+    "tags": [
+      "ir-theory"
+    ]
+  },
+  {
+    "id": "geo-0003",
+    "topic": "Why does the Melian dialogue in Thucydides still get cited as the founding text of realism?",
+    "domain": "geopolitics",
+    "difficulty": 2,
+    "tags": [
+      "ir-theory",
+      "history"
+    ]
+  },
+  {
+    "id": "geo-0004",
+    "topic": "What is a customary international law norm, and how can it bind states that never signed a treaty?",
+    "domain": "geopolitics",
+    "difficulty": 2,
+    "tags": [
+      "law"
+    ]
+  },
+  {
+    "id": "geo-0005",
+    "topic": "Why does the UN Security Council's veto power make it structurally unable to act against its five permanent members?",
+    "domain": "geopolitics",
+    "difficulty": 1,
+    "tags": [
+      "institutions"
+    ]
+  },
+  {
+    "id": "geo-0006",
+    "topic": "What is sovereign immunity, and why does it complicate suing a foreign government?",
+    "domain": "geopolitics",
+    "difficulty": 2,
+    "tags": [
+      "law"
+    ]
+  },
+  {
+    "id": "geo-0007",
+    "topic": "Why did the Bretton Woods system's collapse in 1971 change how currencies are valued globally?",
+    "domain": "geopolitics",
+    "difficulty": 2,
+    "tags": [
+      "history",
+      "economics"
+    ]
+  },
+  {
+    "id": "geo-0008",
+    "topic": "What is the difference between a customs union like the EU and a purely bilateral trade deal?",
+    "domain": "geopolitics",
+    "difficulty": 1,
+    "tags": [
+      "institutions"
+    ]
+  },
+  {
+    "id": "geo-0009",
+    "topic": "Why does the “resource curse” make oil wealth correlate with weaker democratic institutions?",
+    "domain": "geopolitics",
+    "difficulty": 2,
+    "tags": [
+      "development"
+    ]
+  },
+  {
+    "id": "geo-0010",
+    "topic": "What is a proxy war, and why do great powers fight through smaller states instead of directly?",
+    "domain": "geopolitics",
+    "difficulty": 1,
+    "tags": [
+      "ir-theory"
+    ]
+  },
+  {
+    "id": "geo-0011",
+    "topic": "Why did the Non-Aligned Movement try to chart a third path during the Cold War?",
+    "domain": "geopolitics",
+    "difficulty": 2,
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "geo-0012",
+    "topic": "What is the responsibility to protect doctrine, and why is it so inconsistently applied?",
+    "domain": "geopolitics",
+    "difficulty": 2,
+    "tags": [
+      "institutions"
+    ]
+  },
+  {
+    "id": "geo-0013",
+    "topic": "Why does extended nuclear deterrence require a country to credibly threaten retaliation on an ally's behalf?",
+    "domain": "geopolitics",
+    "difficulty": 2,
+    "tags": [
+      "security"
+    ]
+  },
+  {
+    "id": "geo-0014",
+    "topic": "What is the difference between de jure and de facto statehood, and why does Taiwan sit in between?",
+    "domain": "geopolitics",
+    "difficulty": 2,
+    "tags": [
+      "law"
+    ]
+  },
+  {
+    "id": "geo-0015",
+    "topic": "Why did the Congress of Vienna's balance-of-power settlement keep major European wars off for decades?",
+    "domain": "geopolitics",
+    "difficulty": 2,
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "geo-0016",
+    "topic": "What is a most-favored-nation clause, and why does it underpin most modern trade agreements?",
+    "domain": "geopolitics",
+    "difficulty": 1,
+    "tags": [
+      "institutions"
+    ]
+  },
+  {
+    "id": "geo-0017",
+    "topic": "Why does the democratic peace theory claim democracies rarely go to war with each other?",
+    "domain": "geopolitics",
+    "difficulty": 2,
+    "tags": [
+      "ir-theory"
+    ]
+  },
+  {
+    "id": "geo-0018",
+    "topic": "What is gunboat diplomacy, and why did it define 19th-century imperial coercion?",
+    "domain": "geopolitics",
+    "difficulty": 1,
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "geo-0019",
+    "topic": "Why does the exclusive economic zone extend a coastal state's rights 200 nautical miles offshore?",
+    "domain": "geopolitics",
+    "difficulty": 1,
+    "tags": [
+      "law"
+    ]
+  },
+  {
+    "id": "geo-0020",
+    "topic": "What is the difference between de-escalation and appeasement in crisis diplomacy?",
+    "domain": "geopolitics",
+    "difficulty": 2,
+    "tags": [
+      "ir-theory"
+    ]
+  },
+  {
+    "id": "geo-0021",
+    "topic": "Why did the Sykes-Picot agreement's colonial borders keep causing conflict in the Middle East long after 1916?",
+    "domain": "geopolitics",
+    "difficulty": 2,
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "geo-0022",
+    "topic": "What is a currency war, and why do competitive devaluations rarely benefit everyone who tries them?",
+    "domain": "geopolitics",
+    "difficulty": 2,
+    "tags": [
+      "economics"
+    ]
+  },
+  {
+    "id": "geo-0023",
+    "topic": "Why does the “Thucydides Trap” describe the danger when a rising power threatens to displace a ruling one?",
+    "domain": "geopolitics",
+    "difficulty": 2,
+    "tags": [
+      "ir-theory"
+    ]
+  },
+  {
+    "id": "geo-0024",
+    "topic": "What is extraterritorial jurisdiction, and why do US sanctions affect companies with no US operations?",
+    "domain": "geopolitics",
+    "difficulty": 2,
+    "tags": [
+      "law"
+    ]
+  },
+  {
+    "id": "geo-0025",
+    "topic": "Why did the Marshall Plan's aid come with conditions that reshaped postwar European economic policy?",
+    "domain": "geopolitics",
+    "difficulty": 1,
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "geo-0026",
+    "topic": "What is a failed state, and what indicators do political scientists use to define one?",
+    "domain": "geopolitics",
+    "difficulty": 1,
+    "tags": [
+      "institutions"
+    ]
+  },
+  {
+    "id": "geo-0027",
+    "topic": "Why does asylum law distinguish a refugee from an economic migrant, and why is the line contested?",
+    "domain": "geopolitics",
+    "difficulty": 1,
+    "tags": [
+      "law"
+    ]
+  },
+  {
+    "id": "geo-0028",
+    "topic": "What is the “Great Game,” and why does the term still get applied to Central Asian geopolitics today?",
+    "domain": "geopolitics",
+    "difficulty": 1,
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "geo-0029",
+    "topic": "Why did the Non-Proliferation Treaty accept some nuclear states as legitimate while barring all others?",
+    "domain": "geopolitics",
+    "difficulty": 2,
+    "tags": [
+      "security"
+    ]
+  },
+  {
+    "id": "geo-0030",
+    "topic": "What is a special economic zone, and why did China's use of them accelerate its economic opening?",
+    "domain": "geopolitics",
+    "difficulty": 1,
+    "tags": [
+      "development"
+    ]
+  },
+  {
+    "id": "geo-0031",
+    "topic": "Why does the “Chicken Kiev” pattern of ethnic federalism explain some post-Soviet border conflicts?",
+    "domain": "geopolitics",
+    "difficulty": 3,
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "geo-0032",
+    "topic": "What is the difference between a monarchy, a republic, and a one-party state's claim to legitimacy?",
+    "domain": "geopolitics",
+    "difficulty": 1,
+    "tags": [
+      "institutions"
+    ]
+  },
+  {
+    "id": "geo-0033",
+    "topic": "Why did the Berlin Conference divide Africa along lines that ignored existing ethnic and political boundaries?",
+    "domain": "geopolitics",
+    "difficulty": 1,
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "geo-0034",
+    "topic": "What is lawfare, and why do states increasingly use legal systems as a tool of geopolitical conflict?",
+    "domain": "geopolitics",
+    "difficulty": 2,
+    "tags": [
+      "law"
+    ]
+  },
+  {
+    "id": "geo-0035",
+    "topic": "Why does the “String of Pearls” theory describe a strategy of port access rather than formal colonization?",
+    "domain": "geopolitics",
+    "difficulty": 2,
+    "tags": [
+      "ir-theory"
+    ]
+  },
+  {
+    "id": "geo-0036",
+    "topic": "What is the difference between collective security and a traditional military alliance like NATO?",
+    "domain": "geopolitics",
+    "difficulty": 2,
+    "tags": [
+      "institutions"
+    ]
+  },
+  {
+    "id": "geo-0037",
+    "topic": "Why did the Non-Aligned Movement's founding members define neutrality differently from Cold War “neutral” states like Switzerland?",
+    "domain": "geopolitics",
+    "difficulty": 2,
+    "tags": [
+      "history"
+    ]
+  },
+  {
+    "id": "geo-0038",
+    "topic": "What is a sanctions regime, and why do they often hurt a civilian population more than the targeted regime?",
+    "domain": "geopolitics",
+    "difficulty": 1,
+    "tags": [
+      "security"
+    ]
+  },
+  {
+    "id": "geo-0039",
+    "topic": "Why does maritime “freedom of navigation” become contested in areas like the South China Sea?",
+    "domain": "geopolitics",
+    "difficulty": 2,
+    "tags": [
+      "law",
+      "security"
+    ]
+  },
+  {
+    "id": "geo-0040",
+    "topic": "What is irredentism, and why does it drive some of the world's most persistent border disputes?",
+    "domain": "geopolitics",
+    "difficulty": 1,
+    "tags": [
+      "ir-theory"
+    ]
+  },
+  {
+    "id": "geo-0041",
+    "topic": "Why does the principle of non-refoulement bind even states that never signed the refugee convention?",
+    "domain": "geopolitics",
+    "difficulty": 2,
+    "tags": [
+      "law"
+    ]
+  },
+  {
+    "id": "geo-0042",
+    "topic": "What is a client state, and how does it differ from a formal colony in terms of sovereignty?",
+    "domain": "geopolitics",
+    "difficulty": 1,
+    "tags": [
+      "ir-theory"
+    ]
+  },
+  {
+    "id": "geo-0043",
+    "topic": "Why did the Uti Possidetis principle preserve colonial-era borders for newly independent African states?",
+    "domain": "geopolitics",
+    "difficulty": 2,
+    "tags": [
+      "law",
+      "history"
+    ]
+  },
+  {
+    "id": "his-0001",
+    "topic": "Why did the Mongol Empire's postal relay system, the Yam, matter as much as its cavalry for holding territory?",
+    "domain": "history",
+    "difficulty": 2,
+    "tags": [
+      "asia",
+      "medieval"
+    ]
+  },
+  {
+    "id": "his-0002",
+    "topic": "What made the Library of Alexandria's loss such a genuine catastrophe for ancient knowledge, beyond the myth?",
+    "domain": "history",
+    "difficulty": 2,
+    "tags": [
+      "ancient"
+    ]
+  },
+  {
+    "id": "his-0003",
+    "topic": "Why did the Bronze Age Collapse bring down multiple advanced civilizations around 1200 BCE almost simultaneously?",
+    "domain": "history",
+    "difficulty": 3,
+    "tags": [
+      "ancient"
+    ]
+  },
+  {
+    "id": "his-0004",
+    "topic": "What was the Haitian Revolution, and why does it rarely get taught alongside the American and French ones?",
+    "domain": "history",
+    "difficulty": 1,
+    "tags": [
+      "americas"
+    ]
+  },
+  {
+    "id": "his-0005",
+    "topic": "Why did the Silk Road function as a network of relays rather than a single continuous trade route?",
+    "domain": "history",
+    "difficulty": 1,
+    "tags": [
+      "asia",
+      "medieval"
+    ]
+  },
+  {
+    "id": "his-0006",
+    "topic": "What was the Mali Empire under Mansa Musa, and why did his pilgrimage reportedly disrupt gold prices in Egypt?",
+    "domain": "history",
+    "difficulty": 1,
+    "tags": [
+      "africa",
+      "medieval"
+    ]
+  },
+  {
+    "id": "his-0007",
+    "topic": "Why did the Ottoman devshirme system convert conquered Christian boys into the empire's elite administrators and soldiers?",
+    "domain": "history",
+    "difficulty": 2,
+    "tags": [
+      "middle-east",
+      "medieval"
+    ]
+  },
+  {
+    "id": "his-0008",
+    "topic": "What was the Taiping Rebellion, and why was it one of the deadliest conflicts in human history?",
+    "domain": "history",
+    "difficulty": 2,
+    "tags": [
+      "asia"
+    ]
+  },
+  {
+    "id": "his-0009",
+    "topic": "Why did the Columbian Exchange reshape diets on every inhabited continent within a few centuries?",
+    "domain": "history",
+    "difficulty": 1,
+    "tags": [
+      "global"
+    ]
+  },
+  {
+    "id": "his-0010",
+    "topic": "What was the Meiji Restoration, and how did Japan avoid the colonization that befell much of Asia?",
+    "domain": "history",
+    "difficulty": 1,
+    "tags": [
+      "asia"
+    ]
+  },
+  {
+    "id": "his-0011",
+    "topic": "Why did the Berlin Wall's fall happen faster than almost anyone in East German leadership expected?",
+    "domain": "history",
+    "difficulty": 1,
+    "tags": [
+      "europe",
+      "modern"
+    ]
+  },
+  {
+    "id": "his-0012",
+    "topic": "What was the Rwandan genocide's radio propaganda apparatus, and how did it accelerate mass violence?",
+    "domain": "history",
+    "difficulty": 2,
+    "tags": [
+      "africa",
+      "modern"
+    ]
+  },
+  {
+    "id": "his-0013",
+    "topic": "Why did the Song Dynasty's economy industrialize in ways that a later dynasty then reversed?",
+    "domain": "history",
+    "difficulty": 3,
+    "tags": [
+      "asia",
+      "medieval"
+    ]
+  },
+  {
+    "id": "his-0014",
+    "topic": "What was the Atlantic triangular trade, and how did its three legs each depend on the others economically?",
+    "domain": "history",
+    "difficulty": 1,
+    "tags": [
+      "global"
+    ]
+  },
+  {
+    "id": "his-0015",
+    "topic": "Why did the Justinian Plague's demographic collapse weaken the Byzantine Empire for a generation?",
+    "domain": "history",
+    "difficulty": 2,
+    "tags": [
+      "europe",
+      "medieval"
+    ]
+  },
+  {
+    "id": "his-0016",
+    "topic": "What was the Green Revolution, and why did it prevent the famines that 1960s population models predicted?",
+    "domain": "history",
+    "difficulty": 1,
+    "tags": [
+      "global",
+      "modern"
+    ]
+  },
+  {
+    "id": "his-0017",
+    "topic": "Why did the partition of India in 1947 produce one of the largest mass migrations in human history?",
+    "domain": "history",
+    "difficulty": 1,
+    "tags": [
+      "asia",
+      "modern"
+    ]
+  },
+  {
+    "id": "his-0018",
+    "topic": "What was the Great Zimbabwe civilization, and why did colonial historians long refuse to credit it to Africans?",
+    "domain": "history",
+    "difficulty": 2,
+    "tags": [
+      "africa"
+    ]
+  },
+  {
+    "id": "his-0019",
+    "topic": "Why did the Xinhai Revolution end over two thousand years of Chinese imperial rule so abruptly?",
+    "domain": "history",
+    "difficulty": 2,
+    "tags": [
+      "asia",
+      "modern"
+    ]
+  },
+  {
+    "id": "his-0020",
+    "topic": "What was the encomienda system, and how did it structure forced labor in Spanish colonial America?",
+    "domain": "history",
+    "difficulty": 1,
+    "tags": [
+      "americas"
+    ]
+  },
+  {
+    "id": "his-0021",
+    "topic": "Why did the Suez Crisis of 1956 mark a turning point in Britain and France's status as global powers?",
+    "domain": "history",
+    "difficulty": 1,
+    "tags": [
+      "europe",
+      "modern"
+    ]
+  },
+  {
+    "id": "his-0022",
+    "topic": "What was the Islamic Golden Age's House of Wisdom, and what did it actually produce beyond translation?",
+    "domain": "history",
+    "difficulty": 2,
+    "tags": [
+      "middle-east",
+      "medieval"
+    ]
+  },
+  {
+    "id": "his-0023",
+    "topic": "Why did the Congo Free State under Leopold II become one of the most lethal colonial regimes in history?",
+    "domain": "history",
+    "difficulty": 1,
+    "tags": [
+      "africa",
+      "modern"
+    ]
+  },
+  {
+    "id": "his-0024",
+    "topic": "What was the Grand Canal of China, and why was its engineering considered as significant as the Great Wall?",
+    "domain": "history",
+    "difficulty": 1,
+    "tags": [
+      "asia"
+    ]
+  },
+  {
+    "id": "his-0025",
+    "topic": "Why did the Reconquista span nearly 800 years instead of resolving in a single campaign?",
+    "domain": "history",
+    "difficulty": 2,
+    "tags": [
+      "europe",
+      "medieval"
+    ]
+  },
+  {
+    "id": "his-0026",
+    "topic": "What was the Bandung Conference, and why is it considered the birth of the Non-Aligned Movement?",
+    "domain": "history",
+    "difficulty": 1,
+    "tags": [
+      "asia",
+      "modern"
+    ]
+  },
+  {
+    "id": "his-0027",
+    "topic": "Why did the Aztec Empire's tribute system make it vulnerable to Spanish alliances with resentful subject states?",
+    "domain": "history",
+    "difficulty": 2,
+    "tags": [
+      "americas"
+    ]
+  },
+  {
+    "id": "his-0028",
+    "topic": "What was the Opium War's outcome, and why do Chinese textbooks call the following century the “Century of Humiliation”?",
+    "domain": "history",
+    "difficulty": 1,
+    "tags": [
+      "asia",
+      "modern"
+    ]
+  },
+  {
+    "id": "his-0029",
+    "topic": "Why did the Kingdom of Aksum's control of Red Sea trade make it one of the great ancient powers, per a Persian chronicler?",
+    "domain": "history",
+    "difficulty": 2,
+    "tags": [
+      "africa",
+      "ancient"
+    ]
+  },
+  {
+    "id": "his-0030",
+    "topic": "What was the Weimar Republic's hyperinflation, and how did it reshape German political trust in institutions?",
+    "domain": "history",
+    "difficulty": 1,
+    "tags": [
+      "europe",
+      "modern"
+    ]
+  },
+  {
+    "id": "his-0031",
+    "topic": "Why did the Indian Ocean trade network rely on monsoon wind patterns centuries before European arrival?",
+    "domain": "history",
+    "difficulty": 1,
+    "tags": [
+      "global",
+      "medieval"
+    ]
+  },
+  {
+    "id": "his-0032",
+    "topic": "What was the Cultural Revolution's Red Guard movement, and how did it turn against its own instigators?",
+    "domain": "history",
+    "difficulty": 2,
+    "tags": [
+      "asia",
+      "modern"
+    ]
+  },
+  {
+    "id": "his-0033",
+    "topic": "Why did the Peace of Westphalia in 1648 establish the modern concept of state sovereignty?",
+    "domain": "history",
+    "difficulty": 2,
+    "tags": [
+      "europe",
+      "history-of-ideas"
+    ]
+  },
+  {
+    "id": "his-0034",
+    "topic": "What was the Trail of Tears, and how did the Indian Removal Act's legal mechanism enable it?",
+    "domain": "history",
+    "difficulty": 1,
+    "tags": [
+      "americas"
+    ]
+  },
+  {
+    "id": "his-0035",
+    "topic": "Why did the Umayyad Caliphate's expansion halt at the Battle of Tours rather than continuing north?",
+    "domain": "history",
+    "difficulty": 1,
+    "tags": [
+      "europe",
+      "medieval"
+    ]
+  },
+  {
+    "id": "his-0036",
+    "topic": "What was the Great Leap Forward's Four Pests campaign, and how did it worsen the famine it aimed to prevent?",
+    "domain": "history",
+    "difficulty": 2,
+    "tags": [
+      "asia",
+      "modern"
+    ]
+  },
+  {
+    "id": "his-0037",
+    "topic": "Why did the fall of Constantinople in 1453 push European scholars and trade routes westward?",
+    "domain": "history",
+    "difficulty": 1,
+    "tags": [
+      "europe",
+      "medieval"
+    ]
+  },
+  {
+    "id": "his-0038",
+    "topic": "What was the Zulu Kingdom's military reorganization under Shaka, and why did it reshape southern Africa?",
+    "domain": "history",
+    "difficulty": 2,
+    "tags": [
+      "africa"
+    ]
+  },
+  {
+    "id": "his-0039",
+    "topic": "Why did the Marshall Islands' Bikini Atoll nuclear tests leave a legacy that outlasted the Cold War itself?",
+    "domain": "history",
+    "difficulty": 1,
+    "tags": [
+      "global",
+      "modern"
+    ]
+  },
+  {
+    "id": "his-0040",
+    "topic": "What was the Corn Laws' repeal in Britain, and why did it split the ruling Conservative party for a generation?",
+    "domain": "history",
+    "difficulty": 2,
+    "tags": [
+      "europe",
+      "modern"
+    ]
+  },
+  {
+    "id": "phy-0001",
+    "topic": "Why does time dilation mean a clock on a fast-moving spaceship ticks slower than one on Earth?",
+    "domain": "physics",
+    "difficulty": 2,
+    "tags": [
+      "relativity"
+    ]
+  },
+  {
+    "id": "phy-0002",
+    "topic": "What does it mean for spacetime to be curved, and why does that curvature explain gravity in general relativity?",
+    "domain": "physics",
+    "difficulty": 3,
+    "tags": [
+      "relativity"
+    ]
+  },
+  {
+    "id": "phy-0003",
+    "topic": "Why does quantum entanglement not actually allow faster-than-light communication despite instantaneous correlation?",
+    "domain": "physics",
+    "difficulty": 3,
+    "tags": [
+      "quantum"
+    ]
+  },
+  {
+    "id": "phy-0004",
+    "topic": "What is the double-slit experiment, and why does observation seem to change the outcome?",
+    "domain": "physics",
+    "difficulty": 2,
+    "tags": [
+      "quantum"
+    ]
+  },
+  {
+    "id": "phy-0005",
+    "topic": "Why does the Heisenberg uncertainty principle set a fundamental limit, not just a measurement problem?",
+    "domain": "physics",
+    "difficulty": 2,
+    "tags": [
+      "quantum"
+    ]
+  },
+  {
+    "id": "phy-0006",
+    "topic": "What is entropy, and why does the second law of thermodynamics make some processes irreversible?",
+    "domain": "physics",
+    "difficulty": 2,
+    "tags": [
+      "thermodynamics"
+    ]
+  },
+  {
+    "id": "phy-0007",
+    "topic": "Why can't anything actually reach absolute zero temperature?",
+    "domain": "physics",
+    "difficulty": 2,
+    "tags": [
+      "thermodynamics"
+    ]
+  },
+  {
+    "id": "phy-0008",
+    "topic": "What is superconductivity, and why does it only appear below a critical temperature?",
+    "domain": "physics",
+    "difficulty": 2,
+    "tags": [
+      "condensed-matter"
+    ]
+  },
+  {
+    "id": "phy-0009",
+    "topic": "Why does Noether's theorem link every conservation law to a symmetry in physics?",
+    "domain": "physics",
+    "difficulty": 3,
+    "tags": [
+      "theoretical"
+    ]
+  },
+  {
+    "id": "phy-0010",
+    "topic": "What is dark matter, and why do galaxy rotation curves suggest it exists even though it's never been directly detected?",
+    "domain": "physics",
+    "difficulty": 2,
+    "tags": [
+      "cosmology"
+    ]
+  },
+  {
+    "id": "phy-0011",
+    "topic": "Why does the cosmic microwave background serve as evidence for the Big Bang?",
+    "domain": "physics",
+    "difficulty": 2,
+    "tags": [
+      "cosmology"
+    ]
+  },
+  {
+    "id": "phy-0012",
+    "topic": "What is a black hole's event horizon, and why is it a point of no return rather than a physical surface?",
+    "domain": "physics",
+    "difficulty": 2,
+    "tags": [
+      "relativity"
+    ]
+  },
+  {
+    "id": "phy-0013",
+    "topic": "Why does Hawking radiation suggest black holes eventually evaporate despite nothing escaping their gravity classically?",
+    "domain": "physics",
+    "difficulty": 3,
+    "tags": [
+      "relativity",
+      "quantum"
+    ]
+  },
+  {
+    "id": "phy-0014",
+    "topic": "What is the Higgs mechanism, and why does it explain why some particles have mass and others don't?",
+    "domain": "physics",
+    "difficulty": 3,
+    "tags": [
+      "particle-physics"
+    ]
+  },
+  {
+    "id": "phy-0015",
+    "topic": "Why does nuclear fusion release energy while nuclear fission also releases energy, seemingly opposite processes?",
+    "domain": "physics",
+    "difficulty": 2,
+    "tags": [
+      "nuclear"
+    ]
+  },
+  {
+    "id": "phy-0016",
+    "topic": "What is the photoelectric effect, and why did it require treating light as particles, not just waves?",
+    "domain": "physics",
+    "difficulty": 2,
+    "tags": [
+      "quantum"
+    ]
+  },
+  {
+    "id": "phy-0017",
+    "topic": "Why does a laser produce coherent light instead of the scattered light from an ordinary bulb?",
+    "domain": "physics",
+    "difficulty": 1,
+    "tags": [
+      "optics"
+    ]
+  },
+  {
+    "id": "phy-0018",
+    "topic": "What is superposition, and why is Schrödinger's cat thought experiment a critique of it, not an endorsement?",
+    "domain": "physics",
+    "difficulty": 2,
+    "tags": [
+      "quantum"
+    ]
+  },
+  {
+    "id": "phy-0019",
+    "topic": "Why does special relativity mean there's no universal “now” shared by all observers?",
+    "domain": "physics",
+    "difficulty": 2,
+    "tags": [
+      "relativity"
+    ]
+  },
+  {
+    "id": "phy-0020",
+    "topic": "What is the standard model of particle physics, and what does it still fail to explain?",
+    "domain": "physics",
+    "difficulty": 2,
+    "tags": [
+      "particle-physics"
+    ]
+  },
+  {
+    "id": "phy-0021",
+    "topic": "Why does friction convert kinetic energy into heat rather than destroying energy outright?",
+    "domain": "physics",
+    "difficulty": 1,
+    "tags": [
+      "classical-mechanics"
+    ]
+  },
+  {
+    "id": "phy-0022",
+    "topic": "What is resonance, and why can a bridge collapse from soldiers marching in step?",
+    "domain": "physics",
+    "difficulty": 1,
+    "tags": [
+      "classical-mechanics"
+    ]
+  },
+  {
+    "id": "phy-0023",
+    "topic": "Why does the Coriolis effect deflect moving objects differently in the northern and southern hemispheres?",
+    "domain": "physics",
+    "difficulty": 2,
+    "tags": [
+      "classical-mechanics"
+    ]
+  },
+  {
+    "id": "phy-0024",
+    "topic": "What is the difference between weight and mass, and why does an astronaut in orbit still have mass but not weight?",
+    "domain": "physics",
+    "difficulty": 1,
+    "tags": [
+      "classical-mechanics"
+    ]
+  },
+  {
+    "id": "phy-0025",
+    "topic": "Why does a gyroscope resist changes to its orientation?",
+    "domain": "physics",
+    "difficulty": 2,
+    "tags": [
+      "classical-mechanics"
+    ]
+  },
+  {
+    "id": "phy-0026",
+    "topic": "What is quantum tunneling, and how does it let particles cross barriers they classically shouldn't be able to?",
+    "domain": "physics",
+    "difficulty": 2,
+    "tags": [
+      "quantum"
+    ]
+  },
+  {
+    "id": "phy-0027",
+    "topic": "Why does the speed of light act as a universal speed limit rather than just a fast number?",
+    "domain": "physics",
+    "difficulty": 2,
+    "tags": [
+      "relativity"
+    ]
+  },
+  {
+    "id": "phy-0028",
+    "topic": "What is the difference between a fermion and a boson, and why does that distinction dictate the Pauli exclusion principle?",
+    "domain": "physics",
+    "difficulty": 3,
+    "tags": [
+      "particle-physics"
+    ]
+  },
+  {
+    "id": "phy-0029",
+    "topic": "Why does chaos theory mean tiny differences in initial conditions can make long-term weather forecasting fundamentally limited?",
+    "domain": "physics",
+    "difficulty": 1,
+    "tags": [
+      "classical-mechanics"
+    ]
+  },
+  {
+    "id": "phy-0030",
+    "topic": "What is antimatter, and why does the universe's apparent lack of it remain an open puzzle?",
+    "domain": "physics",
+    "difficulty": 2,
+    "tags": [
+      "particle-physics"
+    ]
+  },
+  {
+    "id": "phy-0031",
+    "topic": "Why does a rainbow always appear as an arc rather than a straight band of color?",
+    "domain": "physics",
+    "difficulty": 1,
+    "tags": [
+      "optics"
+    ]
+  },
+  {
+    "id": "phy-0032",
+    "topic": "What is polarization of light, and how do polarized sunglasses exploit it to cut glare?",
+    "domain": "physics",
+    "difficulty": 1,
+    "tags": [
+      "optics"
+    ]
+  },
+  {
+    "id": "phy-0033",
+    "topic": "Why does the Doppler effect change a sound's pitch as its source moves toward or away from you?",
+    "domain": "physics",
+    "difficulty": 1,
+    "tags": [
+      "waves"
+    ]
+  },
+  {
+    "id": "phy-0034",
+    "topic": "What is the difference between constructive and destructive interference?",
+    "domain": "physics",
+    "difficulty": 1,
+    "tags": [
+      "waves"
+    ]
+  },
+  {
+    "id": "phy-0035",
+    "topic": "Why does a nuclear reactor need control rods, and what would happen without them?",
+    "domain": "physics",
+    "difficulty": 1,
+    "tags": [
+      "nuclear"
+    ]
+  },
+  {
+    "id": "phy-0036",
+    "topic": "What is the equivalence principle, and why did it lead Einstein toward general relativity?",
+    "domain": "physics",
+    "difficulty": 2,
+    "tags": [
+      "relativity"
+    ]
+  },
+  {
+    "id": "phy-0037",
+    "topic": "Why does string theory propose extra spatial dimensions that we can't perceive?",
+    "domain": "physics",
+    "difficulty": 3,
+    "tags": [
+      "theoretical"
+    ]
+  },
+  {
+    "id": "phy-0038",
+    "topic": "What is a phase transition, and why does water boiling and a magnet losing its magnetism share mathematical structure?",
+    "domain": "physics",
+    "difficulty": 2,
+    "tags": [
+      "condensed-matter"
+    ]
+  },
+  {
+    "id": "phy-0039",
+    "topic": "Why does the arrow of time point in only one direction if the underlying physical laws are time-symmetric?",
+    "domain": "physics",
+    "difficulty": 3,
+    "tags": [
+      "thermodynamics"
+    ]
+  },
+  {
+    "id": "phy-0040",
+    "topic": "What is gravitational lensing, and how did it provide early evidence for general relativity?",
+    "domain": "physics",
+    "difficulty": 2,
+    "tags": [
+      "relativity"
+    ]
+  },
+  {
+    "id": "phy-0041",
+    "topic": "Why does a pendulum's period depend on its length but not its mass?",
+    "domain": "physics",
+    "difficulty": 1,
+    "tags": [
+      "classical-mechanics"
+    ]
+  },
+  {
+    "id": "phy-0042",
+    "topic": "What is the twin paradox, and why does the traveling twin actually age less rather than it being purely relative?",
+    "domain": "physics",
+    "difficulty": 3,
+    "tags": [
+      "relativity"
+    ]
+  },
+  {
+    "id": "phy-0043",
+    "topic": "Why does sound travel faster through solids than through air?",
+    "domain": "physics",
+    "difficulty": 1,
+    "tags": [
+      "waves"
+    ]
+  },
+  {
+    "id": "chm-0001",
+    "topic": "Why does the periodic table's structure fall out of how electrons fill quantum shells?",
+    "domain": "chemistry",
+    "difficulty": 2,
+    "tags": [
+      "atomic-structure"
+    ]
+  },
+  {
+    "id": "chm-0002",
+    "topic": "What is a covalent bond, and why does it differ fundamentally from an ionic bond?",
+    "domain": "chemistry",
+    "difficulty": 1,
+    "tags": [
+      "bonding"
+    ]
+  },
+  {
+    "id": "chm-0003",
+    "topic": "Why does water's bent molecular shape make it a polar solvent that dissolves so many substances?",
+    "domain": "chemistry",
+    "difficulty": 1,
+    "tags": [
+      "molecular-structure"
+    ]
+  },
+  {
+    "id": "chm-0004",
+    "topic": "What is pH actually measuring, and why is the scale logarithmic?",
+    "domain": "chemistry",
+    "difficulty": 1,
+    "tags": [
+      "acids-bases"
+    ]
+  },
+  {
+    "id": "chm-0005",
+    "topic": "Why does a catalyst speed up a reaction without being consumed by it?",
+    "domain": "chemistry",
+    "difficulty": 1,
+    "tags": [
+      "kinetics"
+    ]
+  },
+  {
+    "id": "chm-0006",
+    "topic": "What is activation energy, and why do some spontaneous reactions still need a spark to start?",
+    "domain": "chemistry",
+    "difficulty": 1,
+    "tags": [
+      "kinetics"
+    ]
+  },
+  {
+    "id": "chm-0007",
+    "topic": "Why does Le Chatelier's principle predict how a system at equilibrium responds to a disturbance?",
+    "domain": "chemistry",
+    "difficulty": 2,
+    "tags": [
+      "equilibrium"
+    ]
+  },
+  {
+    "id": "chm-0008",
+    "topic": "What is a chiral molecule, and why can two mirror-image versions have completely different biological effects?",
+    "domain": "chemistry",
+    "difficulty": 2,
+    "tags": [
+      "organic"
+    ]
+  },
+  {
+    "id": "chm-0009",
+    "topic": "Why does carbon's ability to form four bonds make it uniquely suited to building complex molecules?",
+    "domain": "chemistry",
+    "difficulty": 1,
+    "tags": [
+      "organic"
+    ]
+  },
+  {
+    "id": "chm-0010",
+    "topic": "What is a polymer, and why do small changes in monomer structure produce wildly different material properties?",
+    "domain": "chemistry",
+    "difficulty": 1,
+    "tags": [
+      "materials"
+    ]
+  },
+  {
+    "id": "chm-0011",
+    "topic": "Why does soap's molecular structure let it dissolve grease in water?",
+    "domain": "chemistry",
+    "difficulty": 1,
+    "tags": [
+      "organic"
+    ]
+  },
+  {
+    "id": "chm-0012",
+    "topic": "What is oxidation, and why doesn't it always involve oxygen despite the name?",
+    "domain": "chemistry",
+    "difficulty": 1,
+    "tags": [
+      "redox"
+    ]
+  },
+  {
+    "id": "chm-0013",
+    "topic": "Why does an electrochemical cell generate electricity from a chemical reaction?",
+    "domain": "chemistry",
+    "difficulty": 2,
+    "tags": [
+      "electrochemistry"
+    ]
+  },
+  {
+    "id": "chm-0014",
+    "topic": "What is entropy's role in chemistry, and why does it help explain why ice melts at room temperature?",
+    "domain": "chemistry",
+    "difficulty": 2,
+    "tags": [
+      "thermochemistry"
+    ]
+  },
+  {
+    "id": "chm-0015",
+    "topic": "Why do noble gases rarely react with anything?",
+    "domain": "chemistry",
+    "difficulty": 1,
+    "tags": [
+      "atomic-structure"
+    ]
+  },
+  {
+    "id": "chm-0016",
+    "topic": "What is a buffer solution, and why does it resist changes in pH?",
+    "domain": "chemistry",
+    "difficulty": 2,
+    "tags": [
+      "acids-bases"
+    ]
+  },
+  {
+    "id": "chm-0017",
+    "topic": "Why does the greenhouse effect depend on specific molecular vibrations of gases like CO2?",
+    "domain": "chemistry",
+    "difficulty": 2,
+    "tags": [
+      "environmental"
+    ]
+  },
+  {
+    "id": "chm-0018",
+    "topic": "What is a hydrogen bond, and why is it strong enough to give water its unusually high boiling point?",
+    "domain": "chemistry",
+    "difficulty": 1,
+    "tags": [
+      "molecular-structure"
+    ]
+  },
+  {
+    "id": "chm-0019",
+    "topic": "Why does distillation separate liquids based on differences in boiling point?",
+    "domain": "chemistry",
+    "difficulty": 1,
+    "tags": [
+      "separation"
+    ]
+  },
+  {
+    "id": "chm-0020",
+    "topic": "What is an isotope, and why do some decay radioactively while others of the same element don't?",
+    "domain": "chemistry",
+    "difficulty": 1,
+    "tags": [
+      "nuclear-chemistry"
+    ]
+  },
+  {
+    "id": "chm-0021",
+    "topic": "Why does rust form on iron but not on gold?",
+    "domain": "chemistry",
+    "difficulty": 1,
+    "tags": [
+      "redox"
+    ]
+  },
+  {
+    "id": "chm-0022",
+    "topic": "What is a Lewis acid-base reaction, and how does it generalize beyond proton transfer?",
+    "domain": "chemistry",
+    "difficulty": 2,
+    "tags": [
+      "acids-bases"
+    ]
+  },
+  {
+    "id": "chm-0023",
+    "topic": "Why does the octet rule predict how atoms bond, and why does it sometimes fail?",
+    "domain": "chemistry",
+    "difficulty": 1,
+    "tags": [
+      "bonding"
+    ]
+  },
+  {
+    "id": "chm-0024",
+    "topic": "What is crystallization, and why do crystals form regular geometric shapes from disordered liquid?",
+    "domain": "chemistry",
+    "difficulty": 1,
+    "tags": [
+      "materials"
+    ]
+  },
+  {
+    "id": "chm-0025",
+    "topic": "Why does adding salt to icy roads lower the freezing point of water?",
+    "domain": "chemistry",
+    "difficulty": 1,
+    "tags": [
+      "thermochemistry"
+    ]
+  },
+  {
+    "id": "chm-0026",
+    "topic": "What is a nucleophile, and why does its behavior drive so much of organic reaction mechanism?",
+    "domain": "chemistry",
+    "difficulty": 2,
+    "tags": [
+      "organic"
+    ]
+  },
+  {
+    "id": "chm-0027",
+    "topic": "Why does the strength of an acid depend on how well it stabilizes its conjugate base?",
+    "domain": "chemistry",
+    "difficulty": 2,
+    "tags": [
+      "acids-bases"
+    ]
+  },
+  {
+    "id": "chm-0028",
+    "topic": "What is a semiconductor, and why does doping it with impurities let it conduct electricity selectively?",
+    "domain": "chemistry",
+    "difficulty": 2,
+    "tags": [
+      "materials"
+    ]
+  },
+  {
+    "id": "chm-0029",
+    "topic": "Why does combustion release energy stored in chemical bonds as heat and light?",
+    "domain": "chemistry",
+    "difficulty": 1,
+    "tags": [
+      "thermochemistry"
+    ]
+  },
+  {
+    "id": "chm-0030",
+    "topic": "What is chromatography, and how does it separate a mixture based on how components travel through a medium?",
+    "domain": "chemistry",
+    "difficulty": 1,
+    "tags": [
+      "separation"
+    ]
+  },
+  {
+    "id": "chm-0031",
+    "topic": "Why does vulcanization transform soft natural rubber into a durable, elastic material?",
+    "domain": "chemistry",
+    "difficulty": 2,
+    "tags": [
+      "materials"
+    ]
+  },
+  {
+    "id": "chm-0032",
+    "topic": "What is a free radical, and why does it drive both aging in cells and the smell of rancid fat?",
+    "domain": "chemistry",
+    "difficulty": 2,
+    "tags": [
+      "biochemistry"
+    ]
+  },
+  {
+    "id": "chm-0033",
+    "topic": "Why does the Haber process's synthesis of ammonia matter enough to have changed global population growth?",
+    "domain": "chemistry",
+    "difficulty": 2,
+    "tags": [
+      "industrial"
+    ]
+  },
+  {
+    "id": "chm-0034",
+    "topic": "What is an enzyme's active site, and why does its shape determine which reactions it can catalyze?",
+    "domain": "chemistry",
+    "difficulty": 1,
+    "tags": [
+      "biochemistry"
+    ]
+  },
+  {
+    "id": "chm-0035",
+    "topic": "Why does soap not work well in “hard” water?",
+    "domain": "chemistry",
+    "difficulty": 1,
+    "tags": [
+      "everyday"
+    ]
+  },
+  {
+    "id": "chm-0036",
+    "topic": "What is electrolysis, and how does it force a non-spontaneous chemical reaction to happen?",
+    "domain": "chemistry",
+    "difficulty": 2,
+    "tags": [
+      "electrochemistry"
+    ]
+  },
+  {
+    "id": "chm-0037",
+    "topic": "Why does the flame test produce different colors for different metal ions?",
+    "domain": "chemistry",
+    "difficulty": 1,
+    "tags": [
+      "atomic-structure"
+    ]
+  },
+  {
+    "id": "chm-0038",
+    "topic": "What is a racemic mixture, and why does it matter for pharmaceutical drug design?",
+    "domain": "chemistry",
+    "difficulty": 2,
+    "tags": [
+      "organic"
+    ]
+  },
+  {
+    "id": "chm-0039",
+    "topic": "Why does supercooled water suddenly freeze solid the instant it's disturbed?",
+    "domain": "chemistry",
+    "difficulty": 2,
+    "tags": [
+      "thermochemistry"
+    ]
+  },
+  {
+    "id": "chm-0040",
+    "topic": "What is the difference between a strong and a weak electrolyte in solution?",
+    "domain": "chemistry",
+    "difficulty": 1,
+    "tags": [
+      "acids-bases"
+    ]
+  },
+  {
+    "id": "chm-0041",
+    "topic": "Why does adding a solute to a solvent raise its boiling point and lower its freezing point?",
+    "domain": "chemistry",
+    "difficulty": 2,
+    "tags": [
+      "thermochemistry"
+    ]
+  },
+  {
+    "id": "chm-0042",
+    "topic": "What is a catalyst poison, and why can a tiny impurity shut down an entire industrial reaction?",
+    "domain": "chemistry",
+    "difficulty": 2,
+    "tags": [
+      "kinetics"
+    ]
+  },
+  {
+    "id": "chm-0043",
+    "topic": "Why does graphite conduct electricity while diamond, also pure carbon, does not?",
+    "domain": "chemistry",
+    "difficulty": 2,
+    "tags": [
+      "materials"
+    ]
+  },
+  {
+    "id": "bio-0001",
+    "topic": "Why does natural selection require variation, heredity, and differential survival to produce evolution at all?",
+    "domain": "biology",
+    "difficulty": 1,
+    "tags": [
+      "evolution"
+    ]
+  },
+  {
+    "id": "bio-0002",
+    "topic": "What is genetic drift, and why can it fix a trait in a small population even if it's not advantageous?",
+    "domain": "biology",
+    "difficulty": 2,
+    "tags": [
+      "evolution"
+    ]
+  },
+  {
+    "id": "bio-0003",
+    "topic": "Why does convergent evolution produce similar traits, like wings, in completely unrelated lineages?",
+    "domain": "biology",
+    "difficulty": 1,
+    "tags": [
+      "evolution"
+    ]
+  },
+  {
+    "id": "bio-0004",
+    "topic": "What is horizontal gene transfer, and why does it complicate the idea of a single tree of life?",
+    "domain": "biology",
+    "difficulty": 2,
+    "tags": [
+      "evolution",
+      "microbiology"
+    ]
+  },
+  {
+    "id": "bio-0005",
+    "topic": "Why does CRISPR-Cas9 let scientists edit specific genes with a precision earlier tools lacked?",
+    "domain": "biology",
+    "difficulty": 2,
+    "tags": [
+      "genetics"
+    ]
+  },
+  {
+    "id": "bio-0006",
+    "topic": "What is the difference between a gene and an allele?",
+    "domain": "biology",
+    "difficulty": 1,
+    "tags": [
+      "genetics"
+    ]
+  },
+  {
+    "id": "bio-0007",
+    "topic": "Why does epigenetics mean gene expression can change without altering the underlying DNA sequence?",
+    "domain": "biology",
+    "difficulty": 2,
+    "tags": [
+      "genetics"
+    ]
+  },
+  {
+    "id": "bio-0008",
+    "topic": "What is mitosis versus meiosis, and why does only one of them halve the chromosome number?",
+    "domain": "biology",
+    "difficulty": 1,
+    "tags": [
+      "cell-biology"
+    ]
+  },
+  {
+    "id": "bio-0009",
+    "topic": "Why does the mitochondria's own DNA support the theory that it was once a free-living bacterium?",
+    "domain": "biology",
+    "difficulty": 2,
+    "tags": [
+      "cell-biology",
+      "evolution"
+    ]
+  },
+  {
+    "id": "bio-0010",
+    "topic": "What is apoptosis, and why is programmed cell death necessary for a healthy organism?",
+    "domain": "biology",
+    "difficulty": 1,
+    "tags": [
+      "cell-biology"
+    ]
+  },
+  {
+    "id": "bio-0011",
+    "topic": "Why does a virus need a host cell's machinery to reproduce, unlike a bacterium?",
+    "domain": "biology",
+    "difficulty": 1,
+    "tags": [
+      "microbiology"
+    ]
+  },
+  {
+    "id": "bio-0012",
+    "topic": "What is herd immunity, and why does the threshold differ between diseases?",
+    "domain": "biology",
+    "difficulty": 1,
+    "tags": [
+      "immunology"
+    ]
+  },
+  {
+    "id": "bio-0013",
+    "topic": "Why does an antibody's shape let the immune system target an almost unlimited variety of pathogens?",
+    "domain": "biology",
+    "difficulty": 2,
+    "tags": [
+      "immunology"
+    ]
+  },
+  {
+    "id": "bio-0014",
+    "topic": "What is an autoimmune disease, and why does the immune system sometimes attack the body's own cells?",
+    "domain": "biology",
+    "difficulty": 1,
+    "tags": [
+      "immunology"
+    ]
+  },
+  {
+    "id": "bio-0015",
+    "topic": "Why does antibiotic resistance spread so quickly through bacterial populations?",
+    "domain": "biology",
+    "difficulty": 1,
+    "tags": [
+      "microbiology",
+      "evolution"
+    ]
+  },
+  {
+    "id": "bio-0016",
+    "topic": "What is homeostasis, and why does the body treat it as a moving target rather than a fixed setpoint?",
+    "domain": "biology",
+    "difficulty": 1,
+    "tags": [
+      "physiology"
+    ]
+  },
+  {
+    "id": "bio-0017",
+    "topic": "Why does photosynthesis split water molecules to release the oxygen we breathe?",
+    "domain": "biology",
+    "difficulty": 1,
+    "tags": [
+      "botany"
+    ]
+  },
+  {
+    "id": "bio-0018",
+    "topic": "What is the Krebs cycle, and why is it central to how cells extract energy from food?",
+    "domain": "biology",
+    "difficulty": 2,
+    "tags": [
+      "biochemistry"
+    ]
+  },
+  {
+    "id": "bio-0019",
+    "topic": "Why does a species' population follow a logistic rather than exponential growth curve once resources are limited?",
+    "domain": "biology",
+    "difficulty": 1,
+    "tags": [
+      "ecology"
+    ]
+  },
+  {
+    "id": "bio-0020",
+    "topic": "What is a keystone species, and why does its removal collapse an ecosystem disproportionate to its numbers?",
+    "domain": "biology",
+    "difficulty": 1,
+    "tags": [
+      "ecology"
+    ]
+  },
+  {
+    "id": "bio-0021",
+    "topic": "Why does biodiversity increase an ecosystem's resilience to disturbance?",
+    "domain": "biology",
+    "difficulty": 1,
+    "tags": [
+      "ecology"
+    ]
+  },
+  {
+    "id": "bio-0022",
+    "topic": "What is symbiosis, and how do mutualism, commensalism, and parasitism differ?",
+    "domain": "biology",
+    "difficulty": 1,
+    "tags": [
+      "ecology"
+    ]
+  },
+  {
+    "id": "bio-0023",
+    "topic": "Why does the Hardy-Weinberg equilibrium give biologists a baseline for detecting evolution in a population?",
+    "domain": "biology",
+    "difficulty": 2,
+    "tags": [
+      "genetics",
+      "evolution"
+    ]
+  },
+  {
+    "id": "bio-0024",
+    "topic": "What is a vestigial structure, and why does it count as evidence for evolution rather than design?",
+    "domain": "biology",
+    "difficulty": 1,
+    "tags": [
+      "evolution"
+    ]
+  },
+  {
+    "id": "bio-0025",
+    "topic": "Why does sickle cell trait persist in populations despite being harmful, due to its link to malaria resistance?",
+    "domain": "biology",
+    "difficulty": 2,
+    "tags": [
+      "genetics",
+      "evolution"
+    ]
+  },
+  {
+    "id": "bio-0026",
+    "topic": "What is the difference between an exon and an intron, and why does the cell splice one out?",
+    "domain": "biology",
+    "difficulty": 2,
+    "tags": [
+      "genetics"
+    ]
+  },
+  {
+    "id": "bio-0027",
+    "topic": "Why does a stem cell's potency describe how many different cell types it can become?",
+    "domain": "biology",
+    "difficulty": 1,
+    "tags": [
+      "cell-biology"
+    ]
+  },
+  {
+    "id": "bio-0028",
+    "topic": "What is quorum sensing, and how do bacteria “communicate” to coordinate collective behavior?",
+    "domain": "biology",
+    "difficulty": 2,
+    "tags": [
+      "microbiology"
+    ]
+  },
+  {
+    "id": "bio-0029",
+    "topic": "Why does the blood-brain barrier restrict what substances can reach the brain from the bloodstream?",
+    "domain": "biology",
+    "difficulty": 1,
+    "tags": [
+      "physiology"
+    ]
+  },
+  {
+    "id": "bio-0030",
+    "topic": "What is a prion, and why is it dangerous despite not being alive or containing genetic material?",
+    "domain": "biology",
+    "difficulty": 2,
+    "tags": [
+      "microbiology"
+    ]
+  },
+  {
+    "id": "bio-0031",
+    "topic": "Why does hibernation require more than just a lower body temperature to actually save energy?",
+    "domain": "biology",
+    "difficulty": 1,
+    "tags": [
+      "physiology"
+    ]
+  },
+  {
+    "id": "bio-0032",
+    "topic": "What is the difference between an r-strategist and a K-strategist species?",
+    "domain": "biology",
+    "difficulty": 2,
+    "tags": [
+      "ecology"
+    ]
+  },
+  {
+    "id": "bio-0033",
+    "topic": "Why does a coral reef bleach when ocean temperatures rise even slightly?",
+    "domain": "biology",
+    "difficulty": 1,
+    "tags": [
+      "ecology"
+    ]
+  },
+  {
+    "id": "bio-0034",
+    "topic": "What is lateral inhibition, and how does it sharpen sensory perception like edge detection in vision?",
+    "domain": "biology",
+    "difficulty": 2,
+    "tags": [
+      "physiology"
+    ]
+  },
+  {
+    "id": "bio-0035",
+    "topic": "Why does a species' genetic bottleneck reduce its ability to adapt to future environmental change?",
+    "domain": "biology",
+    "difficulty": 2,
+    "tags": [
+      "evolution"
+    ]
+  },
+  {
+    "id": "bio-0036",
+    "topic": "What is the endosymbiotic theory, and what evidence supports chloroplasts having a similar origin to mitochondria?",
+    "domain": "biology",
+    "difficulty": 2,
+    "tags": [
+      "evolution",
+      "botany"
+    ]
+  },
+  {
+    "id": "bio-0037",
+    "topic": "Why does a fever help the immune system fight infection instead of just being a symptom to suppress?",
+    "domain": "biology",
+    "difficulty": 1,
+    "tags": [
+      "immunology"
+    ]
+  },
+  {
+    "id": "bio-0038",
+    "topic": "What is alternative splicing, and how does it let one gene produce multiple different proteins?",
+    "domain": "biology",
+    "difficulty": 2,
+    "tags": [
+      "genetics"
+    ]
+  },
+  {
+    "id": "bio-0039",
+    "topic": "Why does a species' extinction risk rise disproportionately once its population drops below a minimum viable size?",
+    "domain": "biology",
+    "difficulty": 1,
+    "tags": [
+      "ecology"
+    ]
+  },
+  {
+    "id": "bio-0040",
+    "topic": "What is the difference between innate and adaptive immunity, and why does the body need both?",
+    "domain": "biology",
+    "difficulty": 1,
+    "tags": [
+      "immunology"
+    ]
+  },
+  {
+    "id": "ear-0001",
+    "topic": "Why does plate tectonics explain both earthquakes and the shape of continents with one mechanism?",
+    "domain": "earth-science",
+    "difficulty": 1,
+    "tags": [
+      "geology"
+    ]
+  },
+  {
+    "id": "ear-0002",
+    "topic": "What is the difference between a P-wave and an S-wave, and how do seismologists use both to locate an earthquake's epicenter?",
+    "domain": "earth-science",
+    "difficulty": 2,
+    "tags": [
+      "geology"
+    ]
+  },
+  {
+    "id": "ear-0003",
+    "topic": "Why do volcanic eruptions at subduction zones tend to be more explosive than those at mid-ocean ridges?",
+    "domain": "earth-science",
+    "difficulty": 2,
+    "tags": [
+      "geology"
+    ]
+  },
+  {
+    "id": "ear-0004",
+    "topic": "What is the Milankovitch cycle theory, and how do orbital changes drive ice ages over tens of thousands of years?",
+    "domain": "earth-science",
+    "difficulty": 2,
+    "tags": [
+      "climate"
+    ]
+  },
+  {
+    "id": "ear-0005",
+    "topic": "Why does the ozone layer's depletion involve chlorine catalysis rather than the CFCs directly destroying ozone?",
+    "domain": "earth-science",
+    "difficulty": 2,
+    "tags": [
+      "atmosphere"
+    ]
+  },
+  {
+    "id": "ear-0006",
+    "topic": "What is the thermohaline circulation, and why is it sometimes called the ocean's conveyor belt?",
+    "domain": "earth-science",
+    "difficulty": 2,
+    "tags": [
+      "oceanography"
+    ]
+  },
+  {
+    "id": "ear-0007",
+    "topic": "Why does El Niño shift weather patterns across the entire globe, not just the Pacific?",
+    "domain": "earth-science",
+    "difficulty": 2,
+    "tags": [
+      "climate"
+    ]
+  },
+  {
+    "id": "ear-0008",
+    "topic": "What is the difference between weather and climate, and why does one cold winter not disprove the other's trend?",
+    "domain": "earth-science",
+    "difficulty": 1,
+    "tags": [
+      "climate"
+    ]
+  },
+  {
+    "id": "ear-0009",
+    "topic": "Why does the greenhouse effect occur naturally, and what makes the human-driven version different?",
+    "domain": "earth-science",
+    "difficulty": 1,
+    "tags": [
+      "climate"
+    ]
+  },
+  {
+    "id": "ear-0010",
+    "topic": "What is radiometric dating, and why does a rock's radioactive decay rate let scientists estimate its age?",
+    "domain": "earth-science",
+    "difficulty": 2,
+    "tags": [
+      "geology"
+    ]
+  },
+  {
+    "id": "ear-0011",
+    "topic": "Why does the Earth's magnetic field periodically reverse polarity, and how do rocks record that history?",
+    "domain": "earth-science",
+    "difficulty": 2,
+    "tags": [
+      "geology"
+    ]
+  },
+  {
+    "id": "ear-0012",
+    "topic": "What is an aquifer, and why can pumping groundwater faster than it recharges cause land to sink?",
+    "domain": "earth-science",
+    "difficulty": 1,
+    "tags": [
+      "hydrology"
+    ]
+  },
+  {
+    "id": "ear-0013",
+    "topic": "Why does the jet stream steer most weather systems across the mid-latitudes?",
+    "domain": "earth-science",
+    "difficulty": 2,
+    "tags": [
+      "atmosphere"
+    ]
+  },
+  {
+    "id": "ear-0014",
+    "topic": "What is ocean acidification, and why does absorbing carbon dioxide lower seawater's pH?",
+    "domain": "earth-science",
+    "difficulty": 1,
+    "tags": [
+      "oceanography"
+    ]
+  },
+  {
+    "id": "ear-0015",
+    "topic": "Why do hurricanes need warm ocean water above a certain temperature threshold to form?",
+    "domain": "earth-science",
+    "difficulty": 1,
+    "tags": [
+      "atmosphere"
+    ]
+  },
+  {
+    "id": "ear-0016",
+    "topic": "What is the difference between a mineral and a rock?",
+    "domain": "earth-science",
+    "difficulty": 1,
+    "tags": [
+      "geology"
+    ]
+  },
+  {
+    "id": "ear-0017",
+    "topic": "Why does soil erosion accelerate dramatically once vegetation cover is removed?",
+    "domain": "earth-science",
+    "difficulty": 1,
+    "tags": [
+      "geology"
+    ]
+  },
+  {
+    "id": "ear-0018",
+    "topic": "What is the Coriolis effect's role in generating the rotation of hurricanes and typhoons?",
+    "domain": "earth-science",
+    "difficulty": 2,
+    "tags": [
+      "atmosphere"
+    ]
+  },
+  {
+    "id": "ear-0019",
+    "topic": "Why does the rock cycle mean no rock type is permanent over geological time?",
+    "domain": "earth-science",
+    "difficulty": 1,
+    "tags": [
+      "geology"
+    ]
+  },
+  {
+    "id": "ear-0020",
+    "topic": "What is a karst landscape, and why does it form specifically over limestone bedrock?",
+    "domain": "earth-science",
+    "difficulty": 2,
+    "tags": [
+      "geology"
+    ]
+  },
+  {
+    "id": "ear-0021",
+    "topic": "Why does permafrost thaw risk releasing methane that could accelerate warming further?",
+    "domain": "earth-science",
+    "difficulty": 2,
+    "tags": [
+      "climate"
+    ]
+  },
+  {
+    "id": "ear-0022",
+    "topic": "What is the difference between a shield volcano and a stratovolcano, and why does magma viscosity explain both shapes?",
+    "domain": "earth-science",
+    "difficulty": 2,
+    "tags": [
+      "geology"
+    ]
+  },
+  {
+    "id": "ear-0023",
+    "topic": "Why does sea level rise from thermal expansion matter as much as melting ice?",
+    "domain": "earth-science",
+    "difficulty": 2,
+    "tags": [
+      "climate"
+    ]
+  },
+  {
+    "id": "ear-0024",
+    "topic": "What is a rain shadow, and why does one side of a mountain range end up a desert?",
+    "domain": "earth-science",
+    "difficulty": 1,
+    "tags": [
+      "atmosphere"
+    ]
+  },
+  {
+    "id": "ear-0025",
+    "topic": "Why do tsunamis travel so fast in open ocean but grow so tall near shore?",
+    "domain": "earth-science",
+    "difficulty": 1,
+    "tags": [
+      "oceanography"
+    ]
+  },
+  {
+    "id": "ear-0026",
+    "topic": "What is the difference between an igneous, sedimentary, and metamorphic rock?",
+    "domain": "earth-science",
+    "difficulty": 1,
+    "tags": [
+      "geology"
+    ]
+  },
+  {
+    "id": "ear-0027",
+    "topic": "Why does the Earth's core generate the magnetic field that shields the planet from solar wind?",
+    "domain": "earth-science",
+    "difficulty": 2,
+    "tags": [
+      "geology"
+    ]
+  },
+  {
+    "id": "ear-0028",
+    "topic": "What is a supercontinent cycle, and why do continents appear to periodically assemble and break apart?",
+    "domain": "earth-science",
+    "difficulty": 2,
+    "tags": [
+      "geology"
+    ]
+  },
+  {
+    "id": "ear-0029",
+    "topic": "Why does upwelling along certain coastlines make them some of the most productive fisheries on Earth?",
+    "domain": "earth-science",
+    "difficulty": 1,
+    "tags": [
+      "oceanography"
+    ]
+  },
+  {
+    "id": "ear-0030",
+    "topic": "What is albedo, and why does melting Arctic ice create a feedback loop that accelerates further melting?",
+    "domain": "earth-science",
+    "difficulty": 1,
+    "tags": [
+      "climate"
+    ]
+  },
+  {
+    "id": "ear-0031",
+    "topic": "Why does the Richter scale's logarithmic nature mean a magnitude 6 earthquake releases far more than twice the energy of a magnitude 5?",
+    "domain": "earth-science",
+    "difficulty": 2,
+    "tags": [
+      "geology"
+    ]
+  },
+  {
+    "id": "ear-0032",
+    "topic": "What is a delta, geologically, and why does a river deposit sediment in that particular fan shape at its mouth?",
+    "domain": "earth-science",
+    "difficulty": 1,
+    "tags": [
+      "geology"
+    ]
+  },
+  {
+    "id": "ear-0033",
+    "topic": "Why does the stratosphere get warmer with altitude while the troposphere below it gets colder?",
+    "domain": "earth-science",
+    "difficulty": 2,
+    "tags": [
+      "atmosphere"
+    ]
+  },
+  {
+    "id": "mat-0001",
+    "topic": "Why did Gödel's incompleteness theorems show that any sufficiently powerful formal system contains true statements it cannot prove?",
+    "domain": "mathematics",
+    "difficulty": 3,
+    "tags": [
+      "logic"
+    ]
+  },
+  {
+    "id": "mat-0002",
+    "topic": "What is a proof by contradiction, and why does assuming the opposite ever prove anything?",
+    "domain": "mathematics",
+    "difficulty": 1,
+    "tags": [
+      "logic"
+    ]
+  },
+  {
+    "id": "mat-0003",
+    "topic": "Why is the square root of 2 irrational, and why did that discovery reportedly disturb the Pythagoreans?",
+    "domain": "mathematics",
+    "difficulty": 1,
+    "tags": [
+      "number-theory"
+    ]
+  },
+  {
+    "id": "mat-0004",
+    "topic": "What does it mean for two infinite sets to have the same cardinality, and why are the reals “bigger” than the integers?",
+    "domain": "mathematics",
+    "difficulty": 3,
+    "tags": [
+      "set-theory"
+    ]
+  },
+  {
+    "id": "mat-0005",
+    "topic": "Why does Cantor's diagonal argument prove that some infinities are larger than others?",
+    "domain": "mathematics",
+    "difficulty": 3,
+    "tags": [
+      "set-theory"
+    ]
+  },
+  {
+    "id": "mat-0006",
+    "topic": "What is a prime number's role in the fundamental theorem of arithmetic?",
+    "domain": "mathematics",
+    "difficulty": 1,
+    "tags": [
+      "number-theory"
+    ]
+  },
+  {
+    "id": "mat-0007",
+    "topic": "Why is the Riemann hypothesis considered one of the most important unsolved problems in mathematics?",
+    "domain": "mathematics",
+    "difficulty": 3,
+    "tags": [
+      "number-theory"
+    ]
+  },
+  {
+    "id": "mat-0008",
+    "topic": "What is modular arithmetic, and why does it make clock math and cryptography both work the same way?",
+    "domain": "mathematics",
+    "difficulty": 1,
+    "tags": [
+      "number-theory"
+    ]
+  },
+  {
+    "id": "mat-0009",
+    "topic": "Why does the fundamental theorem of calculus link the seemingly separate ideas of area and slope?",
+    "domain": "mathematics",
+    "difficulty": 2,
+    "tags": [
+      "calculus"
+    ]
+  },
+  {
+    "id": "mat-0010",
+    "topic": "What is a derivative actually measuring beyond “slope of a line”?",
+    "domain": "mathematics",
+    "difficulty": 1,
+    "tags": [
+      "calculus"
+    ]
+  },
+  {
+    "id": "mat-0011",
+    "topic": "Why does an infinite series like 1 + 1/2 + 1/4 + ... converge to a finite number?",
+    "domain": "mathematics",
+    "difficulty": 1,
+    "tags": [
+      "calculus"
+    ]
+  },
+  {
+    "id": "mat-0012",
+    "topic": "What is the difference between a necessary and a sufficient condition in a mathematical statement?",
+    "domain": "mathematics",
+    "difficulty": 1,
+    "tags": [
+      "logic"
+    ]
+  },
+  {
+    "id": "mat-0013",
+    "topic": "Why does Bayes' theorem let you update a probability as new evidence arrives?",
+    "domain": "mathematics",
+    "difficulty": 1,
+    "tags": [
+      "probability"
+    ]
+  },
+  {
+    "id": "mat-0014",
+    "topic": "What is the birthday paradox, and why does it take only 23 people to make a coincidence likely?",
+    "domain": "mathematics",
+    "difficulty": 1,
+    "tags": [
+      "probability"
+    ]
+  },
+  {
+    "id": "mat-0015",
+    "topic": "Why does the central limit theorem explain why so many unrelated phenomena end up normally distributed?",
+    "domain": "mathematics",
+    "difficulty": 2,
+    "tags": [
+      "statistics"
+    ]
+  },
+  {
+    "id": "mat-0016",
+    "topic": "What is a matrix eigenvalue, and what does it actually represent geometrically?",
+    "domain": "mathematics",
+    "difficulty": 2,
+    "tags": [
+      "linear-algebra"
+    ]
+  },
+  {
+    "id": "mat-0017",
+    "topic": "Why does matrix multiplication not commute, and what does that mean physically?",
+    "domain": "mathematics",
+    "difficulty": 2,
+    "tags": [
+      "linear-algebra"
+    ]
+  },
+  {
+    "id": "mat-0018",
+    "topic": "What is topology's rubber-sheet idea of “sameness,” and why is a coffee cup considered the same shape as a donut?",
+    "domain": "mathematics",
+    "difficulty": 1,
+    "tags": [
+      "topology"
+    ]
+  },
+  {
+    "id": "mat-0019",
+    "topic": "Why does the four color theorem require only four colors to color any map without adjacent regions matching?",
+    "domain": "mathematics",
+    "difficulty": 2,
+    "tags": [
+      "combinatorics"
+    ]
+  },
+  {
+    "id": "mat-0020",
+    "topic": "What is a fractal, and why does it have a dimension that isn't a whole number?",
+    "domain": "mathematics",
+    "difficulty": 2,
+    "tags": [
+      "geometry"
+    ]
+  },
+  {
+    "id": "mat-0021",
+    "topic": "Why does Euler's identity, e^(iπ) + 1 = 0, link five fundamental constants in one equation?",
+    "domain": "mathematics",
+    "difficulty": 2,
+    "tags": [
+      "analysis"
+    ]
+  },
+  {
+    "id": "mat-0022",
+    "topic": "What is the difference between a rational and an irrational number, and why does the distinction matter practically?",
+    "domain": "mathematics",
+    "difficulty": 1,
+    "tags": [
+      "number-theory"
+    ]
+  },
+  {
+    "id": "mat-0023",
+    "topic": "Why does the pigeonhole principle prove things without doing any real “counting”?",
+    "domain": "mathematics",
+    "difficulty": 1,
+    "tags": [
+      "combinatorics"
+    ]
+  },
+  {
+    "id": "mat-0024",
+    "topic": "What is game theory's minimax theorem, and why does it guarantee an optimal strategy in zero-sum games?",
+    "domain": "mathematics",
+    "difficulty": 2,
+    "tags": [
+      "game-theory"
+    ]
+  },
+  {
+    "id": "mat-0025",
+    "topic": "Why does a proof by induction only need a base case and a single inductive step to cover infinitely many cases?",
+    "domain": "mathematics",
+    "difficulty": 1,
+    "tags": [
+      "logic"
+    ]
+  },
+  {
+    "id": "mat-0026",
+    "topic": "What is the difference between correlation and causation, and why does math alone never settle which is present?",
+    "domain": "mathematics",
+    "difficulty": 1,
+    "tags": [
+      "statistics"
+    ]
+  },
+  {
+    "id": "mat-0027",
+    "topic": "Why does non-Euclidean geometry mean parallel lines can meet, depending on the surface's curvature?",
+    "domain": "mathematics",
+    "difficulty": 2,
+    "tags": [
+      "geometry"
+    ]
+  },
+  {
+    "id": "mat-0028",
+    "topic": "What is a Markov chain's stationary distribution, and why does it not depend on the starting point?",
+    "domain": "mathematics",
+    "difficulty": 2,
+    "tags": [
+      "probability"
+    ]
+  },
+  {
+    "id": "mat-0029",
+    "topic": "Why does the traveling salesman problem become computationally intractable as the number of cities grows?",
+    "domain": "mathematics",
+    "difficulty": 2,
+    "tags": [
+      "combinatorics"
+    ]
+  },
+  {
+    "id": "mat-0030",
+    "topic": "What is a Fibonacci sequence, and why does it show up so often in natural growth patterns?",
+    "domain": "mathematics",
+    "difficulty": 1,
+    "tags": [
+      "number-theory"
+    ]
+  },
+  {
+    "id": "mat-0031",
+    "topic": "Why did the invention of zero as a number, not just a placeholder, take centuries to arrive in most number systems?",
+    "domain": "mathematics",
+    "difficulty": 1,
+    "tags": [
+      "history-of-math"
+    ]
+  },
+  {
+    "id": "mat-0032",
+    "topic": "What is a vector space, and why does the same abstract structure describe both arrows and polynomials?",
+    "domain": "mathematics",
+    "difficulty": 2,
+    "tags": [
+      "linear-algebra"
+    ]
+  },
+  {
+    "id": "mat-0033",
+    "topic": "Why does the law of large numbers guarantee long-run averages but say nothing about any single outcome?",
+    "domain": "mathematics",
+    "difficulty": 1,
+    "tags": [
+      "probability"
+    ]
+  },
+  {
+    "id": "mat-0034",
+    "topic": "What is a group in abstract algebra, and why does the same structure describe both rotations and clock arithmetic?",
+    "domain": "mathematics",
+    "difficulty": 3,
+    "tags": [
+      "abstract-algebra"
+    ]
+  },
+  {
+    "id": "mat-0035",
+    "topic": "Why does Monty Hall's game reward switching doors, against most people's first instinct?",
+    "domain": "mathematics",
+    "difficulty": 1,
+    "tags": [
+      "probability"
+    ]
+  },
+  {
+    "id": "mat-0036",
+    "topic": "What is a proof by exhaustion, and why did the four color theorem's reliance on one make some mathematicians uneasy?",
+    "domain": "mathematics",
+    "difficulty": 2,
+    "tags": [
+      "logic"
+    ]
+  },
+  {
+    "id": "mat-0037",
+    "topic": "Why does the harmonic series diverge even though its individual terms shrink toward zero?",
+    "domain": "mathematics",
+    "difficulty": 2,
+    "tags": [
+      "calculus"
+    ]
+  },
+  {
+    "id": "mat-0038",
+    "topic": "What is the difference between a permutation and a combination, and why does order matter for only one?",
+    "domain": "mathematics",
+    "difficulty": 1,
+    "tags": [
+      "combinatorics"
+    ]
+  },
+  {
+    "id": "art-0001",
+    "topic": "Why did the invention of linear perspective in the Renaissance change what “realistic” painting even meant?",
+    "domain": "art",
+    "difficulty": 1,
+    "tags": [
+      "art-history"
+    ]
+  },
+  {
+    "id": "art-0002",
+    "topic": "What is chiaroscuro, and why did Caravaggio's use of it feel so radical at the time?",
+    "domain": "art",
+    "difficulty": 1,
+    "tags": [
+      "art-history"
+    ]
+  },
+  {
+    "id": "art-0003",
+    "topic": "Why did Cubism fracture a single viewpoint into multiple simultaneous perspectives?",
+    "domain": "art",
+    "difficulty": 1,
+    "tags": [
+      "art-history"
+    ]
+  },
+  {
+    "id": "art-0004",
+    "topic": "What made Duchamp's “Fountain” count as art when it was, physically, an ordinary urinal?",
+    "domain": "art",
+    "difficulty": 2,
+    "tags": [
+      "art-history"
+    ]
+  },
+  {
+    "id": "art-0005",
+    "topic": "Why did Impressionism's loose brushwork provoke outrage from the academic art establishment of its day?",
+    "domain": "art",
+    "difficulty": 1,
+    "tags": [
+      "art-history"
+    ]
+  },
+  {
+    "id": "art-0006",
+    "topic": "What is the golden ratio, and why do some historians overstate how deliberately artists used it?",
+    "domain": "art",
+    "difficulty": 1,
+    "tags": [
+      "art-theory"
+    ]
+  },
+  {
+    "id": "art-0007",
+    "topic": "Why does flying buttress architecture let Gothic cathedrals have such tall walls and huge windows?",
+    "domain": "art",
+    "difficulty": 1,
+    "tags": [
+      "architecture"
+    ]
+  },
+  {
+    "id": "art-0008",
+    "topic": "What is the difference between load-bearing and curtain wall construction in skyscraper design?",
+    "domain": "art",
+    "difficulty": 2,
+    "tags": [
+      "architecture"
+    ]
+  },
+  {
+    "id": "art-0009",
+    "topic": "Why did Brutalist architecture's raw concrete aesthetic become both celebrated and reviled?",
+    "domain": "art",
+    "difficulty": 1,
+    "tags": [
+      "architecture"
+    ]
+  },
+  {
+    "id": "art-0010",
+    "topic": "What is negative space, and why does a skilled designer treat it as an active element, not emptiness?",
+    "domain": "art",
+    "difficulty": 1,
+    "tags": [
+      "design"
+    ]
+  },
+  {
+    "id": "art-0011",
+    "topic": "Why did Bauhaus try to unify fine art, craft, and industrial design into a single discipline?",
+    "domain": "art",
+    "difficulty": 1,
+    "tags": [
+      "art-history",
+      "design"
+    ]
+  },
+  {
+    "id": "art-0012",
+    "topic": "What is contrapposto, and why did its use in sculpture signal a shift toward naturalism?",
+    "domain": "art",
+    "difficulty": 2,
+    "tags": [
+      "art-history"
+    ]
+  },
+  {
+    "id": "art-0013",
+    "topic": "Why does color theory's complementary color pairing make adjacent colors look more vivid?",
+    "domain": "art",
+    "difficulty": 1,
+    "tags": [
+      "design"
+    ]
+  },
+  {
+    "id": "art-0014",
+    "topic": "What is the difference between fresco and tempera painting techniques, and why did fresco demand such speed?",
+    "domain": "art",
+    "difficulty": 2,
+    "tags": [
+      "art-history"
+    ]
+  },
+  {
+    "id": "art-0015",
+    "topic": "Why did the Rothschild's patronage system shape which Renaissance art actually got made?",
+    "domain": "art",
+    "difficulty": 2,
+    "tags": [
+      "art-history"
+    ]
+  },
+  {
+    "id": "art-0016",
+    "topic": "What is Ukiyo-e, and how did Japanese woodblock prints influence Western Impressionists like Van Gogh?",
+    "domain": "art",
+    "difficulty": 1,
+    "tags": [
+      "art-history"
+    ]
+  },
+  {
+    "id": "art-0017",
+    "topic": "Why does a flying buttress redirect a building's structural load instead of just holding up a wall?",
+    "domain": "art",
+    "difficulty": 2,
+    "tags": [
+      "architecture"
+    ]
+  },
+  {
+    "id": "art-0018",
+    "topic": "What is the difference between abstract and non-representational art?",
+    "domain": "art",
+    "difficulty": 1,
+    "tags": [
+      "art-theory"
+    ]
+  },
+  {
+    "id": "art-0019",
+    "topic": "Why did the Armory Show of 1913 provoke such a strong reaction from the American public?",
+    "domain": "art",
+    "difficulty": 1,
+    "tags": [
+      "art-history"
+    ]
+  },
+  {
+    "id": "art-0020",
+    "topic": "What is trompe-l'œil, and how does perspective trick the eye into seeing three dimensions on a flat surface?",
+    "domain": "art",
+    "difficulty": 1,
+    "tags": [
+      "art-theory"
+    ]
+  },
+  {
+    "id": "art-0021",
+    "topic": "Why does biomimicry increasingly influence architectural design, beyond just aesthetics?",
+    "domain": "art",
+    "difficulty": 2,
+    "tags": [
+      "architecture",
+      "design"
+    ]
+  },
+  {
+    "id": "art-0022",
+    "topic": "What is the difference between Romanesque and Gothic architecture, structurally and not just stylistically?",
+    "domain": "art",
+    "difficulty": 2,
+    "tags": [
+      "architecture"
+    ]
+  },
+  {
+    "id": "art-0023",
+    "topic": "Why did Pop Art elevate commercial imagery like soup cans into the realm of fine art?",
+    "domain": "art",
+    "difficulty": 1,
+    "tags": [
+      "art-history"
+    ]
+  },
+  {
+    "id": "art-0024",
+    "topic": "What is a vanishing point, and why does a painting need more than one for certain compositions?",
+    "domain": "art",
+    "difficulty": 1,
+    "tags": [
+      "art-theory"
+    ]
+  },
+  {
+    "id": "art-0025",
+    "topic": "Why did modernist architecture's “form follows function” credo provoke a postmodern backlash?",
+    "domain": "art",
+    "difficulty": 2,
+    "tags": [
+      "architecture"
+    ]
+  },
+  {
+    "id": "art-0026",
+    "topic": "What is the difference between high relief and low relief sculpture?",
+    "domain": "art",
+    "difficulty": 1,
+    "tags": [
+      "art-theory"
+    ]
+  },
+  {
+    "id": "art-0027",
+    "topic": "Why does the restoration of the Sistine Chapel ceiling remain controversial among art historians?",
+    "domain": "art",
+    "difficulty": 2,
+    "tags": [
+      "art-history"
+    ]
+  },
+  {
+    "id": "art-0028",
+    "topic": "What is a palimpsest, and why does the term now get used outside of manuscripts entirely?",
+    "domain": "art",
+    "difficulty": 2,
+    "tags": [
+      "art-history"
+    ]
+  },
+  {
+    "id": "art-0029",
+    "topic": "Why did Frank Lloyd Wright's organic architecture aim to integrate buildings with their natural surroundings?",
+    "domain": "art",
+    "difficulty": 1,
+    "tags": [
+      "architecture"
+    ]
+  },
+  {
+    "id": "art-0030",
+    "topic": "What is the difference between figurative and abstract expressionism?",
+    "domain": "art",
+    "difficulty": 1,
+    "tags": [
+      "art-history"
+    ]
+  },
+  {
+    "id": "art-0031",
+    "topic": "Why does a cantilever let a structure extend outward with no visible support underneath?",
+    "domain": "art",
+    "difficulty": 2,
+    "tags": [
+      "architecture"
+    ]
+  },
+  {
+    "id": "art-0032",
+    "topic": "What is the difference between fine art printmaking techniques like etching, lithography, and screen printing?",
+    "domain": "art",
+    "difficulty": 2,
+    "tags": [
+      "art-theory"
+    ]
+  },
+  {
+    "id": "mus-0001",
+    "topic": "Why does a major and minor chord built from the same root note sound so emotionally different?",
+    "domain": "music",
+    "difficulty": 1,
+    "tags": [
+      "music-theory"
+    ]
+  },
+  {
+    "id": "mus-0002",
+    "topic": "What is equal temperament tuning, and why did adopting it require every note to be slightly “out of tune”?",
+    "domain": "music",
+    "difficulty": 2,
+    "tags": [
+      "music-theory"
+    ]
+  },
+  {
+    "id": "mus-0003",
+    "topic": "Why does the circle of fifths organize keys in a way that predicts which chords sound good together?",
+    "domain": "music",
+    "difficulty": 2,
+    "tags": [
+      "music-theory"
+    ]
+  },
+  {
+    "id": "mus-0004",
+    "topic": "What is syncopation, and why does displacing an expected beat create rhythmic tension?",
+    "domain": "music",
+    "difficulty": 1,
+    "tags": [
+      "music-theory"
+    ]
+  },
+  {
+    "id": "mus-0005",
+    "topic": "Why did the invention of the printing press change how far and fast musical notation could spread?",
+    "domain": "music",
+    "difficulty": 1,
+    "tags": [
+      "music-history"
+    ]
+  },
+  {
+    "id": "mus-0006",
+    "topic": "What is counterpoint, and why did Bach's mastery of it remain a benchmark for centuries after?",
+    "domain": "music",
+    "difficulty": 2,
+    "tags": [
+      "music-theory"
+    ]
+  },
+  {
+    "id": "mus-0007",
+    "topic": "Why does a symphony orchestra tune to the oboe's A instead of the piano or any other instrument?",
+    "domain": "music",
+    "difficulty": 1,
+    "tags": [
+      "orchestral"
+    ]
+  },
+  {
+    "id": "mus-0008",
+    "topic": "What is the difference between a chord's root position and its inversions?",
+    "domain": "music",
+    "difficulty": 1,
+    "tags": [
+      "music-theory"
+    ]
+  },
+  {
+    "id": "mus-0009",
+    "topic": "Why did the blues scale's “blue notes” not fit neatly into Western sheet music notation?",
+    "domain": "music",
+    "difficulty": 2,
+    "tags": [
+      "music-theory",
+      "music-history"
+    ]
+  },
+  {
+    "id": "mus-0010",
+    "topic": "What is a call-and-response structure, and why does it appear across so many musical traditions independently?",
+    "domain": "music",
+    "difficulty": 1,
+    "tags": [
+      "music-history"
+    ]
+  },
+  {
+    "id": "mus-0011",
+    "topic": "Why does a minor key's harmonic version raise the seventh note while the melodic version differs ascending and descending?",
+    "domain": "music",
+    "difficulty": 2,
+    "tags": [
+      "music-theory"
+    ]
+  },
+  {
+    "id": "mus-0012",
+    "topic": "What is sampling in music production, and how did it reshape copyright law around music?",
+    "domain": "music",
+    "difficulty": 1,
+    "tags": [
+      "production"
+    ]
+  },
+  {
+    "id": "mus-0013",
+    "topic": "Why does reverb simulate physical space, and why do different rooms produce different reverb “signatures”?",
+    "domain": "music",
+    "difficulty": 1,
+    "tags": [
+      "production"
+    ]
+  },
+  {
+    "id": "mus-0014",
+    "topic": "What is the difference between mixing and mastering a track?",
+    "domain": "music",
+    "difficulty": 1,
+    "tags": [
+      "production"
+    ]
+  },
+  {
+    "id": "mus-0015",
+    "topic": "Why did the development of the piano's hammer mechanism let it replace the harpsichord?",
+    "domain": "music",
+    "difficulty": 1,
+    "tags": [
+      "music-history"
+    ]
+  },
+  {
+    "id": "mus-0016",
+    "topic": "What is a raga in Indian classical music, and how does it differ from a Western scale?",
+    "domain": "music",
+    "difficulty": 2,
+    "tags": [
+      "world-music"
+    ]
+  },
+  {
+    "id": "mus-0017",
+    "topic": "Why does gamelan music from Indonesia use a tuning system incompatible with Western equal temperament?",
+    "domain": "music",
+    "difficulty": 2,
+    "tags": [
+      "world-music"
+    ]
+  },
+  {
+    "id": "mus-0018",
+    "topic": "What is polyrhythm, and why does West African drumming often layer multiple simultaneous rhythms?",
+    "domain": "music",
+    "difficulty": 2,
+    "tags": [
+      "world-music"
+    ]
+  },
+  {
+    "id": "mus-0019",
+    "topic": "Why did Stravinsky's “Rite of Spring” provoke a riot at its 1913 premiere?",
+    "domain": "music",
+    "difficulty": 1,
+    "tags": [
+      "music-history"
+    ]
+  },
+  {
+    "id": "mus-0020",
+    "topic": "What is a leitmotif, and how did Wagner use it to give characters and ideas a recurring musical identity?",
+    "domain": "music",
+    "difficulty": 1,
+    "tags": [
+      "music-theory"
+    ]
+  },
+  {
+    "id": "mus-0021",
+    "topic": "Why does a fugue's subject and countersubject interact according to strict compositional rules?",
+    "domain": "music",
+    "difficulty": 2,
+    "tags": [
+      "music-theory"
+    ]
+  },
+  {
+    "id": "mus-0022",
+    "topic": "What is the difference between homophonic and polyphonic musical texture?",
+    "domain": "music",
+    "difficulty": 1,
+    "tags": [
+      "music-theory"
+    ]
+  },
+  {
+    "id": "mus-0023",
+    "topic": "Why did bebop musicians deliberately play at tempos and harmonic complexity that discouraged casual dancing?",
+    "domain": "music",
+    "difficulty": 2,
+    "tags": [
+      "music-history"
+    ]
+  },
+  {
+    "id": "mus-0024",
+    "topic": "What is a cadence in music, and why does an authentic cadence feel more “finished” than a deceptive one?",
+    "domain": "music",
+    "difficulty": 1,
+    "tags": [
+      "music-theory"
+    ]
+  },
+  {
+    "id": "mus-0025",
+    "topic": "Why does autotune's pitch correction produce an audibly artificial effect when pushed to extremes?",
+    "domain": "music",
+    "difficulty": 1,
+    "tags": [
+      "production"
+    ]
+  },
+  {
+    "id": "mus-0026",
+    "topic": "What is the pentatonic scale, and why does it appear independently across nearly every world music tradition?",
+    "domain": "music",
+    "difficulty": 1,
+    "tags": [
+      "music-theory",
+      "world-music"
+    ]
+  },
+  {
+    "id": "mus-0027",
+    "topic": "Why did the phonograph's invention change how musicians composed, not just how listeners consumed music?",
+    "domain": "music",
+    "difficulty": 2,
+    "tags": [
+      "music-history"
+    ]
+  },
+  {
+    "id": "mus-0028",
+    "topic": "What is the difference between a concerto and a symphony?",
+    "domain": "music",
+    "difficulty": 1,
+    "tags": [
+      "orchestral"
+    ]
+  },
+  {
+    "id": "mus-0029",
+    "topic": "Why does a well-tempered instrument allow a composer to write in any key without retuning?",
+    "domain": "music",
+    "difficulty": 2,
+    "tags": [
+      "music-theory"
+    ]
+  },
+  {
+    "id": "mus-0030",
+    "topic": "What is Auto-Tune's role in hip-hop production beyond correcting pitch, as a deliberate stylistic choice?",
+    "domain": "music",
+    "difficulty": 1,
+    "tags": [
+      "production"
+    ]
+  },
+  {
+    "id": "mus-0031",
+    "topic": "Why does a musical scale's mode, like Dorian or Mixolydian, change a melody's mood while using the same notes?",
+    "domain": "music",
+    "difficulty": 2,
+    "tags": [
+      "music-theory"
+    ]
+  },
+  {
+    "id": "mus-0032",
+    "topic": "What is a drone in music, and why do so many unrelated traditions use a sustained note as a harmonic anchor?",
+    "domain": "music",
+    "difficulty": 1,
+    "tags": [
+      "world-music"
+    ]
+  },
+  {
+    "id": "lit-0001",
+    "topic": "Why does the unreliable narrator device force a reader to interpret rather than simply trust the story?",
+    "domain": "literature",
+    "difficulty": 1,
+    "tags": [
+      "literary-theory"
+    ]
+  },
+  {
+    "id": "lit-0002",
+    "topic": "What is free indirect discourse, and how does it blend a narrator's voice with a character's thoughts?",
+    "domain": "literature",
+    "difficulty": 2,
+    "tags": [
+      "literary-theory"
+    ]
+  },
+  {
+    "id": "lit-0003",
+    "topic": "Why did the epistolary novel's letter-based format shape 18th-century fiction's sense of intimacy?",
+    "domain": "literature",
+    "difficulty": 1,
+    "tags": [
+      "literary-history"
+    ]
+  },
+  {
+    "id": "lit-0004",
+    "topic": "What is a bildungsroman, and why does the coming-of-age structure recur across so many literary traditions?",
+    "domain": "literature",
+    "difficulty": 1,
+    "tags": [
+      "literary-theory"
+    ]
+  },
+  {
+    "id": "lit-0005",
+    "topic": "Why does dramatic irony create tension even when a story has no literal suspense left?",
+    "domain": "literature",
+    "difficulty": 1,
+    "tags": [
+      "literary-theory"
+    ]
+  },
+  {
+    "id": "lit-0006",
+    "topic": "What is the difference between a simile and a metaphor doing more than swapping “like” for nothing?",
+    "domain": "literature",
+    "difficulty": 1,
+    "tags": [
+      "rhetoric"
+    ]
+  },
+  {
+    "id": "lit-0007",
+    "topic": "Why did the printing press's spread of vernacular Bibles accelerate the standardization of European languages?",
+    "domain": "literature",
+    "difficulty": 2,
+    "tags": [
+      "linguistics",
+      "history"
+    ]
+  },
+  {
+    "id": "lit-0008",
+    "topic": "What is etymology, and why does tracing a word's history sometimes reveal a completely different original meaning?",
+    "domain": "literature",
+    "difficulty": 1,
+    "tags": [
+      "linguistics"
+    ]
+  },
+  {
+    "id": "lit-0009",
+    "topic": "Why does the Sapir-Whorf hypothesis claim that language shapes how its speakers perceive the world, and why is the strong version now rejected?",
+    "domain": "literature",
+    "difficulty": 2,
+    "tags": [
+      "linguistics"
+    ]
+  },
+  {
+    "id": "lit-0010",
+    "topic": "What is a phoneme, and why do different languages carve up the same range of sounds differently?",
+    "domain": "literature",
+    "difficulty": 2,
+    "tags": [
+      "linguistics"
+    ]
+  },
+  {
+    "id": "lit-0011",
+    "topic": "Why did Chomsky's theory of universal grammar argue that all human languages share a deep structure?",
+    "domain": "literature",
+    "difficulty": 2,
+    "tags": [
+      "linguistics"
+    ]
+  },
+  {
+    "id": "lit-0012",
+    "topic": "What is code-switching, and why do bilingual speakers do it mid-sentence rather than staying in one language?",
+    "domain": "literature",
+    "difficulty": 1,
+    "tags": [
+      "linguistics"
+    ]
+  },
+  {
+    "id": "lit-0013",
+    "topic": "Why does magical realism blend the fantastical into ordinary narrative without treating it as remarkable?",
+    "domain": "literature",
+    "difficulty": 1,
+    "tags": [
+      "literary-theory"
+    ]
+  },
+  {
+    "id": "lit-0014",
+    "topic": "What is the death of the author as a critical theory, and what does it change about interpreting a text?",
+    "domain": "literature",
+    "difficulty": 2,
+    "tags": [
+      "literary-theory"
+    ]
+  },
+  {
+    "id": "lit-0015",
+    "topic": "Why did the stream of consciousness technique in modernist novels try to mimic the actual texture of thought?",
+    "domain": "literature",
+    "difficulty": 2,
+    "tags": [
+      "literary-theory"
+    ]
+  },
+  {
+    "id": "lit-0016",
+    "topic": "What is a chiasmus, and why does its mirrored structure make a phrase memorable?",
+    "domain": "literature",
+    "difficulty": 1,
+    "tags": [
+      "rhetoric"
+    ]
+  },
+  {
+    "id": "lit-0017",
+    "topic": "Why does the hero's journey structure recur across myths from unconnected cultures?",
+    "domain": "literature",
+    "difficulty": 1,
+    "tags": [
+      "literary-theory"
+    ]
+  },
+  {
+    "id": "lit-0018",
+    "topic": "What is the difference between synecdoche and metonymy?",
+    "domain": "literature",
+    "difficulty": 2,
+    "tags": [
+      "rhetoric"
+    ]
+  },
+  {
+    "id": "lit-0019",
+    "topic": "Why did oral epic poetry, like the Iliad, rely on formulaic phrases as a memory aid for performers?",
+    "domain": "literature",
+    "difficulty": 2,
+    "tags": [
+      "literary-history"
+    ]
+  },
+  {
+    "id": "lit-0020",
+    "topic": "What is a palindrome's linguistic structure, and why is it harder to construct meaningfully in some languages than others?",
+    "domain": "literature",
+    "difficulty": 1,
+    "tags": [
+      "linguistics"
+    ]
+  },
+  {
+    "id": "lit-0021",
+    "topic": "Why does satire use exaggeration to critique something without stating the critique directly?",
+    "domain": "literature",
+    "difficulty": 1,
+    "tags": [
+      "rhetoric"
+    ]
+  },
+  {
+    "id": "lit-0022",
+    "topic": "What is the difference between denotation and connotation, and why does poetry lean so heavily on the latter?",
+    "domain": "literature",
+    "difficulty": 1,
+    "tags": [
+      "rhetoric"
+    ]
+  },
+  {
+    "id": "lit-0023",
+    "topic": "Why did the Great Vowel Shift change English pronunciation so much that Chaucer and Shakespeare sound different?",
+    "domain": "literature",
+    "difficulty": 2,
+    "tags": [
+      "linguistics",
+      "history"
+    ]
+  },
+  {
+    "id": "lit-0024",
+    "topic": "What is intertextuality, and why does a text's meaning depend partly on other texts it references?",
+    "domain": "literature",
+    "difficulty": 2,
+    "tags": [
+      "literary-theory"
+    ]
+  },
+  {
+    "id": "lit-0025",
+    "topic": "Why does a pidgin language emerge, and what has to happen for it to become a full creole?",
+    "domain": "literature",
+    "difficulty": 2,
+    "tags": [
+      "linguistics"
+    ]
+  },
+  {
+    "id": "lit-0026",
+    "topic": "What is the difference between a tragic hero's hamartia and simple bad luck?",
+    "domain": "literature",
+    "difficulty": 1,
+    "tags": [
+      "literary-theory"
+    ]
+  },
+  {
+    "id": "lit-0027",
+    "topic": "Why did the novel as a literary form only really emerge in the 18th century rather than earlier?",
+    "domain": "literature",
+    "difficulty": 2,
+    "tags": [
+      "literary-history"
+    ]
+  },
+  {
+    "id": "lit-0028",
+    "topic": "What is an allegory, and how does it differ from a simple metaphor operating at story-length scale?",
+    "domain": "literature",
+    "difficulty": 1,
+    "tags": [
+      "literary-theory"
+    ]
+  },
+  {
+    "id": "lit-0029",
+    "topic": "Why does translation of poetry force a choice between preserving meaning and preserving form?",
+    "domain": "literature",
+    "difficulty": 1,
+    "tags": [
+      "linguistics",
+      "literary-theory"
+    ]
+  },
+  {
+    "id": "lit-0030",
+    "topic": "What is a false cognate, and why can it cause real misunderstandings between related languages?",
+    "domain": "literature",
+    "difficulty": 1,
+    "tags": [
+      "linguistics"
+    ]
+  },
+  {
+    "id": "lit-0031",
+    "topic": "Why does a red herring in a mystery novel need to be plausible to work as misdirection?",
+    "domain": "literature",
+    "difficulty": 1,
+    "tags": [
+      "literary-theory"
+    ]
+  },
+  {
+    "id": "lit-0032",
+    "topic": "What is a frame narrative, and why do stories like the Canterbury Tales or 1001 Nights nest stories within stories?",
+    "domain": "literature",
+    "difficulty": 1,
+    "tags": [
+      "literary-theory"
+    ]
+  },
+  {
+    "id": "spo-0001",
+    "topic": "Why does the offside rule in soccer exist, and what would the game look like without it?",
+    "domain": "sport",
+    "difficulty": 1,
+    "tags": [
+      "soccer",
+      "rules"
+    ]
+  },
+  {
+    "id": "spo-0002",
+    "topic": "What is a salary cap in professional sports leagues, and what competitive problem is it trying to solve?",
+    "domain": "sport",
+    "difficulty": 1,
+    "tags": [
+      "economics"
+    ]
+  },
+  {
+    "id": "spo-0003",
+    "topic": "Why does a baseball curveball actually curve, aerodynamically?",
+    "domain": "sport",
+    "difficulty": 2,
+    "tags": [
+      "baseball",
+      "physics"
+    ]
+  },
+  {
+    "id": "spo-0004",
+    "topic": "What is the difference between a franchise's revenue sharing model and a promotion-relegation system, and why do American and European leagues differ?",
+    "domain": "sport",
+    "difficulty": 1,
+    "tags": [
+      "economics"
+    ]
+  },
+  {
+    "id": "spo-0005",
+    "topic": "Why does altitude training improve an endurance athlete's performance even after they return to sea level?",
+    "domain": "sport",
+    "difficulty": 2,
+    "tags": [
+      "physiology"
+    ]
+  },
+  {
+    "id": "spo-0006",
+    "topic": "What is the tiebreak rule in tennis, and why was it introduced to replace endless advantage sets?",
+    "domain": "sport",
+    "difficulty": 1,
+    "tags": [
+      "tennis",
+      "rules"
+    ]
+  },
+  {
+    "id": "spo-0007",
+    "topic": "Why does a golf ball have dimples instead of a smooth surface?",
+    "domain": "sport",
+    "difficulty": 1,
+    "tags": [
+      "golf",
+      "physics"
+    ]
+  },
+  {
+    "id": "spo-0008",
+    "topic": "What is the pick-and-roll in basketball, and why is it so difficult to defend?",
+    "domain": "sport",
+    "difficulty": 1,
+    "tags": [
+      "basketball",
+      "tactics"
+    ]
+  },
+  {
+    "id": "spo-0009",
+    "topic": "Why does a cricket ball swing more under humid or overcast conditions?",
+    "domain": "sport",
+    "difficulty": 2,
+    "tags": [
+      "cricket",
+      "physics"
+    ]
+  },
+  {
+    "id": "spo-0010",
+    "topic": "What is the difference between a marathon's “wall” and ordinary fatigue, physiologically?",
+    "domain": "sport",
+    "difficulty": 1,
+    "tags": [
+      "running",
+      "physiology"
+    ]
+  },
+  {
+    "id": "spo-0011",
+    "topic": "Why does Formula 1's DRS system open a rear wing flap only in designated track zones?",
+    "domain": "sport",
+    "difficulty": 1,
+    "tags": [
+      "motorsport",
+      "rules"
+    ]
+  },
+  {
+    "id": "spo-0012",
+    "topic": "What is a zone defense versus a man-to-man defense, and why does each create different scoring opportunities?",
+    "domain": "sport",
+    "difficulty": 1,
+    "tags": [
+      "basketball",
+      "tactics"
+    ]
+  },
+  {
+    "id": "spo-0013",
+    "topic": "Why does doping with erythropoietin boost endurance performance by increasing oxygen-carrying capacity?",
+    "domain": "sport",
+    "difficulty": 2,
+    "tags": [
+      "physiology",
+      "doping"
+    ]
+  },
+  {
+    "id": "spo-0014",
+    "topic": "What is the offside trap in soccer, and why is it such a high-risk defensive tactic?",
+    "domain": "sport",
+    "difficulty": 2,
+    "tags": [
+      "soccer",
+      "tactics"
+    ]
+  },
+  {
+    "id": "spo-0015",
+    "topic": "Why does a sumo wrestler's diet and training aim for a specific kind of mass, not just size?",
+    "domain": "sport",
+    "difficulty": 1,
+    "tags": [
+      "sumo"
+    ]
+  },
+  {
+    "id": "spo-0016",
+    "topic": "What is the Elo rating system, and how does it estimate relative skill from a history of match results?",
+    "domain": "sport",
+    "difficulty": 2,
+    "tags": [
+      "statistics"
+    ]
+  },
+  {
+    "id": "spo-0017",
+    "topic": "Why does home advantage exist statistically across almost every sport, and what actually causes it?",
+    "domain": "sport",
+    "difficulty": 1,
+    "tags": [
+      "sports-science"
+    ]
+  },
+  {
+    "id": "spo-0018",
+    "topic": "What is a spiral in American football, and why does the ball's rotation stabilize its flight?",
+    "domain": "sport",
+    "difficulty": 1,
+    "tags": [
+      "football",
+      "physics"
+    ]
+  },
+  {
+    "id": "spo-0019",
+    "topic": "Why did the introduction of the shot clock change the pace and strategy of basketball fundamentally?",
+    "domain": "sport",
+    "difficulty": 1,
+    "tags": [
+      "basketball",
+      "history"
+    ]
+  },
+  {
+    "id": "spo-0020",
+    "topic": "What is the difference between aerobic and anaerobic exercise, and why does an athlete train both differently?",
+    "domain": "sport",
+    "difficulty": 1,
+    "tags": [
+      "physiology"
+    ]
+  },
+  {
+    "id": "spo-0021",
+    "topic": "Why does drafting behind another cyclist in a peloton reduce energy expenditure so significantly?",
+    "domain": "sport",
+    "difficulty": 1,
+    "tags": [
+      "cycling",
+      "physics"
+    ]
+  },
+  {
+    "id": "spo-0022",
+    "topic": "What is a handicap in golf, and how does it let players of different skill levels compete fairly?",
+    "domain": "sport",
+    "difficulty": 1,
+    "tags": [
+      "golf",
+      "rules"
+    ]
+  },
+  {
+    "id": "spo-0023",
+    "topic": "Why does a boxer's “sweet science” rely as much on angles and distance as on raw punching power?",
+    "domain": "sport",
+    "difficulty": 1,
+    "tags": [
+      "boxing",
+      "tactics"
+    ]
+  },
+  {
+    "id": "spo-0024",
+    "topic": "What is the reserve clause's history in baseball, and why did its elimination transform player salaries?",
+    "domain": "sport",
+    "difficulty": 2,
+    "tags": [
+      "baseball",
+      "economics"
+    ]
+  },
+  {
+    "id": "spo-0025",
+    "topic": "Why does the offside law differ meaningfully between rugby union and rugby league?",
+    "domain": "sport",
+    "difficulty": 2,
+    "tags": [
+      "rugby",
+      "rules"
+    ]
+  },
+  {
+    "id": "spo-0026",
+    "topic": "What is VAR in soccer, and why has its introduction remained controversial despite improving decision accuracy?",
+    "domain": "sport",
+    "difficulty": 1,
+    "tags": [
+      "soccer",
+      "technology"
+    ]
+  },
+  {
+    "id": "spo-0027",
+    "topic": "Why does a swimmer's stroke technique matter more than raw strength for sprint speed?",
+    "domain": "sport",
+    "difficulty": 1,
+    "tags": [
+      "swimming",
+      "physiology"
+    ]
+  },
+  {
+    "id": "spo-0028",
+    "topic": "What is the difference between a league's closed system and an open pyramid, and why does each shape long-term competitive balance?",
+    "domain": "sport",
+    "difficulty": 2,
+    "tags": [
+      "economics"
+    ]
+  },
+  {
+    "id": "spo-0029",
+    "topic": "Why does a cyclist's aerodynamic position matter more than their power output at high speed?",
+    "domain": "sport",
+    "difficulty": 2,
+    "tags": [
+      "cycling",
+      "physics"
+    ]
+  },
+  {
+    "id": "spo-0030",
+    "topic": "What is the “Moneyball” approach to sports analytics, and why did it upend how baseball teams valued players?",
+    "domain": "sport",
+    "difficulty": 1,
+    "tags": [
+      "baseball",
+      "analytics"
+    ]
+  },
+  {
+    "id": "spo-0031",
+    "topic": "Why does a well-hit knuckleball's unpredictability come from having almost no spin, not from having more?",
+    "domain": "sport",
+    "difficulty": 2,
+    "tags": [
+      "baseball",
+      "physics"
+    ]
+  },
+  {
+    "id": "spo-0032",
+    "topic": "What is the offside rule's history in soccer, and why has the exact distance it's enforced changed over time?",
+    "domain": "sport",
+    "difficulty": 1,
+    "tags": [
+      "soccer",
+      "history"
+    ]
+  },
+  {
+    "id": "foo-0001",
+    "topic": "Why does the Maillard reaction, not caramelization, produce the browning and flavor of a seared steak?",
+    "domain": "food",
+    "difficulty": 1,
+    "tags": [
+      "cooking-science"
+    ]
+  },
+  {
+    "id": "foo-0002",
+    "topic": "What is gluten, and why does kneading dough develop a structure that trapped gas needs to make bread rise?",
+    "domain": "food",
+    "difficulty": 1,
+    "tags": [
+      "cooking-science"
+    ]
+  },
+  {
+    "id": "foo-0003",
+    "topic": "Why does fermentation preserve food while also transforming its flavor, as with cheese, kimchi, or beer?",
+    "domain": "food",
+    "difficulty": 1,
+    "tags": [
+      "fermentation"
+    ]
+  },
+  {
+    "id": "foo-0004",
+    "topic": "What is the difference between baking soda and baking powder, chemically, and why can't you always substitute one for the other?",
+    "domain": "food",
+    "difficulty": 1,
+    "tags": [
+      "cooking-science"
+    ]
+  },
+  {
+    "id": "foo-0005",
+    "topic": "Why does searing meat not actually “seal in” juices, despite the popular claim?",
+    "domain": "food",
+    "difficulty": 1,
+    "tags": [
+      "cooking-science"
+    ]
+  },
+  {
+    "id": "foo-0006",
+    "topic": "What is umami, and why did it take until the 20th century to be recognized as a distinct taste?",
+    "domain": "food",
+    "difficulty": 1,
+    "tags": [
+      "food-science"
+    ]
+  },
+  {
+    "id": "foo-0007",
+    "topic": "Why does salt draw water out of vegetables through osmosis, and why is that useful in cooking?",
+    "domain": "food",
+    "difficulty": 1,
+    "tags": [
+      "cooking-science"
+    ]
+  },
+  {
+    "id": "foo-0008",
+    "topic": "What is the Green Revolution's use of nitrogen fertilizer, and why did it depend on the Haber-Bosch process?",
+    "domain": "food",
+    "difficulty": 2,
+    "tags": [
+      "agriculture"
+    ]
+  },
+  {
+    "id": "foo-0009",
+    "topic": "Why does monoculture farming increase a crop's vulnerability to disease and pests?",
+    "domain": "food",
+    "difficulty": 1,
+    "tags": [
+      "agriculture"
+    ]
+  },
+  {
+    "id": "foo-0010",
+    "topic": "What is crop rotation, and why does alternating legumes with other crops replenish soil nitrogen?",
+    "domain": "food",
+    "difficulty": 1,
+    "tags": [
+      "agriculture"
+    ]
+  },
+  {
+    "id": "foo-0011",
+    "topic": "Why does milk appear white when none of its ingredients are actually white pigments?",
+    "domain": "food",
+    "difficulty": 1,
+    "tags": [
+      "food-science"
+    ]
+  },
+  {
+    "id": "foo-0012",
+    "topic": "What is pasteurization, and why does it kill pathogens without fully sterilizing the liquid?",
+    "domain": "food",
+    "difficulty": 1,
+    "tags": [
+      "food-science"
+    ]
+  },
+  {
+    "id": "foo-0013",
+    "topic": "Why does bread go stale through starch retrogradation rather than simply drying out?",
+    "domain": "food",
+    "difficulty": 2,
+    "tags": [
+      "food-science"
+    ]
+  },
+  {
+    "id": "foo-0014",
+    "topic": "What is the difference between an emulsion like mayonnaise and a simple mixture of oil and water?",
+    "domain": "food",
+    "difficulty": 1,
+    "tags": [
+      "cooking-science"
+    ]
+  },
+  {
+    "id": "foo-0015",
+    "topic": "Why does chili pepper's capsaicin trigger a “heat” sensation without actually raising temperature?",
+    "domain": "food",
+    "difficulty": 1,
+    "tags": [
+      "food-science"
+    ]
+  },
+  {
+    "id": "foo-0016",
+    "topic": "What is terroir, and why do winemakers argue it can't be replicated by soil chemistry alone?",
+    "domain": "food",
+    "difficulty": 1,
+    "tags": [
+      "food-culture"
+    ]
+  },
+  {
+    "id": "foo-0017",
+    "topic": "Why does the domestication of wheat around 10,000 years ago count as one of history's most consequential technologies?",
+    "domain": "food",
+    "difficulty": 2,
+    "tags": [
+      "agriculture",
+      "history"
+    ]
+  },
+  {
+    "id": "foo-0018",
+    "topic": "What is a monoculture's relationship to the Irish Potato Famine, and why did genetic uniformity make it so catastrophic?",
+    "domain": "food",
+    "difficulty": 1,
+    "tags": [
+      "agriculture",
+      "history"
+    ]
+  },
+  {
+    "id": "foo-0019",
+    "topic": "Why does aging beef change both its tenderness and flavor?",
+    "domain": "food",
+    "difficulty": 1,
+    "tags": [
+      "food-science"
+    ]
+  },
+  {
+    "id": "foo-0020",
+    "topic": "What is the difference between how a zipper's teeth interlock and how Velcro's hooks and loops grip?",
+    "domain": "food",
+    "difficulty": 1,
+    "tags": [
+      "everyday-engineering"
+    ]
+  },
+  {
+    "id": "foo-0021",
+    "topic": "Why does stainless steel resist rust when ordinary steel doesn't?",
+    "domain": "food",
+    "difficulty": 1,
+    "tags": [
+      "materials"
+    ]
+  },
+  {
+    "id": "foo-0022",
+    "topic": "What is vulcanized rubber, and why did it make tires practical where natural rubber failed?",
+    "domain": "food",
+    "difficulty": 1,
+    "tags": [
+      "materials"
+    ]
+  },
+  {
+    "id": "foo-0023",
+    "topic": "Why does concrete need rebar to handle tension when the concrete itself handles compression well?",
+    "domain": "food",
+    "difficulty": 1,
+    "tags": [
+      "materials",
+      "engineering"
+    ]
+  },
+  {
+    "id": "foo-0024",
+    "topic": "What is the difference between a supply chain's just-in-time model and holding safety stock, and why did COVID-19 expose the tradeoff?",
+    "domain": "food",
+    "difficulty": 1,
+    "tags": [
+      "logistics"
+    ]
+  },
+  {
+    "id": "foo-0025",
+    "topic": "Why does a shipping container's standardized size matter as much as the ship itself for global trade?",
+    "domain": "food",
+    "difficulty": 1,
+    "tags": [
+      "logistics",
+      "history"
+    ]
+  },
+  {
+    "id": "foo-0026",
+    "topic": "What is freeze-drying, and why does it preserve food differently than simple dehydration?",
+    "domain": "food",
+    "difficulty": 1,
+    "tags": [
+      "food-science"
+    ]
+  },
+  {
+    "id": "foo-0027",
+    "topic": "Why does glass form as an amorphous solid instead of a crystalline structure like most solids?",
+    "domain": "food",
+    "difficulty": 2,
+    "tags": [
+      "materials"
+    ]
+  },
+  {
+    "id": "foo-0028",
+    "topic": "What is the difference between plywood and MDF, structurally, and why does each suit different uses?",
+    "domain": "food",
+    "difficulty": 1,
+    "tags": [
+      "materials"
+    ]
+  },
+  {
+    "id": "foo-0029",
+    "topic": "Why does a thermos keep both hot and cold drinks at temperature using the same mechanism?",
+    "domain": "food",
+    "difficulty": 1,
+    "tags": [
+      "everyday-engineering"
+    ]
+  },
+  {
+    "id": "foo-0030",
+    "topic": "What is the Maillard reaction's relationship to caramelization, given that people often confuse the two?",
+    "domain": "food",
+    "difficulty": 1,
+    "tags": [
+      "cooking-science"
+    ]
+  },
+  {
+    "id": "med-0001",
+    "topic": "Why does the Kuleshov effect show that film editing can manufacture an emotion the actor never played?",
+    "domain": "media",
+    "difficulty": 2,
+    "tags": [
+      "film-theory"
+    ]
+  },
+  {
+    "id": "med-0002",
+    "topic": "What is montage in film theory, and why did Soviet filmmakers treat editing as the essence of cinema itself?",
+    "domain": "media",
+    "difficulty": 2,
+    "tags": [
+      "film-theory"
+    ]
+  },
+  {
+    "id": "med-0003",
+    "topic": "Why did the transition from silent film to sound end some actors' careers overnight?",
+    "domain": "media",
+    "difficulty": 1,
+    "tags": [
+      "film-history"
+    ]
+  },
+  {
+    "id": "med-0004",
+    "topic": "What is the difference between diegetic and non-diegetic sound in a film?",
+    "domain": "media",
+    "difficulty": 1,
+    "tags": [
+      "film-theory"
+    ]
+  },
+  {
+    "id": "med-0005",
+    "topic": "Why does the 180-degree rule in film editing exist, and what happens perceptually when it's broken?",
+    "domain": "media",
+    "difficulty": 2,
+    "tags": [
+      "film-theory"
+    ]
+  },
+  {
+    "id": "med-0006",
+    "topic": "What is auteur theory, and why did it reframe the director as a film's true “author” over the studio?",
+    "domain": "media",
+    "difficulty": 1,
+    "tags": [
+      "film-theory"
+    ]
+  },
+  {
+    "id": "med-0007",
+    "topic": "Why did the Hays Code shape decades of Hollywood films through content restrictions rather than outright censorship?",
+    "domain": "media",
+    "difficulty": 1,
+    "tags": [
+      "film-history"
+    ]
+  },
+  {
+    "id": "med-0008",
+    "topic": "What is procedural generation in video games, and why can it create vast worlds from relatively little stored data?",
+    "domain": "media",
+    "difficulty": 1,
+    "tags": [
+      "games"
+    ]
+  },
+  {
+    "id": "med-0009",
+    "topic": "Why does a game's “feel,” like input latency and animation timing, matter as much as its mechanics?",
+    "domain": "media",
+    "difficulty": 1,
+    "tags": [
+      "games",
+      "design"
+    ]
+  },
+  {
+    "id": "med-0010",
+    "topic": "What is the difference between a roguelike and a game that merely has permadeath?",
+    "domain": "media",
+    "difficulty": 2,
+    "tags": [
+      "games"
+    ]
+  },
+  {
+    "id": "med-0011",
+    "topic": "Why did the transition from cartridges to CD-ROMs change what kinds of games could be made?",
+    "domain": "media",
+    "difficulty": 1,
+    "tags": [
+      "games",
+      "history"
+    ]
+  },
+  {
+    "id": "med-0012",
+    "topic": "What is the uncanny valley, and why do near-realistic faces unsettle viewers more than obviously stylized ones?",
+    "domain": "media",
+    "difficulty": 1,
+    "tags": [
+      "media-theory"
+    ]
+  },
+  {
+    "id": "med-0013",
+    "topic": "Why does a laugh track measurably change how audiences rate a sitcom's jokes as funny?",
+    "domain": "media",
+    "difficulty": 1,
+    "tags": [
+      "media-theory"
+    ]
+  },
+  {
+    "id": "med-0014",
+    "topic": "What is agenda-setting theory in media studies, and how does it differ from claims of direct propaganda?",
+    "domain": "media",
+    "difficulty": 2,
+    "tags": [
+      "media-theory"
+    ]
+  },
+  {
+    "id": "med-0015",
+    "topic": "Why did the 24-hour news cycle change the economics of what counts as a “story” worth covering?",
+    "domain": "media",
+    "difficulty": 1,
+    "tags": [
+      "journalism"
+    ]
+  },
+  {
+    "id": "med-0016",
+    "topic": "What is the difference between a documentary and a docudrama in terms of factual obligation?",
+    "domain": "media",
+    "difficulty": 1,
+    "tags": [
+      "film-theory"
+    ]
+  },
+  {
+    "id": "med-0017",
+    "topic": "Why does color grading shape a film's emotional tone as deliberately as its script or score?",
+    "domain": "media",
+    "difficulty": 1,
+    "tags": [
+      "film-theory"
+    ]
+  },
+  {
+    "id": "med-0018",
+    "topic": "What is a MacGuffin in screenwriting, and why doesn't it matter what it actually is?",
+    "domain": "media",
+    "difficulty": 1,
+    "tags": [
+      "film-theory"
+    ]
+  },
+  {
+    "id": "med-0019",
+    "topic": "Why did streaming's recommendation algorithms change what kinds of shows get produced in the first place?",
+    "domain": "media",
+    "difficulty": 1,
+    "tags": [
+      "media-theory"
+    ]
+  },
+  {
+    "id": "med-0020",
+    "topic": "What is the difference between a video game's ludology and its narrative, and why do game theorists argue about which matters more?",
+    "domain": "media",
+    "difficulty": 2,
+    "tags": [
+      "games",
+      "media-theory"
+    ]
+  },
+  {
+    "id": "med-0021",
+    "topic": "Why does foley art recreate everyday sounds artificially instead of using the original recorded sound?",
+    "domain": "media",
+    "difficulty": 1,
+    "tags": [
+      "film-production"
+    ]
+  },
+  {
+    "id": "med-0022",
+    "topic": "What is a long take, and why does a single unbroken shot change an audience's sense of tension?",
+    "domain": "media",
+    "difficulty": 1,
+    "tags": [
+      "film-theory"
+    ]
+  },
+  {
+    "id": "med-0023",
+    "topic": "Why did the rise of anime's limited animation techniques emerge from budget constraints, not just style choices?",
+    "domain": "media",
+    "difficulty": 2,
+    "tags": [
+      "animation",
+      "history"
+    ]
+  },
+  {
+    "id": "med-0024",
+    "topic": "What is transmedia storytelling, and why does spreading a narrative across multiple formats change how it's told?",
+    "domain": "media",
+    "difficulty": 2,
+    "tags": [
+      "media-theory"
+    ]
+  },
+  {
+    "id": "med-0025",
+    "topic": "Why does a video game's difficulty curve matter as much as its raw challenge level for player retention?",
+    "domain": "media",
+    "difficulty": 1,
+    "tags": [
+      "games",
+      "design"
+    ]
+  },
+  {
+    "id": "evr-0001",
+    "topic": "Why does a zipper's interlocking teeth stay closed under sideways pull but open easily along its length?",
+    "domain": "everyday",
+    "difficulty": 1,
+    "tags": [
+      "mechanisms"
+    ]
+  },
+  {
+    "id": "evr-0002",
+    "topic": "Why is milk white when none of its main components are white on their own?",
+    "domain": "everyday",
+    "difficulty": 1,
+    "tags": [
+      "food-science"
+    ]
+  },
+  {
+    "id": "evr-0003",
+    "topic": "Why does a microwave heat food but leave the plate underneath comparatively cool?",
+    "domain": "everyday",
+    "difficulty": 1,
+    "tags": [
+      "physics"
+    ]
+  },
+  {
+    "id": "evr-0004",
+    "topic": "Why does ice float instead of sinking, unlike almost every other solid in its own liquid?",
+    "domain": "everyday",
+    "difficulty": 1,
+    "tags": [
+      "chemistry"
+    ]
+  },
+  {
+    "id": "evr-0005",
+    "topic": "Why do mirrors seem to flip left and right but not up and down?",
+    "domain": "everyday",
+    "difficulty": 2,
+    "tags": [
+      "physics",
+      "perception"
+    ]
+  },
+  {
+    "id": "evr-0006",
+    "topic": "Why does a shaken can of soda spray out but a can that's just been jostled slowly doesn't?",
+    "domain": "everyday",
+    "difficulty": 1,
+    "tags": [
+      "physics"
+    ]
+  },
+  {
+    "id": "evr-0007",
+    "topic": "Why does a boomerang come back instead of just flying in a straight line?",
+    "domain": "everyday",
+    "difficulty": 2,
+    "tags": [
+      "physics"
+    ]
+  },
+  {
+    "id": "evr-0008",
+    "topic": "Why do cats almost always land on their feet when they fall?",
+    "domain": "everyday",
+    "difficulty": 2,
+    "tags": [
+      "biology",
+      "physics"
+    ]
+  },
+  {
+    "id": "evr-0009",
+    "topic": "Why does a rubber band get warm when you stretch it quickly?",
+    "domain": "everyday",
+    "difficulty": 2,
+    "tags": [
+      "physics",
+      "thermodynamics"
+    ]
+  },
+  {
+    "id": "evr-0010",
+    "topic": "Why does helium make your voice sound higher without changing your vocal cords at all?",
+    "domain": "everyday",
+    "difficulty": 1,
+    "tags": [
+      "physics"
+    ]
+  },
+  {
+    "id": "evr-0011",
+    "topic": "Why do you yawn when you see someone else yawn?",
+    "domain": "everyday",
+    "difficulty": 2,
+    "tags": [
+      "biology",
+      "psychology"
+    ]
+  },
+  {
+    "id": "evr-0012",
+    "topic": "Why does bread mold turn green or black instead of just rotting uniformly?",
+    "domain": "everyday",
+    "difficulty": 1,
+    "tags": [
+      "biology"
+    ]
+  },
+  {
+    "id": "evr-0013",
+    "topic": "Why do your fingers wrinkle after a long time in water, and why only on hands and feet?",
+    "domain": "everyday",
+    "difficulty": 2,
+    "tags": [
+      "biology"
+    ]
+  },
+  {
+    "id": "evr-0014",
+    "topic": "Why does a spinning top resist falling over while it's spinning fast?",
+    "domain": "everyday",
+    "difficulty": 2,
+    "tags": [
+      "physics"
+    ]
+  },
+  {
+    "id": "evr-0015",
+    "topic": "Why does static electricity build up more in dry winter air than in humid summer air?",
+    "domain": "everyday",
+    "difficulty": 1,
+    "tags": [
+      "physics"
+    ]
+  },
+  {
+    "id": "evr-0016",
+    "topic": "Why does glass appear transparent while most solids are opaque?",
+    "domain": "everyday",
+    "difficulty": 2,
+    "tags": [
+      "physics",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "evr-0017",
+    "topic": "Why do onions make you cry, chemically, and why does refrigerating them first help?",
+    "domain": "everyday",
+    "difficulty": 1,
+    "tags": [
+      "chemistry"
+    ]
+  },
+  {
+    "id": "evr-0018",
+    "topic": "Why does a hot air balloon rise using the same air that's all around it?",
+    "domain": "everyday",
+    "difficulty": 1,
+    "tags": [
+      "physics"
+    ]
+  },
+  {
+    "id": "evr-0019",
+    "topic": "Why does your voice sound different to you on a recording than in your own head?",
+    "domain": "everyday",
+    "difficulty": 1,
+    "tags": [
+      "physics",
+      "biology"
+    ]
+  },
+  {
+    "id": "evr-0020",
+    "topic": "Why do soap bubbles form a sphere instead of any other shape?",
+    "domain": "everyday",
+    "difficulty": 1,
+    "tags": [
+      "physics"
+    ]
+  },
+  {
+    "id": "evr-0021",
+    "topic": "Why does an elastic waistband lose its stretch over years even sitting unused in a drawer?",
+    "domain": "everyday",
+    "difficulty": 2,
+    "tags": [
+      "materials"
+    ]
+  },
+  {
+    "id": "evr-0022",
+    "topic": "Why do knuckles make a popping sound when you crack them?",
+    "domain": "everyday",
+    "difficulty": 1,
+    "tags": [
+      "biology"
+    ]
+  },
+  {
+    "id": "evr-0023",
+    "topic": "Why does toast almost always land butter-side down when dropped?",
+    "domain": "everyday",
+    "difficulty": 2,
+    "tags": [
+      "physics"
+    ]
+  },
+  {
+    "id": "evr-0024",
+    "topic": "Why does a compass needle point north, and why is that direction not exactly true north?",
+    "domain": "everyday",
+    "difficulty": 1,
+    "tags": [
+      "physics"
+    ]
+  },
+  {
+    "id": "evr-0025",
+    "topic": "Why do you get brain freeze from eating something cold too fast?",
+    "domain": "everyday",
+    "difficulty": 1,
+    "tags": [
+      "biology"
+    ]
+  },
+  {
+    "id": "evr-0026",
+    "topic": "Why does a paper airplane's design change whether it flies straight or loops?",
+    "domain": "everyday",
+    "difficulty": 1,
+    "tags": [
+      "physics"
+    ]
+  },
+  {
+    "id": "evr-0027",
+    "topic": "Why does hot water sometimes freeze faster than cold water, the so-called Mpemba effect?",
+    "domain": "everyday",
+    "difficulty": 3,
+    "tags": [
+      "physics"
+    ]
+  },
+  {
+    "id": "evr-0028",
+    "topic": "Why do we get goosebumps from cold or fear when human body hair is too short to trap warmth?",
+    "domain": "everyday",
+    "difficulty": 1,
+    "tags": [
+      "biology"
+    ]
+  },
+  {
+    "id": "evr-0029",
+    "topic": "Why does a Velcro strip's grip weaken after being used many times?",
+    "domain": "everyday",
+    "difficulty": 1,
+    "tags": [
+      "materials"
+    ]
+  },
+  {
+    "id": "evr-0030",
+    "topic": "Why does chewing gum stay soft while other things you chew break down?",
+    "domain": "everyday",
+    "difficulty": 1,
+    "tags": [
+      "materials",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "evr-0031",
+    "topic": "Why does a cast iron pan need seasoning, chemically, to become non-stick?",
+    "domain": "everyday",
+    "difficulty": 1,
+    "tags": [
+      "materials",
+      "food-science"
+    ]
+  },
+  {
+    "id": "evr-0032",
+    "topic": "What is the difference between whole grain and refined flour, nutritionally and structurally?",
+    "domain": "everyday",
+    "difficulty": 1,
+    "tags": [
+      "food-science"
+    ]
+  }
+]
