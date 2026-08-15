@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import Link from "next/link";
 import Nav from "@/app/components/Nav";
-import { getSession, getAudio } from "@/lib/db";
 import { loadTopics, topicById } from "@/lib/topics";
 import { Session, TopicRecord } from "@/lib/types";
 
@@ -14,27 +13,27 @@ export default function ArchiveDetailPage() {
 
   const [session, setSession] = useState<Session | null | undefined>(undefined);
   const [topic, setTopic] = useState<TopicRecord | undefined>(undefined);
-  const [audioUrl, setAudioUrl] = useState<string | null>(null);
 
   useEffect(() => {
     let cancelled = false;
     (async () => {
-      const [s, audio, topics] = await Promise.all([getSession(id), getAudio(id), loadTopics()]);
+      const [sessionRes, topics] = await Promise.all([
+        fetch(`/api/sessions/${id}`),
+        loadTopics(),
+      ]);
       if (cancelled) return;
-      setSession(s ?? null);
-      if (s) setTopic(topicById(topics, s.topicId));
-      if (audio) setAudioUrl(URL.createObjectURL(audio));
+      if (!sessionRes.ok) {
+        setSession(null);
+        return;
+      }
+      const { session: s } = await sessionRes.json();
+      setSession(s);
+      setTopic(topicById(topics, s.topicId));
     })();
     return () => {
       cancelled = true;
     };
   }, [id]);
-
-  useEffect(() => {
-    return () => {
-      if (audioUrl) URL.revokeObjectURL(audioUrl);
-    };
-  }, [audioUrl]);
 
   return (
     <div className="flex-1 flex flex-col">
@@ -60,8 +59,8 @@ export default function ArchiveDetailPage() {
               </p>
             </div>
 
-            {audioUrl && (
-              <audio controls src={audioUrl} className="w-full">
+            {session.hasAudio && (
+              <audio controls src={`/api/sessions/${session.id}/audio`} className="w-full">
                 Your browser does not support audio playback.
               </audio>
             )}

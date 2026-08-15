@@ -3,9 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import Nav from "@/app/components/Nav";
-import { getAllSessions } from "@/lib/db";
 import { loadTopics, topicById } from "@/lib/topics";
-import { isPending } from "@/lib/session";
 import { exportAllData } from "@/lib/export";
 import { Session, TopicRecord } from "@/lib/types";
 
@@ -17,8 +15,11 @@ export default function ArchivePage() {
 
   useEffect(() => {
     (async () => {
-      const [allSessions, allTopics] = await Promise.all([getAllSessions(), loadTopics()]);
-      setSessions(allSessions.filter((s) => !isPending(s)));
+      const [sessionsRes, allTopics] = await Promise.all([
+        fetch("/api/sessions").then((r) => r.json()),
+        loadTopics(),
+      ]);
+      setSessions(sessionsRes.sessions ?? []);
       setTopics(allTopics);
       setLoading(false);
     })();

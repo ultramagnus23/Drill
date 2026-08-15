@@ -1,4 +1,5 @@
 import Link from "next/link";
+import LogoutButton from "./LogoutButton";
 
 export default function Nav() {
   return (
@@ -13,6 +14,10 @@ export default function Nav() {
         <Link href="/map" className="hover:text-ink">
           Map
         </Link>
+        <Link href="/brain" className="hover:text-ink">
+          Brain
+        </Link>
+        <LogoutButton />
       </nav>
     </header>
   );

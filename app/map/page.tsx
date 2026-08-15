@@ -2,8 +2,6 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Nav from "@/app/components/Nav";
-import { getAllSessions } from "@/lib/db";
-import { isPending } from "@/lib/session";
 import { Session } from "@/lib/types";
 
 interface DomainStat {
@@ -18,8 +16,8 @@ export default function MapPage() {
 
   useEffect(() => {
     (async () => {
-      const all = await getAllSessions();
-      setSessions(all.filter((s) => !isPending(s)));
+      const res = await fetch("/api/sessions").then((r) => r.json());
+      setSessions(res.sessions ?? []);
       setLoading(false);
     })();
   }, []);

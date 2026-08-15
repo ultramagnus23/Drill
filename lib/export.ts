@@ -1,9 +1,10 @@
 import JSZip from "jszip";
-import { getAllSessions, getAudio } from "./db";
-import { isPending } from "./session";
+import { Session } from "./types";
 
 export async function exportAllData(): Promise<void> {
-  const sessions = (await getAllSessions()).filter((s) => !isPending(s));
+  const { sessions } = (await fetch("/api/sessions").then((r) => r.json())) as {
+    sessions: Session[];
+  };
   const zip = new JSZip();
 
   zip.file("sessions.json", JSON.stringify(sessions, null, 2));
@@ -11,8 +12,8 @@ export async function exportAllData(): Promise<void> {
   const audioFolder = zip.folder("audio");
   for (const s of sessions) {
     if (!s.hasAudio) continue;
-    const blob = await getAudio(s.id);
-    if (blob) audioFolder?.file(`${s.id}.webm`, blob);
+    const blob = await fetch(`/api/sessions/${s.id}/audio`).then((r) => r.blob());
+    audioFolder?.file(`${s.id}.webm`, blob);
   }
 
   const zipBlob = await zip.generateAsync({ type: "blob" });

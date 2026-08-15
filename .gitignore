@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# personal data imports (never commit — private conversation exports, etc.)
+/data-import/
+/data/brain/
+*.zip
+
+/lib/generated/prisma

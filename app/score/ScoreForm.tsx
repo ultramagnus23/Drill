@@ -3,17 +3,18 @@
 import { useEffect, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import ScoreInput from "@/app/components/ScoreInput";
-import { getSession, getAudio, saveSession } from "@/lib/db";
-import { recordStreakCompletion } from "@/lib/storage";
-import { Session } from "@/lib/types";
+
+interface SessionDTO {
+  id: string;
+  hasAudio: boolean;
+}
 
 export default function ScoreForm() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const id = searchParams.get("id");
 
-  const [session, setSession] = useState<Session | null>(null);
-  const [audioUrl, setAudioUrl] = useState<string | null>(null);
+  const [session, setSession] = useState<SessionDTO | null>(null);
   const [fluency, setFluency] = useState(0);
   const [depth, setDepth] = useState(0);
   const [coverage, setCoverage] = useState(0);
@@ -27,34 +28,34 @@ export default function ScoreForm() {
     }
     let cancelled = false;
     (async () => {
-      const [s, audio] = await Promise.all([getSession(id), getAudio(id)]);
+      const res = await fetch(`/api/sessions/${id}`);
       if (cancelled) return;
-      if (!s) {
+      if (!res.ok) {
         router.replace("/");
         return;
       }
-      setSession(s);
-      if (audio) setAudioUrl(URL.createObjectURL(audio));
+      const data = await res.json();
+      setSession(data.session);
     })();
     return () => {
       cancelled = true;
     };
   }, [id, router]);
 
-  useEffect(() => {
-    return () => {
-      if (audioUrl) URL.revokeObjectURL(audioUrl);
-    };
-  }, [audioUrl]);
-
   const canSave = fluency > 0 && depth > 0 && coverage > 0 && !saving;
 
   async function handleSave() {
     if (!session || !canSave) return;
     setSaving(true);
-    const updated: Session = { ...session, fluency, depth, coverage, failureNote };
-    await saveSession(updated, null);
-    recordStreakCompletion(session.date);
+    const res = await fetch(`/api/sessions/${session.id}/score`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ fluency, depth, coverage, failureNote }),
+    });
+    if (!res.ok) {
+      setSaving(false);
+      return;
+    }
     router.push("/");
   }
 
@@ -69,8 +70,8 @@ export default function ScoreForm() {
   return (
     <div className="flex-1 flex flex-col items-center px-6 py-12">
       <div className="w-full max-w-md flex flex-col gap-8">
-        {audioUrl && (
-          <audio controls src={audioUrl} className="w-full">
+        {session.hasAudio && (
+          <audio controls src={`/api/sessions/${session.id}/audio`} className="w-full">
             Your browser does not support audio playback.
           </audio>
         )}

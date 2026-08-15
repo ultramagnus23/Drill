@@ -1,0 +1,75 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client"
+  output   = "../lib/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id           String   @id @default(uuid())
+  email        String   @unique
+  passwordHash String
+  createdAt    DateTime @default(now())
+
+  authSessions AuthSession[]
+  drillSessions DrillSession[]
+  dailyDraws   DailyDraw[]
+}
+
+model AuthSession {
+  token     String   @id @default(uuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+}
+
+// One row per drawn-and-scored (or pending-score) topic day.
+model DrillSession {
+  id             String   @id @default(uuid())
+  userId         String
+  user           User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  date           String // YYYY-MM-DD
+  topicId        String
+  domain         String
+  notesText      String   @default("")
+  audioData      Bytes?
+  audioMimeType  String?
+  fluency        Int      @default(0) // 0 = pending, self-score not yet submitted
+  depth          Int      @default(0)
+  coverage       Int      @default(0)
+  failureNote    String   @default("")
+  wasRerolled    Boolean  @default(false)
+  isRevisit      Boolean  @default(false)
+  durationSpoken Int      @default(0)
+  createdAt      DateTime @default(now())
+
+  @@index([userId, date])
+}
+
+// In-progress "today" state: draw -> research -> recall, before a
+// DrillSession is finalized. One row per user per day.
+model DailyDraw {
+  id             String   @id @default(uuid())
+  userId         String
+  user           User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  date           String // YYYY-MM-DD
+  topicId        String
+  isRevisit      Boolean  @default(false)
+  wasRerolled    Boolean  @default(false)
+  rerollUsed     Boolean  @default(false)
+  phase          String // "draw" | "research" | "recall"
+  notesText      String   @default("")
+  researchEndsAt DateTime?
+  recallEndsAt   DateTime?
+  updatedAt      DateTime @updatedAt
+
+  @@unique([userId, date])
+}

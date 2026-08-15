@@ -32,6 +32,7 @@ export interface TodayState {
   topicId: string;
   isRevisit: boolean;
   wasRerolled: boolean;
+  rerollUsed: boolean;
   phase: "draw" | "research" | "recall" | "done";
   notesText: string;
   researchEndsAt: number | null; // epoch ms

@@ -7,21 +7,8 @@ import TopicCard from "@/app/components/TopicCard";
 import ResearchPanel from "@/app/components/ResearchPanel";
 import RecallPanel from "@/app/components/RecallPanel";
 import { loadTopics, topicById } from "@/lib/topics";
-import { selectTopic } from "@/lib/selection";
-import { getAllSessions, saveSession } from "@/lib/db";
-import { sessionsToHistory, newSessionId, isPending } from "@/lib/session";
-import {
-  todayISO,
-  getStreak,
-  getRerollUsed,
-  markRerollUsed,
-  getTodayState,
-  setTodayState,
-  clearTodayState,
-} from "@/lib/storage";
-import { RESEARCH_SECONDS, RECALL_SECONDS } from "@/lib/constants";
-import { TodayState, TopicRecord, Session } from "@/lib/types";
 import { startRecording, ActiveRecording } from "@/lib/recorder";
+import { TodayState, TopicRecord } from "@/lib/types";
 
 type Status = "loading" | "done" | "active";
 
@@ -31,7 +18,6 @@ export default function TodayPage() {
   const [topics, setTopics] = useState<TopicRecord[]>([]);
   const [phaseData, setPhaseData] = useState<TodayState | null>(null);
   const [streak, setStreak] = useState(0);
-  const [rerollAvailable, setRerollAvailable] = useState(true);
   const [now, setNow] = useState(() => Date.now());
   const [micError, setMicError] = useState<string | null>(null);
   const [isRecording, setIsRecording] = useState(false);
@@ -41,51 +27,24 @@ export default function TodayPage() {
   const phaseDataRef = useRef<TodayState | null>(null);
   const topicRef = useRef<TopicRecord | undefined>(undefined);
 
-  // ---- initial load / resume ----
+  // ---- initial load / resume, from the server ----
   useEffect(() => {
     let cancelled = false;
     (async () => {
-      const [loadedTopics, sessions] = await Promise.all([loadTopics(), getAllSessions()]);
+      const [loadedTopics, res] = await Promise.all([
+        loadTopics(),
+        fetch("/api/today").then((r) => r.json()),
+      ]);
       if (cancelled) return;
+      setTopics(loadedTopics);
 
-      const today = todayISO();
-      const completedToday = sessions.find((s) => s.date === today && !isPending(s));
-      if (completedToday) {
-        setStreak(getStreak().count);
+      if (res.status === "done") {
+        setStreak(res.streak);
         setStatus("done");
         return;
       }
 
-      setTopics(loadedTopics);
-      setRerollAvailable(!getRerollUsed(today));
-
-      let state = getTodayState();
-      if (!state || state.date !== today) {
-        const history = sessionsToHistory(sessions);
-        const { topic, isRevisit } = selectTopic(loadedTopics, history, today);
-        state = {
-          date: today,
-          topicId: topic.id,
-          isRevisit,
-          wasRerolled: false,
-          phase: "draw",
-          notesText: "",
-          researchEndsAt: null,
-          recallEndsAt: null,
-        };
-        setTodayState(state);
-      } else if (
-        state.phase === "research" &&
-        state.researchEndsAt &&
-        Date.now() >= state.researchEndsAt
-      ) {
-        // Resumed after the research window already closed elsewhere — the
-        // lock must hold, so jump straight into a fresh recall window.
-        state = { ...state, phase: "recall", recallEndsAt: Date.now() + RECALL_SECONDS * 1000 };
-        setTodayState(state);
-      }
-
-      setPhaseData(state);
+      setPhaseData(res.draw);
       setStatus("active");
     })();
     return () => {
@@ -103,30 +62,23 @@ export default function TodayPage() {
     topicRef.current = topic;
   }, [topic]);
 
-  function persist(update: Partial<TodayState>) {
-    setPhaseData((prev) => {
-      if (!prev) return prev;
-      const next = { ...prev, ...update };
-      setTodayState(next);
-      return next;
-    });
-  }
-
-  function handleStart() {
-    persist({ phase: "research", researchEndsAt: Date.now() + RESEARCH_SECONDS * 1000 });
+  async function handleStart() {
+    const res = await fetch("/api/today/start", { method: "POST" });
+    if (res.ok) setPhaseData((await res.json()).draw);
   }
 
   async function handleReroll() {
-    if (!phaseData) return;
-    const today = todayISO();
-    const sessions = await getAllSessions();
-    const history = sessionsToHistory(sessions);
-    const { topic: newTopic, isRevisit } = selectTopic(topics, history, today, {
-      excludeIds: new Set([phaseData.topicId]),
+    const res = await fetch("/api/today/reroll", { method: "POST" });
+    if (res.ok) setPhaseData((await res.json()).draw);
+  }
+
+  function handleNotesChange(value: string) {
+    setPhaseData((prev) => (prev ? { ...prev, notesText: value } : prev));
+    fetch("/api/today/notes", {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ notesText: value }),
     });
-    markRerollUsed(today);
-    setRerollAvailable(false);
-    persist({ topicId: newTopic.id, isRevisit, wasRerolled: true });
   }
 
   // ---- research countdown + hard lock into recall ----
@@ -142,7 +94,9 @@ export default function TodayPage() {
         current.researchEndsAt &&
         n >= current.researchEndsAt
       ) {
-        persist({ phase: "recall", recallEndsAt: Date.now() + RECALL_SECONDS * 1000 });
+        fetch("/api/today/lock", { method: "POST" })
+          .then((r) => r.json())
+          .then((data) => data.draw && setPhaseData(data.draw));
       }
     }, 200);
     return () => clearInterval(id);
@@ -171,7 +125,7 @@ export default function TodayPage() {
     };
   }, [phaseData?.phase]);
 
-  // ---- recall countdown + finalize -> save pending session -> score screen ----
+  // ---- recall countdown + finalize -> upload -> score screen ----
   async function finalizeRecall(state: TodayState) {
     let audioBlob: Blob | null = null;
     if (recordingRef.current) {
@@ -180,25 +134,14 @@ export default function TodayPage() {
     }
     setIsRecording(false);
 
-    const id = newSessionId();
-    const session: Session = {
-      id,
-      date: state.date,
-      topicId: state.topicId,
-      domain: topicRef.current?.domain ?? "",
-      notesText: state.notesText,
-      hasAudio: !!audioBlob,
-      fluency: 0,
-      depth: 0,
-      coverage: 0,
-      failureNote: "",
-      wasRerolled: state.wasRerolled,
-      isRevisit: state.isRevisit,
-      durationSpoken: RECALL_SECONDS,
-    };
-    await saveSession(session, audioBlob);
-    clearTodayState();
-    router.push(`/score?id=${id}`);
+    const form = new FormData();
+    const startedAt = (state.recallEndsAt ?? Date.now()) - 60_000;
+    form.set("durationSpoken", String(Math.max(0, Math.round((Date.now() - startedAt) / 1000))));
+    if (audioBlob) form.set("audio", audioBlob, "recall.webm");
+
+    const res = await fetch("/api/today/finalize", { method: "POST", body: form });
+    const data = await res.json();
+    router.push(`/score?id=${data.sessionId}`);
   }
 
   useEffect(() => {
@@ -263,7 +206,7 @@ export default function TodayPage() {
             >
               Start
             </button>
-            {rerollAvailable && (
+            {!phaseData.rerollUsed && (
               <button
                 onClick={handleReroll}
                 className="text-sm text-ink-quiet hover:text-ink underline underline-offset-4"
@@ -287,7 +230,7 @@ export default function TodayPage() {
             isRevisit={phaseData.isRevisit}
             remainingMs={remainingMs}
             notesText={phaseData.notesText}
-            onNotesChange={(value) => persist({ notesText: value })}
+            onNotesChange={handleNotesChange}
           />
         </div>
       </div>
